@@ -1,0 +1,15 @@
+.venv
+.uv-cache
+.runtime
+.git
+.env
+.pytest_cache
+__pycache__
+tests
+backend/tests
+node_modules
+.openai
+*.log
+backups
+test-results
+playwright-report

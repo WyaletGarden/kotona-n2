@@ -1,0 +1,9704 @@
+[
+  {
+    "kanji": "挑戦",
+    "reading": "ちょうせん",
+    "meaning": "Thử thách; sự thử sức",
+    "note": "新しいことに挑戦する。｜Thử sức với điều mới."
+  },
+  {
+    "kanji": "貢献",
+    "reading": "こうけん",
+    "meaning": "Đóng góp",
+    "note": "社会に貢献する。｜Đóng góp cho xã hội."
+  },
+  {
+    "kanji": "実践",
+    "reading": "じっせん",
+    "meaning": "Thực hành; đưa vào thực tế",
+    "note": "学んだことを実践する。｜Áp dụng điều đã học."
+  },
+  {
+    "kanji": "確認",
+    "reading": "かくにん",
+    "meaning": "Xác nhận; kiểm tra lại",
+    "note": "予定を確認する。｜Kiểm tra lại lịch."
+  },
+  {
+    "kanji": "解決",
+    "reading": "かいけつ",
+    "meaning": "Giải quyết",
+    "note": "問題を解決する。｜Giải quyết vấn đề."
+  },
+  {
+    "kanji": "判断",
+    "reading": "はんだん",
+    "meaning": "Phán đoán; quyết định",
+    "note": "自分で判断する。｜Tự mình phán đoán."
+  },
+  {
+    "kanji": "影響",
+    "reading": "えいきょう",
+    "meaning": "Ảnh hưởng",
+    "note": "環境に影響を与える。｜Gây ảnh hưởng đến môi trường."
+  },
+  {
+    "kanji": "改善",
+    "reading": "かいぜん",
+    "meaning": "Cải thiện",
+    "note": "生活を改善する。｜Cải thiện cuộc sống."
+  },
+  {
+    "kanji": "経験",
+    "reading": "けいけん",
+    "meaning": "Kinh nghiệm; trải nghiệm",
+    "note": "経験を積む。｜Tích lũy kinh nghiệm."
+  },
+  {
+    "kanji": "努力",
+    "reading": "どりょく",
+    "meaning": "Nỗ lực",
+    "note": "努力を続ける。｜Tiếp tục nỗ lực."
+  },
+  {
+    "kanji": "達成",
+    "reading": "たっせい",
+    "meaning": "Đạt được; hoàn thành",
+    "note": "目標を達成する。｜Đạt được mục tiêu."
+  },
+  {
+    "kanji": "責任",
+    "reading": "せきにん",
+    "meaning": "Trách nhiệm",
+    "note": "責任を持つ。｜Có trách nhiệm."
+  },
+  {
+    "kanji": "提案",
+    "reading": "ていあん",
+    "meaning": "Đề xuất; kiến nghị",
+    "note": "新しい方法を提案する。｜Đề xuất phương pháp mới."
+  },
+  {
+    "kanji": "比較",
+    "reading": "ひかく",
+    "meaning": "So sánh",
+    "note": "二つの方法を比較する。｜So sánh hai phương pháp."
+  },
+  {
+    "kanji": "検討",
+    "reading": "けんとう",
+    "meaning": "Xem xét; cân nhắc",
+    "note": "計画を検討する。｜Cân nhắc kế hoạch."
+  },
+  {
+    "kanji": "状況",
+    "reading": "じょうきょう",
+    "meaning": "Tình hình; tình trạng",
+    "note": "状況を説明する。｜Giải thích tình hình."
+  },
+  {
+    "kanji": "傾向",
+    "reading": "けいこう",
+    "meaning": "Xu hướng; khuynh hướng",
+    "note": "最近の傾向を調べる。｜Tìm hiểu xu hướng gần đây."
+  },
+  {
+    "kanji": "価値",
+    "reading": "かち",
+    "meaning": "Giá trị",
+    "note": "読む価値がある。｜Đáng để đọc."
+  },
+  {
+    "kanji": "能力",
+    "reading": "のうりょく",
+    "meaning": "Năng lực; khả năng",
+    "note": "能力を伸ばす。｜Phát triển năng lực."
+  },
+  {
+    "kanji": "知識",
+    "reading": "ちしき",
+    "meaning": "Kiến thức",
+    "note": "知識を深める。｜Đào sâu kiến thức."
+  },
+  {
+    "kanji": "募集",
+    "reading": "ぼしゅう",
+    "meaning": "Tuyển; chiêu mộ",
+    "note": "参加者を募集する。｜Tuyển người tham gia."
+  },
+  {
+    "kanji": "応募",
+    "reading": "おうぼ",
+    "meaning": "Ứng tuyển; đăng ký tham gia",
+    "note": "求人に応募する。｜Ứng tuyển việc làm."
+  },
+  {
+    "kanji": "就職",
+    "reading": "しゅうしょく",
+    "meaning": "Tìm được việc; vào làm",
+    "note": "日本の会社に就職する。｜Vào làm ở công ty Nhật."
+  },
+  {
+    "kanji": "協力",
+    "reading": "きょうりょく",
+    "meaning": "Hợp tác; giúp sức",
+    "note": "みんなで協力する。｜Mọi người cùng hợp tác."
+  },
+  {
+    "kanji": "積極的",
+    "reading": "せっきょくてき",
+    "meaning": "Tích cực; chủ động",
+    "note": "積極的に参加する。｜Chủ động tham gia."
+  },
+  {
+    "kanji": "慎重",
+    "reading": "しんちょう",
+    "meaning": "Thận trọng; cẩn thận",
+    "note": "慎重に考える。｜Suy nghĩ cẩn thận."
+  },
+  {
+    "kanji": "正確",
+    "reading": "せいかく",
+    "meaning": "Chính xác",
+    "note": "正確に伝える。｜Truyền đạt chính xác."
+  },
+  {
+    "kanji": "複雑",
+    "reading": "ふくざつ",
+    "meaning": "Phức tạp",
+    "note": "仕組みが複雑だ。｜Cơ chế phức tạp."
+  },
+  {
+    "kanji": "承認",
+    "reading": "しょうにん",
+    "meaning": "Chấp thuận; phê duyệt",
+    "note": "計画の承認を得る。｜Được phê duyệt kế hoạch."
+  },
+  {
+    "kanji": "納得",
+    "reading": "なっとく",
+    "meaning": "Hiểu và chấp nhận; đồng tình",
+    "note": "説明に納得する。｜Hiểu và chấp nhận lời giải thích."
+  },
+  {
+    "kanji": "勘違い",
+    "reading": "かんちがい",
+    "meaning": "Hiểu nhầm; nhầm tưởng",
+    "note": "時間を勘違いした。｜Tôi đã nhầm giờ."
+  },
+  {
+    "kanji": "成立",
+    "reading": "せいりつ",
+    "meaning": "Được thiết lập; được thông qua",
+    "note": "契約が成立する。｜Hợp đồng được ký kết."
+  },
+  {
+    "kanji": "移住",
+    "reading": "いじゅう",
+    "meaning": "Di cư; chuyển đến sinh sống",
+    "note": "海外に移住する。｜Chuyển ra nước ngoài sinh sống."
+  },
+  {
+    "kanji": "生存",
+    "reading": "せいぞん",
+    "meaning": "Sinh tồn; còn sống",
+    "note": "生存を確認する。｜Xác nhận còn sống."
+  },
+  {
+    "kanji": "催促",
+    "reading": "さいそく",
+    "meaning": "Thúc giục; nhắc nhở",
+    "note": "返事を催促する。｜Thúc giục trả lời."
+  },
+  {
+    "kanji": "期限",
+    "reading": "きげん",
+    "meaning": "Thời hạn; hạn chót",
+    "note": "期限を守る。｜Tuân thủ thời hạn."
+  },
+  {
+    "kanji": "相変わらず",
+    "reading": "あいかわらず",
+    "meaning": "Vẫn như trước; như thường lệ",
+    "note": ""
+  },
+  {
+    "kanji": "曖昧",
+    "reading": "あいまい",
+    "meaning": "Mơ hồ; không rõ ràng",
+    "note": ""
+  },
+  {
+    "kanji": "遭う",
+    "reading": "あう",
+    "meaning": "Gặp phải; gặp chuyện không may",
+    "note": ""
+  },
+  {
+    "kanji": "扇ぐ",
+    "reading": "あおぐ",
+    "meaning": "Quạt; phe phẩy quạt",
+    "note": ""
+  },
+  {
+    "kanji": "青白い",
+    "reading": "あおじろい",
+    "meaning": "Xanh xao; nhợt nhạt",
+    "note": ""
+  },
+  {
+    "kanji": "明き",
+    "reading": "あき",
+    "meaning": "Chỗ trống; thời gian rảnh",
+    "note": ""
+  },
+  {
+    "kanji": "呆れる",
+    "reading": "あきれる",
+    "meaning": "Sửng sốt; ngán ngẩm vì bất ngờ",
+    "note": ""
+  },
+  {
+    "kanji": "飽くまで",
+    "reading": "あくまで",
+    "meaning": "Đến cùng; kiên quyết",
+    "note": ""
+  },
+  {
+    "kanji": "明け方",
+    "reading": "あけがた",
+    "meaning": "Rạng sáng; lúc trời hửng",
+    "note": ""
+  },
+  {
+    "kanji": "挙げる",
+    "reading": "あげる",
+    "meaning": "Giơ lên; nêu ra; tổ chức",
+    "note": ""
+  },
+  {
+    "kanji": "揚げる",
+    "reading": "あげる",
+    "meaning": "Nâng lên; chiên, rán",
+    "note": ""
+  },
+  {
+    "kanji": "憧れる",
+    "reading": "あこがれる",
+    "meaning": "Ngưỡng mộ; ao ước",
+    "note": ""
+  },
+  {
+    "kanji": "足跡",
+    "reading": "あしあと",
+    "meaning": "Dấu chân",
+    "note": ""
+  },
+  {
+    "kanji": "味わう",
+    "reading": "あじわう",
+    "meaning": "Nếm; thưởng thức; trải nghiệm",
+    "note": ""
+  },
+  {
+    "kanji": "預かる",
+    "reading": "あずかる",
+    "meaning": "Giữ hộ; trông nom; nhận bảo quản",
+    "note": ""
+  },
+  {
+    "kanji": "暖まる",
+    "reading": "あたたまる",
+    "meaning": "Trở nên ấm áp",
+    "note": ""
+  },
+  {
+    "kanji": "暖める",
+    "reading": "あたためる",
+    "meaning": "Làm ấm; hâm nóng",
+    "note": ""
+  },
+  {
+    "kanji": "当たり前",
+    "reading": "あたりまえ",
+    "meaning": "Đương nhiên; bình thường",
+    "note": ""
+  },
+  {
+    "kanji": "厚かましい",
+    "reading": "あつかましい",
+    "meaning": "Trơ trẽn; mặt dày",
+    "note": ""
+  },
+  {
+    "kanji": "圧縮",
+    "reading": "あっしゅく",
+    "meaning": "Sự nén; nén lại",
+    "note": ""
+  },
+  {
+    "kanji": "宛名",
+    "reading": "あてな",
+    "meaning": "Tên và địa chỉ người nhận",
+    "note": ""
+  },
+  {
+    "kanji": "当てはまる",
+    "reading": "あてはまる",
+    "meaning": "Phù hợp; áp dụng được",
+    "note": ""
+  },
+  {
+    "kanji": "当てはめる",
+    "reading": "あてはめる",
+    "meaning": "Áp dụng; đưa vào khuôn mẫu",
+    "note": ""
+  },
+  {
+    "kanji": "暴れる",
+    "reading": "あばれる",
+    "meaning": "Quậy phá; vùng vẫy; nổi giận dữ dội",
+    "note": ""
+  },
+  {
+    "kanji": "脂",
+    "reading": "あぶら",
+    "meaning": "Mỡ động vật; chất béo",
+    "note": ""
+  },
+  {
+    "kanji": "炙る",
+    "reading": "あぶる",
+    "meaning": "Hơ; nướng trên lửa",
+    "note": ""
+  },
+  {
+    "kanji": "溢れる",
+    "reading": "あふれる",
+    "meaning": "Tràn; tràn ngập",
+    "note": ""
+  },
+  {
+    "kanji": "雨戸",
+    "reading": "あまど",
+    "meaning": "Cửa chắn mưa, bão",
+    "note": ""
+  },
+  {
+    "kanji": "甘やかす",
+    "reading": "あまやかす",
+    "meaning": "Nuông chiều; làm hư",
+    "note": ""
+  },
+  {
+    "kanji": "余る",
+    "reading": "あまる",
+    "meaning": "Còn thừa; dư ra",
+    "note": ""
+  },
+  {
+    "kanji": "編物",
+    "reading": "あみもの",
+    "meaning": "Đồ đan; việc đan len",
+    "note": ""
+  },
+  {
+    "kanji": "編む",
+    "reading": "あむ",
+    "meaning": "Đan; bện; biên soạn",
+    "note": ""
+  },
+  {
+    "kanji": "危うい",
+    "reading": "あやうい",
+    "meaning": "Nguy hiểm; mong manh",
+    "note": ""
+  },
+  {
+    "kanji": "怪しい",
+    "reading": "あやしい",
+    "meaning": "Đáng ngờ; không chắc chắn",
+    "note": ""
+  },
+  {
+    "kanji": "荒い",
+    "reading": "あらい",
+    "meaning": "Dữ dội; thô bạo",
+    "note": ""
+  },
+  {
+    "kanji": "粗い",
+    "reading": "あらい",
+    "meaning": "Thô; hạt to; không mịn",
+    "note": ""
+  },
+  {
+    "kanji": "粗筋",
+    "reading": "あらすじ",
+    "meaning": "Cốt truyện; nội dung tóm tắt",
+    "note": ""
+  },
+  {
+    "kanji": "争う",
+    "reading": "あらそう",
+    "meaning": "Tranh giành; tranh luận",
+    "note": ""
+  },
+  {
+    "kanji": "改めて",
+    "reading": "あらためて",
+    "meaning": "Một lần nữa; vào dịp khác",
+    "note": ""
+  },
+  {
+    "kanji": "改める",
+    "reading": "あらためる",
+    "meaning": "Sửa đổi; cải thiện",
+    "note": ""
+  },
+  {
+    "kanji": "著す",
+    "reading": "あらわす",
+    "meaning": "Viết; trước tác; xuất bản",
+    "note": ""
+  },
+  {
+    "kanji": "有難い",
+    "reading": "ありがたい",
+    "meaning": "Đáng biết ơn; quý hóa",
+    "note": ""
+  },
+  {
+    "kanji": "彼此",
+    "reading": "あれこれ",
+    "meaning": "Cái này cái kia; đủ chuyện",
+    "note": ""
+  },
+  {
+    "kanji": "慌ただしい",
+    "reading": "あわただしい",
+    "meaning": "Tất bật; vội vã",
+    "note": ""
+  },
+  {
+    "kanji": "慌てる",
+    "reading": "あわてる",
+    "meaning": "Hoảng hốt; luống cuống",
+    "note": ""
+  },
+  {
+    "kanji": "安易",
+    "reading": "あんい",
+    "meaning": "Dễ dãi; thiếu suy xét",
+    "note": ""
+  },
+  {
+    "kanji": "案外",
+    "reading": "あんがい",
+    "meaning": "Ngoài dự đoán; bất ngờ",
+    "note": ""
+  },
+  {
+    "kanji": "言い出す",
+    "reading": "いいだす",
+    "meaning": "Bắt đầu nói; đề xuất",
+    "note": ""
+  },
+  {
+    "kanji": "言い付ける",
+    "reading": "いいつける",
+    "meaning": "Dặn; ra lệnh; mách lại",
+    "note": ""
+  },
+  {
+    "kanji": "意義",
+    "reading": "いぎ",
+    "meaning": "Ý nghĩa; giá trị",
+    "note": ""
+  },
+  {
+    "kanji": "生き生き",
+    "reading": "いきいき",
+    "meaning": "Sinh động; tràn đầy sức sống",
+    "note": ""
+  },
+  {
+    "kanji": "行き成り",
+    "reading": "いきなり",
+    "meaning": "Đột nhiên; bất thình lình",
+    "note": ""
+  },
+  {
+    "kanji": "育児",
+    "reading": "いくじ",
+    "meaning": "Việc nuôi dạy trẻ",
+    "note": ""
+  },
+  {
+    "kanji": "幾分",
+    "reading": "いくぶん",
+    "meaning": "Phần nào; đôi chút",
+    "note": ""
+  },
+  {
+    "kanji": "生け花",
+    "reading": "いけばな",
+    "meaning": "Nghệ thuật cắm hoa",
+    "note": ""
+  },
+  {
+    "kanji": "以後",
+    "reading": "いご",
+    "meaning": "Từ sau đó; kể từ nay",
+    "note": ""
+  },
+  {
+    "kanji": "以降",
+    "reading": "いこう",
+    "meaning": "Từ thời điểm đó trở đi",
+    "note": ""
+  },
+  {
+    "kanji": "勇ましい",
+    "reading": "いさましい",
+    "meaning": "Dũng cảm; oai hùng",
+    "note": ""
+  },
+  {
+    "kanji": "衣食住",
+    "reading": "いしょくじゅう",
+    "meaning": "Ăn, mặc và ở; nhu cầu sinh hoạt cơ bản",
+    "note": ""
+  },
+  {
+    "kanji": "意地悪",
+    "reading": "いじわる",
+    "meaning": "Xấu tính; hay làm khó người khác",
+    "note": ""
+  },
+  {
+    "kanji": "一々",
+    "reading": "いちいち",
+    "meaning": "Từng cái một; từng việc một",
+    "note": ""
+  },
+  {
+    "kanji": "一応",
+    "reading": "いちおう",
+    "meaning": "Tạm thời; trước mắt; đại khái",
+    "note": ""
+  },
+  {
+    "kanji": "一段と",
+    "reading": "いちだんと",
+    "meaning": "Càng hơn; thêm một bậc",
+    "note": ""
+  },
+  {
+    "kanji": "一流",
+    "reading": "いちりゅう",
+    "meaning": "Hàng đầu; hạng nhất",
+    "note": ""
+  },
+  {
+    "kanji": "佚",
+    "reading": "いつ",
+    "meaning": "Thất lạc; lẩn tránh",
+    "note": ""
+  },
+  {
+    "kanji": "一昨年",
+    "reading": "いっさくねん",
+    "meaning": "Năm kia",
+    "note": ""
+  },
+  {
+    "kanji": "一斉",
+    "reading": "いっせい",
+    "meaning": "Đồng loạt; cùng một lúc",
+    "note": ""
+  },
+  {
+    "kanji": "一旦",
+    "reading": "いったん",
+    "meaning": "Một lần; tạm thời",
+    "note": ""
+  },
+  {
+    "kanji": "一定",
+    "reading": "いってい",
+    "meaning": "Nhất định; cố định; không đổi",
+    "note": ""
+  },
+  {
+    "kanji": "何時の間にか",
+    "reading": "いつのまにか",
+    "meaning": "Từ lúc nào không hay",
+    "note": ""
+  },
+  {
+    "kanji": "移転",
+    "reading": "いてん",
+    "meaning": "Di chuyển địa điểm; chuyển chỗ",
+    "note": ""
+  },
+  {
+    "kanji": "緯度",
+    "reading": "いど",
+    "meaning": "Vĩ độ",
+    "note": ""
+  },
+  {
+    "kanji": "井戸",
+    "reading": "いど",
+    "meaning": "Giếng nước",
+    "note": ""
+  },
+  {
+    "kanji": "従姉妹",
+    "reading": "いとこ",
+    "meaning": "Chị, em họ nữ",
+    "note": ""
+  },
+  {
+    "kanji": "威張る",
+    "reading": "いばる",
+    "meaning": "Lên mặt; ra oai",
+    "note": ""
+  },
+  {
+    "kanji": "嫌がる",
+    "reading": "いやがる",
+    "meaning": "Tỏ ra không thích; ghét",
+    "note": ""
+  },
+  {
+    "kanji": "愈々",
+    "reading": "いよいよ",
+    "meaning": "Ngày càng; cuối cùng cũng",
+    "note": ""
+  },
+  {
+    "kanji": "煎る",
+    "reading": "いる",
+    "meaning": "Rang khô",
+    "note": ""
+  },
+  {
+    "kanji": "炒る",
+    "reading": "いる",
+    "meaning": "Rang; sao trên chảo",
+    "note": ""
+  },
+  {
+    "kanji": "入れ物",
+    "reading": "いれもの",
+    "meaning": "Đồ đựng; vật chứa",
+    "note": ""
+  },
+  {
+    "kanji": "引力",
+    "reading": "いんりょく",
+    "meaning": "Lực hút; trọng lực",
+    "note": ""
+  },
+  {
+    "kanji": "植木",
+    "reading": "うえき",
+    "meaning": "Cây cảnh; cây trồng trong vườn",
+    "note": ""
+  },
+  {
+    "kanji": "飢える",
+    "reading": "うえる",
+    "meaning": "Đói khát; thiếu thốn",
+    "note": ""
+  },
+  {
+    "kanji": "浮かぶ",
+    "reading": "うかぶ",
+    "meaning": "Nổi lên; hiện lên trong đầu",
+    "note": ""
+  },
+  {
+    "kanji": "浮かべる",
+    "reading": "うかべる",
+    "meaning": "Thả nổi; để lộ vẻ mặt",
+    "note": ""
+  },
+  {
+    "kanji": "浮く",
+    "reading": "うく",
+    "meaning": "Nổi; tách rời; dư ra",
+    "note": ""
+  },
+  {
+    "kanji": "承る",
+    "reading": "うけたまわる",
+    "meaning": "Kính nhận; kính nghe; vâng lời",
+    "note": ""
+  },
+  {
+    "kanji": "受取",
+    "reading": "うけとり",
+    "meaning": "Việc nhận; biên nhận",
+    "note": ""
+  },
+  {
+    "kanji": "受け持つ",
+    "reading": "うけもつ",
+    "meaning": "Phụ trách; đảm nhiệm",
+    "note": ""
+  },
+  {
+    "kanji": "薄暗い",
+    "reading": "うすぐらい",
+    "meaning": "Lờ mờ; hơi tối",
+    "note": ""
+  },
+  {
+    "kanji": "薄める",
+    "reading": "うすめる",
+    "meaning": "Pha loãng",
+    "note": ""
+  },
+  {
+    "kanji": "打合せ",
+    "reading": "うちあわせ",
+    "meaning": "Cuộc trao đổi trước; cuộc họp bàn",
+    "note": ""
+  },
+  {
+    "kanji": "打ち消す",
+    "reading": "うちけす",
+    "meaning": "Phủ nhận; bác bỏ",
+    "note": ""
+  },
+  {
+    "kanji": "討つ",
+    "reading": "うつ",
+    "meaning": "Tấn công; đánh dẹp; báo thù",
+    "note": ""
+  },
+  {
+    "kanji": "映す",
+    "reading": "うつす",
+    "meaning": "Chiếu; phản chiếu hình ảnh",
+    "note": ""
+  },
+  {
+    "kanji": "映る",
+    "reading": "うつる",
+    "meaning": "Được phản chiếu; hiện lên trên màn hình",
+    "note": ""
+  },
+  {
+    "kanji": "写る",
+    "reading": "うつる",
+    "meaning": "Được chụp vào ảnh; hiện trong ảnh",
+    "note": ""
+  },
+  {
+    "kanji": "饂飩",
+    "reading": "うどん",
+    "meaning": "Mì udon",
+    "note": ""
+  },
+  {
+    "kanji": "有無",
+    "reading": "うむ",
+    "meaning": "Sự có hay không; có hoặc không",
+    "note": ""
+  },
+  {
+    "kanji": "埋める",
+    "reading": "うめる",
+    "meaning": "Chôn; lấp đầy; bù vào",
+    "note": ""
+  },
+  {
+    "kanji": "敬う",
+    "reading": "うやまう",
+    "meaning": "Kính trọng; tôn kính",
+    "note": ""
+  },
+  {
+    "kanji": "裏返す",
+    "reading": "うらがえす",
+    "meaning": "Lật mặt; lộn trái",
+    "note": ""
+  },
+  {
+    "kanji": "裏口",
+    "reading": "うらぐち",
+    "meaning": "Cửa sau; lối vào phía sau",
+    "note": ""
+  },
+  {
+    "kanji": "占う",
+    "reading": "うらなう",
+    "meaning": "Bói; đoán vận mệnh",
+    "note": ""
+  },
+  {
+    "kanji": "恨み",
+    "reading": "うらみ",
+    "meaning": "Sự oán hận",
+    "note": ""
+  },
+  {
+    "kanji": "恨む",
+    "reading": "うらむ",
+    "meaning": "Oán; hận",
+    "note": ""
+  },
+  {
+    "kanji": "羨ましい",
+    "reading": "うらやましい",
+    "meaning": "Đáng ghen tị; ao ước được như vậy",
+    "note": ""
+  },
+  {
+    "kanji": "羨む",
+    "reading": "うらやむ",
+    "meaning": "Ghen tị; thèm muốn",
+    "note": ""
+  },
+  {
+    "kanji": "売上",
+    "reading": "うりあげ",
+    "meaning": "Doanh thu; số tiền bán được",
+    "note": ""
+  },
+  {
+    "kanji": "売り切れ",
+    "reading": "うりきれ",
+    "meaning": "Tình trạng bán hết hàng",
+    "note": ""
+  },
+  {
+    "kanji": "売り切れる",
+    "reading": "うりきれる",
+    "meaning": "Bán hết; hết hàng",
+    "note": ""
+  },
+  {
+    "kanji": "売れ行き",
+    "reading": "うれゆき",
+    "meaning": "Tình hình tiêu thụ; sức bán",
+    "note": ""
+  },
+  {
+    "kanji": "運河",
+    "reading": "うんが",
+    "meaning": "Kênh đào",
+    "note": ""
+  },
+  {
+    "kanji": "英文",
+    "reading": "えいぶん",
+    "meaning": "Văn bản tiếng Anh; câu tiếng Anh",
+    "note": ""
+  },
+  {
+    "kanji": "英和",
+    "reading": "えいわ",
+    "meaning": "Anh–Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "液体",
+    "reading": "えきたい",
+    "meaning": "Chất lỏng",
+    "note": ""
+  },
+  {
+    "kanji": "絵の具",
+    "reading": "えのぐ",
+    "meaning": "Màu vẽ; sơn vẽ",
+    "note": ""
+  },
+  {
+    "kanji": "偉い",
+    "reading": "えらい",
+    "meaning": "Vĩ đại; đáng kính; giỏi giang",
+    "note": ""
+  },
+  {
+    "kanji": "宴会",
+    "reading": "えんかい",
+    "meaning": "Tiệc; yến tiệc",
+    "note": ""
+  },
+  {
+    "kanji": "園芸",
+    "reading": "えんげい",
+    "meaning": "Nghề làm vườn; trồng cây cảnh",
+    "note": ""
+  },
+  {
+    "kanji": "演劇",
+    "reading": "えんげき",
+    "meaning": "Kịch; nghệ thuật sân khấu",
+    "note": ""
+  },
+  {
+    "kanji": "円周",
+    "reading": "えんしゅう",
+    "meaning": "Chu vi đường tròn",
+    "note": ""
+  },
+  {
+    "kanji": "遠足",
+    "reading": "えんそく",
+    "meaning": "Chuyến dã ngoại",
+    "note": ""
+  },
+  {
+    "kanji": "延長",
+    "reading": "えんちょう",
+    "meaning": "Sự kéo dài; gia hạn",
+    "note": ""
+  },
+  {
+    "kanji": "煙突",
+    "reading": "えんとつ",
+    "meaning": "Ống khói",
+    "note": ""
+  },
+  {
+    "kanji": "追い掛ける",
+    "reading": "おいかける",
+    "meaning": "Đuổi theo; truy đuổi",
+    "note": ""
+  },
+  {
+    "kanji": "追い越す",
+    "reading": "おいこす",
+    "meaning": "Vượt qua; vượt lên trước",
+    "note": ""
+  },
+  {
+    "kanji": "応援",
+    "reading": "おうえん",
+    "meaning": "Cổ vũ; hỗ trợ",
+    "note": ""
+  },
+  {
+    "kanji": "王女",
+    "reading": "おうじょ",
+    "meaning": "Công chúa",
+    "note": ""
+  },
+  {
+    "kanji": "応ずる",
+    "reading": "おうずる",
+    "meaning": "Đáp ứng; phản hồi",
+    "note": ""
+  },
+  {
+    "kanji": "応接",
+    "reading": "おうせつ",
+    "meaning": "Tiếp khách; đón tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "応対",
+    "reading": "おうたい",
+    "meaning": "Ứng đối; tiếp chuyện khách",
+    "note": ""
+  },
+  {
+    "kanji": "往復",
+    "reading": "おうふく",
+    "meaning": "Khứ hồi; đi và về",
+    "note": ""
+  },
+  {
+    "kanji": "欧米",
+    "reading": "おうべい",
+    "meaning": "Châu Âu và châu Mỹ; phương Tây",
+    "note": ""
+  },
+  {
+    "kanji": "応用",
+    "reading": "おうよう",
+    "meaning": "Ứng dụng; vận dụng",
+    "note": ""
+  },
+  {
+    "kanji": "大ざっぱ",
+    "reading": "おおざっぱ",
+    "meaning": "Đại khái; sơ lược; không câu nệ tiểu tiết",
+    "note": ""
+  },
+  {
+    "kanji": "大通り",
+    "reading": "おおどおり",
+    "meaning": "Đường lớn; đại lộ",
+    "note": ""
+  },
+  {
+    "kanji": "大凡",
+    "reading": "おおよそ",
+    "meaning": "Khoảng; xấp xỉ; nhìn chung",
+    "note": ""
+  },
+  {
+    "kanji": "お帰り",
+    "reading": "おかえり",
+    "meaning": "Việc trở về; mừng bạn về nhà",
+    "note": ""
+  },
+  {
+    "kanji": "お蔭様で",
+    "reading": "おかげさまで",
+    "meaning": "Nhờ ơn anh, chị; nhờ mọi người giúp đỡ",
+    "note": ""
+  },
+  {
+    "kanji": "お菜",
+    "reading": "おかず",
+    "meaning": "Món ăn kèm cơm",
+    "note": ""
+  },
+  {
+    "kanji": "拝む",
+    "reading": "おがむ",
+    "meaning": "Chắp tay khấn; cầu xin",
+    "note": ""
+  },
+  {
+    "kanji": "お代わり",
+    "reading": "おかわり",
+    "meaning": "Thêm một phần; thêm một cốc nữa",
+    "note": ""
+  },
+  {
+    "kanji": "補う",
+    "reading": "おぎなう",
+    "meaning": "Bổ sung; bù đắp",
+    "note": ""
+  },
+  {
+    "kanji": "屋外",
+    "reading": "おくがい",
+    "meaning": "Ngoài trời",
+    "note": ""
+  },
+  {
+    "kanji": "送り仮名",
+    "reading": "おくりがな",
+    "meaning": "Phần kana viết sau Kanji để thể hiện biến đổi từ",
+    "note": ""
+  },
+  {
+    "kanji": "怠る",
+    "reading": "おこたる",
+    "meaning": "Lơ là; sao nhãng",
+    "note": ""
+  },
+  {
+    "kanji": "押える",
+    "reading": "おさえる",
+    "meaning": "Giữ chặt; kiềm chế; ngăn lại",
+    "note": ""
+  },
+  {
+    "kanji": "お先に",
+    "reading": "おさきに",
+    "meaning": "Đi trước; xin phép về trước",
+    "note": ""
+  },
+  {
+    "kanji": "治める",
+    "reading": "おさめる",
+    "meaning": "Cai trị; quản lý; dẹp yên",
+    "note": ""
+  },
+  {
+    "kanji": "納める",
+    "reading": "おさめる",
+    "meaning": "Nộp; giao nộp; thu vào",
+    "note": ""
+  },
+  {
+    "kanji": "惜しい",
+    "reading": "おしい",
+    "meaning": "Đáng tiếc; quý; tiếc của",
+    "note": ""
+  },
+  {
+    "kanji": "御辞儀",
+    "reading": "おじぎ",
+    "meaning": "Cái cúi chào; việc cúi chào",
+    "note": ""
+  },
+  {
+    "kanji": "叔父さん",
+    "reading": "おじさん",
+    "meaning": "Chú, cậu, dượng ít tuổi hơn cha hoặc mẹ",
+    "note": ""
+  },
+  {
+    "kanji": "小父さん",
+    "reading": "おじさん",
+    "meaning": "Người đàn ông trung niên; bác trai",
+    "note": ""
+  },
+  {
+    "kanji": "伯父さん",
+    "reading": "おじさん",
+    "meaning": "Bác trai lớn tuổi hơn cha hoặc mẹ",
+    "note": ""
+  },
+  {
+    "kanji": "お邪魔します",
+    "reading": "おじゃまします",
+    "meaning": "Xin phép làm phiền; xin phép vào nhà",
+    "note": ""
+  },
+  {
+    "kanji": "お洒落",
+    "reading": "おしゃれ",
+    "meaning": "Ăn mặc đẹp; hợp thời trang",
+    "note": ""
+  },
+  {
+    "kanji": "教わる",
+    "reading": "おそわる",
+    "meaning": "Được dạy; học từ ai đó",
+    "note": ""
+  },
+  {
+    "kanji": "お大事に",
+    "reading": "おだいじに",
+    "meaning": "Chúc mau khỏe; hãy giữ gìn sức khỏe",
+    "note": ""
+  },
+  {
+    "kanji": "落着く",
+    "reading": "おちつく",
+    "meaning": "Bình tĩnh lại; ổn định",
+    "note": ""
+  },
+  {
+    "kanji": "お出掛け",
+    "reading": "おでかけ",
+    "meaning": "Việc đi ra ngoài",
+    "note": ""
+  },
+  {
+    "kanji": "お手伝いさん",
+    "reading": "おてつだいさん",
+    "meaning": "Người giúp việc",
+    "note": ""
+  },
+  {
+    "kanji": "脅かす",
+    "reading": "おどかす",
+    "meaning": "Dọa; đe dọa",
+    "note": ""
+  },
+  {
+    "kanji": "落し物",
+    "reading": "おとしもの",
+    "meaning": "Đồ đánh rơi; đồ thất lạc",
+    "note": ""
+  },
+  {
+    "kanji": "大人しい",
+    "reading": "おとなしい",
+    "meaning": "Ngoan ngoãn; điềm đạm; ít nói",
+    "note": ""
+  },
+  {
+    "kanji": "驚かす",
+    "reading": "おどろかす",
+    "meaning": "Làm ngạc nhiên; làm giật mình",
+    "note": ""
+  },
+  {
+    "kanji": "各々",
+    "reading": "おのおの",
+    "meaning": "Mỗi người; mỗi cái",
+    "note": ""
+  },
+  {
+    "kanji": "叔母さん",
+    "reading": "おばさん",
+    "meaning": "Cô, dì, thím, mợ; phụ nữ trung niên",
+    "note": ""
+  },
+  {
+    "kanji": "お参り",
+    "reading": "おまいり",
+    "meaning": "Việc đi lễ đền, chùa",
+    "note": ""
+  },
+  {
+    "kanji": "思いがけない",
+    "reading": "おもいがけない",
+    "meaning": "Bất ngờ; không ngờ tới",
+    "note": ""
+  },
+  {
+    "kanji": "思い込む",
+    "reading": "おもいこむ",
+    "meaning": "Tin chắc; đinh ninh",
+    "note": ""
+  },
+  {
+    "kanji": "思いっきり",
+    "reading": "おもいっきり",
+    "meaning": "Hết sức; thỏa thích",
+    "note": ""
+  },
+  {
+    "kanji": "思い付く",
+    "reading": "おもいつく",
+    "meaning": "Nghĩ ra; nảy ra ý tưởng",
+    "note": ""
+  },
+  {
+    "kanji": "重たい",
+    "reading": "おもたい",
+    "meaning": "Nặng; nặng nề",
+    "note": ""
+  },
+  {
+    "kanji": "お休み",
+    "reading": "おやすみ",
+    "meaning": "Nghỉ; ngày nghỉ; chúc ngủ ngon",
+    "note": ""
+  },
+  {
+    "kanji": "親指",
+    "reading": "おやゆび",
+    "meaning": "Ngón tay cái",
+    "note": ""
+  },
+  {
+    "kanji": "卸す",
+    "reading": "おろす",
+    "meaning": "Bán buôn; bán sỉ",
+    "note": ""
+  },
+  {
+    "kanji": "恩恵",
+    "reading": "おんけい",
+    "meaning": "Ân huệ; lợi ích được hưởng",
+    "note": ""
+  },
+  {
+    "kanji": "温室",
+    "reading": "おんしつ",
+    "meaning": "Nhà kính",
+    "note": ""
+  },
+  {
+    "kanji": "温泉",
+    "reading": "おんせん",
+    "meaning": "Suối nước nóng",
+    "note": ""
+  },
+  {
+    "kanji": "温帯",
+    "reading": "おんたい",
+    "meaning": "Vùng ôn đới",
+    "note": ""
+  },
+  {
+    "kanji": "御中",
+    "reading": "おんちゅう",
+    "meaning": "Kính gửi quý cơ quan, công ty",
+    "note": ""
+  },
+  {
+    "kanji": "女の人",
+    "reading": "おんなのひと",
+    "meaning": "Người phụ nữ",
+    "note": ""
+  },
+  {
+    "kanji": "蚊",
+    "reading": "か",
+    "meaning": "Muỗi",
+    "note": ""
+  },
+  {
+    "kanji": "貝",
+    "reading": "かい",
+    "meaning": "Sò, ốc; vỏ sò",
+    "note": ""
+  },
+  {
+    "kanji": "開会",
+    "reading": "かいかい",
+    "meaning": "Khai mạc cuộc họp",
+    "note": ""
+  },
+  {
+    "kanji": "会館",
+    "reading": "かいかん",
+    "meaning": "Hội quán; tòa nhà hội họp",
+    "note": ""
+  },
+  {
+    "kanji": "改札",
+    "reading": "かいさつ",
+    "meaning": "Soát vé; cửa soát vé",
+    "note": ""
+  },
+  {
+    "kanji": "解散",
+    "reading": "かいさん",
+    "meaning": "Giải tán; giải thể",
+    "note": ""
+  },
+  {
+    "kanji": "海水浴",
+    "reading": "かいすいよく",
+    "meaning": "Tắm biển",
+    "note": ""
+  },
+  {
+    "kanji": "回数",
+    "reading": "かいすう",
+    "meaning": "Số lần; tần suất",
+    "note": ""
+  },
+  {
+    "kanji": "回数券",
+    "reading": "かいすうけん",
+    "meaning": "Tập vé dùng nhiều lần",
+    "note": ""
+  },
+  {
+    "kanji": "快晴",
+    "reading": "かいせい",
+    "meaning": "Trời quang đãng",
+    "note": ""
+  },
+  {
+    "kanji": "改正",
+    "reading": "かいせい",
+    "meaning": "Sửa đổi quy định; cải chính",
+    "note": ""
+  },
+  {
+    "kanji": "解説",
+    "reading": "かいせつ",
+    "meaning": "Giải thích; bình giải",
+    "note": ""
+  },
+  {
+    "kanji": "改造",
+    "reading": "かいぞう",
+    "meaning": "Cải tạo; cải tiến kết cấu",
+    "note": ""
+  },
+  {
+    "kanji": "開通",
+    "reading": "かいつう",
+    "meaning": "Khai thông; mở tuyến giao thông",
+    "note": ""
+  },
+  {
+    "kanji": "回転",
+    "reading": "かいてん",
+    "meaning": "Sự quay; vòng quay",
+    "note": ""
+  },
+  {
+    "kanji": "解答",
+    "reading": "かいとう",
+    "meaning": "Lời giải; đáp án",
+    "note": ""
+  },
+  {
+    "kanji": "回答",
+    "reading": "かいとう",
+    "meaning": "Câu trả lời; sự phản hồi",
+    "note": ""
+  },
+  {
+    "kanji": "外部",
+    "reading": "がいぶ",
+    "meaning": "Bên ngoài; bộ phận bên ngoài",
+    "note": ""
+  },
+  {
+    "kanji": "解放",
+    "reading": "かいほう",
+    "meaning": "Giải phóng; thả tự do",
+    "note": ""
+  },
+  {
+    "kanji": "開放",
+    "reading": "かいほう",
+    "meaning": "Mở cửa; mở cho mọi người sử dụng",
+    "note": ""
+  },
+  {
+    "kanji": "海洋",
+    "reading": "かいよう",
+    "meaning": "Đại dương; biển cả",
+    "note": ""
+  },
+  {
+    "kanji": "概論",
+    "reading": "がいろん",
+    "meaning": "Đại cương; khái luận",
+    "note": ""
+  },
+  {
+    "kanji": "帰す",
+    "reading": "かえす",
+    "meaning": "Cho về; đưa trở về",
+    "note": ""
+  },
+  {
+    "kanji": "却って",
+    "reading": "かえって",
+    "meaning": "Ngược lại; trái lại",
+    "note": ""
+  },
+  {
+    "kanji": "代える",
+    "reading": "かえる",
+    "meaning": "Thay thế; đổi sang",
+    "note": ""
+  },
+  {
+    "kanji": "家屋",
+    "reading": "かおく",
+    "meaning": "Nhà cửa; căn nhà",
+    "note": ""
+  },
+  {
+    "kanji": "係わる",
+    "reading": "かかわる",
+    "meaning": "Liên quan; dính líu",
+    "note": ""
+  },
+  {
+    "kanji": "書留",
+    "reading": "かきとめ",
+    "meaning": "Ghi lại; thư bảo đảm",
+    "note": ""
+  },
+  {
+    "kanji": "書取",
+    "reading": "かきとり",
+    "meaning": "Việc nghe và chép chính tả",
+    "note": ""
+  },
+  {
+    "kanji": "垣根",
+    "reading": "かきね",
+    "meaning": "Hàng rào; hàng giậu",
+    "note": ""
+  },
+  {
+    "kanji": "掻く",
+    "reading": "かく",
+    "meaning": "Gãi; cào; đổ mồ hôi",
+    "note": ""
+  },
+  {
+    "kanji": "嗅ぐ",
+    "reading": "かぐ",
+    "meaning": "Ngửi; đánh hơi",
+    "note": ""
+  },
+  {
+    "kanji": "架空",
+    "reading": "かくう",
+    "meaning": "Hư cấu; tưởng tượng; trên không",
+    "note": ""
+  },
+  {
+    "kanji": "各自",
+    "reading": "かくじ",
+    "meaning": "Mỗi người; từng người",
+    "note": ""
+  },
+  {
+    "kanji": "拡充",
+    "reading": "かくじゅう",
+    "meaning": "Mở rộng và củng cố",
+    "note": ""
+  },
+  {
+    "kanji": "学術",
+    "reading": "がくじゅつ",
+    "meaning": "Học thuật",
+    "note": ""
+  },
+  {
+    "kanji": "各地",
+    "reading": "かくち",
+    "meaning": "Các nơi; nhiều địa phương",
+    "note": ""
+  },
+  {
+    "kanji": "拡張",
+    "reading": "かくちょう",
+    "meaning": "Mở rộng; bành trướng",
+    "note": ""
+  },
+  {
+    "kanji": "角度",
+    "reading": "かくど",
+    "meaning": "Góc; góc độ",
+    "note": ""
+  },
+  {
+    "kanji": "学年",
+    "reading": "がくねん",
+    "meaning": "Năm học; khối lớp",
+    "note": ""
+  },
+  {
+    "kanji": "学部",
+    "reading": "がくぶ",
+    "meaning": "Khoa trong trường đại học",
+    "note": ""
+  },
+  {
+    "kanji": "格別",
+    "reading": "かくべつ",
+    "meaning": "Đặc biệt; khác hẳn",
+    "note": ""
+  },
+  {
+    "kanji": "確率",
+    "reading": "かくりつ",
+    "meaning": "Xác suất",
+    "note": ""
+  },
+  {
+    "kanji": "学力",
+    "reading": "がくりょく",
+    "meaning": "Học lực; năng lực học tập",
+    "note": ""
+  },
+  {
+    "kanji": "掛け算",
+    "reading": "かけざん",
+    "meaning": "Phép nhân",
+    "note": ""
+  },
+  {
+    "kanji": "可決",
+    "reading": "かけつ",
+    "meaning": "Thông qua nghị quyết, dự luật",
+    "note": ""
+  },
+  {
+    "kanji": "下降",
+    "reading": "かこう",
+    "meaning": "Đi xuống; giảm xuống",
+    "note": ""
+  },
+  {
+    "kanji": "火口",
+    "reading": "かこう",
+    "meaning": "Miệng núi lửa",
+    "note": ""
+  },
+  {
+    "kanji": "重なる",
+    "reading": "かさなる",
+    "meaning": "Chồng lên nhau; trùng nhau",
+    "note": ""
+  },
+  {
+    "kanji": "重ねる",
+    "reading": "かさねる",
+    "meaning": "Chồng lên; lặp lại; tích lũy",
+    "note": ""
+  },
+  {
+    "kanji": "飾り",
+    "reading": "かざり",
+    "meaning": "Đồ trang trí; sự trang trí",
+    "note": ""
+  },
+  {
+    "kanji": "火山",
+    "reading": "かざん",
+    "meaning": "Núi lửa",
+    "note": ""
+  },
+  {
+    "kanji": "畏まりました",
+    "reading": "かしこまりました",
+    "meaning": "Vâng, tôi hiểu rồi; xin tuân theo",
+    "note": ""
+  },
+  {
+    "kanji": "貸し出し",
+    "reading": "かしだし",
+    "meaning": "Việc cho mượn; cho vay",
+    "note": ""
+  },
+  {
+    "kanji": "過失",
+    "reading": "かしつ",
+    "meaning": "Sai sót; sơ suất",
+    "note": ""
+  },
+  {
+    "kanji": "果実",
+    "reading": "かじつ",
+    "meaning": "Trái cây; quả",
+    "note": ""
+  },
+  {
+    "kanji": "貸間",
+    "reading": "かしま",
+    "meaning": "Phòng cho thuê",
+    "note": ""
+  },
+  {
+    "kanji": "貸家",
+    "reading": "かしや",
+    "meaning": "Nhà cho thuê",
+    "note": ""
+  },
+  {
+    "kanji": "個所",
+    "reading": "かしょ",
+    "meaning": "Chỗ; vị trí; điểm",
+    "note": ""
+  },
+  {
+    "kanji": "過剰",
+    "reading": "かじょう",
+    "meaning": "Quá mức; dư thừa",
+    "note": ""
+  },
+  {
+    "kanji": "噛る",
+    "reading": "かじる",
+    "meaning": "Gặm; cắn; biết sơ qua",
+    "note": ""
+  },
+  {
+    "kanji": "課税",
+    "reading": "かぜい",
+    "meaning": "Đánh thuế; việc thu thuế",
+    "note": ""
+  },
+  {
+    "kanji": "下線",
+    "reading": "かせん",
+    "meaning": "Đường gạch dưới",
+    "note": ""
+  },
+  {
+    "kanji": "加速",
+    "reading": "かそく",
+    "meaning": "Tăng tốc",
+    "note": ""
+  },
+  {
+    "kanji": "加速度",
+    "reading": "かそくど",
+    "meaning": "Gia tốc",
+    "note": ""
+  },
+  {
+    "kanji": "固い",
+    "reading": "かたい",
+    "meaning": "Cứng; chắc; kiên định",
+    "note": ""
+  },
+  {
+    "kanji": "片仮名",
+    "reading": "かたかな",
+    "meaning": "Chữ katakana",
+    "note": ""
+  },
+  {
+    "kanji": "片付く",
+    "reading": "かたづく",
+    "meaning": "Được dọn gọn; được giải quyết",
+    "note": ""
+  },
+  {
+    "kanji": "塊",
+    "reading": "かたまり",
+    "meaning": "Cục; khối; đám",
+    "note": ""
+  },
+  {
+    "kanji": "固まる",
+    "reading": "かたまる",
+    "meaning": "Đông cứng; tụ lại; được xác định",
+    "note": ""
+  },
+  {
+    "kanji": "片道",
+    "reading": "かたみち",
+    "meaning": "Một chiều; lượt đi hoặc lượt về",
+    "note": ""
+  },
+  {
+    "kanji": "傾く",
+    "reading": "かたむく",
+    "meaning": "Nghiêng; nghiêng về; suy yếu",
+    "note": ""
+  },
+  {
+    "kanji": "片寄る",
+    "reading": "かたよる",
+    "meaning": "Thiên lệch; lệch về một phía",
+    "note": ""
+  },
+  {
+    "kanji": "学科",
+    "reading": "がっか",
+    "meaning": "Môn học; chuyên ngành",
+    "note": ""
+  },
+  {
+    "kanji": "学会",
+    "reading": "がっかい",
+    "meaning": "Hội học thuật; hội nghị khoa học",
+    "note": ""
+  },
+  {
+    "kanji": "楽器",
+    "reading": "がっき",
+    "meaning": "Nhạc cụ",
+    "note": ""
+  },
+  {
+    "kanji": "学級",
+    "reading": "がっきゅう",
+    "meaning": "Lớp học",
+    "note": ""
+  },
+  {
+    "kanji": "担ぐ",
+    "reading": "かつぐ",
+    "meaning": "Vác trên vai; khiêng",
+    "note": ""
+  },
+  {
+    "kanji": "括弧",
+    "reading": "かっこ",
+    "meaning": "Dấu ngoặc",
+    "note": ""
+  },
+  {
+    "kanji": "活字",
+    "reading": "かつじ",
+    "meaning": "Chữ in; con chữ đúc",
+    "note": ""
+  },
+  {
+    "kanji": "活躍",
+    "reading": "かつやく",
+    "meaning": "Hoạt động tích cực; thể hiện năng lực",
+    "note": ""
+  },
+  {
+    "kanji": "活力",
+    "reading": "かつりょく",
+    "meaning": "Sức sống; sinh lực",
+    "note": ""
+  },
+  {
+    "kanji": "仮定",
+    "reading": "かてい",
+    "meaning": "Giả định; giả thuyết",
+    "note": ""
+  },
+  {
+    "kanji": "課程",
+    "reading": "かてい",
+    "meaning": "Chương trình học; khóa học",
+    "note": ""
+  },
+  {
+    "kanji": "過程",
+    "reading": "かてい",
+    "meaning": "Quá trình",
+    "note": ""
+  },
+  {
+    "kanji": "仮名",
+    "reading": "かな",
+    "meaning": "Chữ kana",
+    "note": ""
+  },
+  {
+    "kanji": "仮名遣い",
+    "reading": "かなづかい",
+    "meaning": "Quy tắc viết kana; chính tả kana",
+    "note": ""
+  },
+  {
+    "kanji": "鐘",
+    "reading": "かね",
+    "meaning": "Chuông",
+    "note": ""
+  },
+  {
+    "kanji": "加熱",
+    "reading": "かねつ",
+    "meaning": "Gia nhiệt; làm nóng",
+    "note": ""
+  },
+  {
+    "kanji": "兼ねる",
+    "reading": "かねる",
+    "meaning": "Kiêm nhiệm; đồng thời làm; khó có thể",
+    "note": ""
+  },
+  {
+    "kanji": "過半数",
+    "reading": "かはんすう",
+    "meaning": "Quá bán; hơn một nửa",
+    "note": ""
+  },
+  {
+    "kanji": "被せる",
+    "reading": "かぶせる",
+    "meaning": "Phủ lên; đậy lên",
+    "note": ""
+  },
+  {
+    "kanji": "釜",
+    "reading": "かま",
+    "meaning": "Nồi gang; nồi nấu cơm",
+    "note": ""
+  },
+  {
+    "kanji": "紙屑",
+    "reading": "かみくず",
+    "meaning": "Giấy vụn; giấy bỏ",
+    "note": ""
+  },
+  {
+    "kanji": "神様",
+    "reading": "かみさま",
+    "meaning": "Thần; đấng thần linh",
+    "note": ""
+  },
+  {
+    "kanji": "剃刀",
+    "reading": "かみそり",
+    "meaning": "Dao cạo",
+    "note": ""
+  },
+  {
+    "kanji": "貨物",
+    "reading": "かもつ",
+    "meaning": "Hàng hóa vận chuyển",
+    "note": ""
+  },
+  {
+    "kanji": "痒い",
+    "reading": "かゆい",
+    "meaning": "Ngứa",
+    "note": ""
+  },
+  {
+    "kanji": "歌謡",
+    "reading": "かよう",
+    "meaning": "Ca khúc; bài hát",
+    "note": ""
+  },
+  {
+    "kanji": "殻",
+    "reading": "から",
+    "meaning": "Vỏ cứng; vỏ trấu",
+    "note": ""
+  },
+  {
+    "kanji": "揶揄う",
+    "reading": "からかう",
+    "meaning": "Trêu chọc; đùa cợt",
+    "note": ""
+  },
+  {
+    "kanji": "空っぽ",
+    "reading": "からっぽ",
+    "meaning": "Rỗng không; trống rỗng",
+    "note": ""
+  },
+  {
+    "kanji": "歌留多",
+    "reading": "かるた",
+    "meaning": "Bài karuta của Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "枯れる",
+    "reading": "かれる",
+    "meaning": "Héo; khô chết",
+    "note": ""
+  },
+  {
+    "kanji": "可愛がる",
+    "reading": "かわいがる",
+    "meaning": "Yêu chiều; cưng nựng",
+    "note": ""
+  },
+  {
+    "kanji": "乾かす",
+    "reading": "かわかす",
+    "meaning": "Làm khô; phơi khô",
+    "note": ""
+  },
+  {
+    "kanji": "渇く",
+    "reading": "かわく",
+    "meaning": "Khát; khô cổ",
+    "note": ""
+  },
+  {
+    "kanji": "為替",
+    "reading": "かわせ",
+    "meaning": "Hối đoái; chuyển tiền",
+    "note": ""
+  },
+  {
+    "kanji": "瓦",
+    "reading": "かわら",
+    "meaning": "Ngói lợp",
+    "note": ""
+  },
+  {
+    "kanji": "代る",
+    "reading": "かわる",
+    "meaning": "Thay thế; thay phiên",
+    "note": ""
+  },
+  {
+    "kanji": "間隔",
+    "reading": "かんかく",
+    "meaning": "Khoảng cách; khoảng thời gian",
+    "note": ""
+  },
+  {
+    "kanji": "換気",
+    "reading": "かんき",
+    "meaning": "Thông gió; thay không khí",
+    "note": ""
+  },
+  {
+    "kanji": "感激",
+    "reading": "かんげき",
+    "meaning": "Cảm kích; xúc động sâu sắc",
+    "note": ""
+  },
+  {
+    "kanji": "関西",
+    "reading": "かんさい",
+    "meaning": "Vùng Kansai",
+    "note": ""
+  },
+  {
+    "kanji": "鑑賞",
+    "reading": "かんしょう",
+    "meaning": "Thưởng thức nghệ thuật",
+    "note": ""
+  },
+  {
+    "kanji": "感ずる",
+    "reading": "かんずる",
+    "meaning": "Cảm thấy; cảm nhận",
+    "note": ""
+  },
+  {
+    "kanji": "間接",
+    "reading": "かんせつ",
+    "meaning": "Gián tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "乾燥",
+    "reading": "かんそう",
+    "meaning": "Sự khô; sấy khô",
+    "note": ""
+  },
+  {
+    "kanji": "感想",
+    "reading": "かんそう",
+    "meaning": "Cảm tưởng; cảm nghĩ",
+    "note": ""
+  },
+  {
+    "kanji": "観測",
+    "reading": "かんそく",
+    "meaning": "Quan trắc; quan sát đo đạc",
+    "note": ""
+  },
+  {
+    "kanji": "寒帯",
+    "reading": "かんたい",
+    "meaning": "Vùng hàn đới",
+    "note": ""
+  },
+  {
+    "kanji": "官庁",
+    "reading": "かんちょう",
+    "meaning": "Cơ quan nhà nước",
+    "note": ""
+  },
+  {
+    "kanji": "缶詰",
+    "reading": "かんづめ",
+    "meaning": "Đồ hộp; sự đóng hộp",
+    "note": ""
+  },
+  {
+    "kanji": "乾電池",
+    "reading": "かんでんち",
+    "meaning": "Pin khô",
+    "note": ""
+  },
+  {
+    "kanji": "関東",
+    "reading": "かんとう",
+    "meaning": "Vùng Kanto",
+    "note": ""
+  },
+  {
+    "kanji": "観念",
+    "reading": "かんねん",
+    "meaning": "Quan niệm; ý niệm; chấp nhận chịu thua",
+    "note": ""
+  },
+  {
+    "kanji": "乾杯",
+    "reading": "かんぱい",
+    "meaning": "Cạn ly; nâng cốc chúc mừng",
+    "note": ""
+  },
+  {
+    "kanji": "看板",
+    "reading": "かんばん",
+    "meaning": "Biển hiệu; bảng quảng cáo",
+    "note": ""
+  },
+  {
+    "kanji": "看病",
+    "reading": "かんびょう",
+    "meaning": "Chăm sóc người bệnh",
+    "note": ""
+  },
+  {
+    "kanji": "冠",
+    "reading": "かんむり",
+    "meaning": "Vương miện; mũ miện",
+    "note": ""
+  },
+  {
+    "kanji": "漢和",
+    "reading": "かんわ",
+    "meaning": "Hán–Nhật; từ điển chữ Hán giải nghĩa bằng tiếng Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "気圧",
+    "reading": "きあつ",
+    "meaning": "Áp suất không khí",
+    "note": ""
+  },
+  {
+    "kanji": "器械",
+    "reading": "きかい",
+    "meaning": "Dụng cụ; thiết bị cơ khí",
+    "note": ""
+  },
+  {
+    "kanji": "着替え",
+    "reading": "きがえ",
+    "meaning": "Thay quần áo; bộ quần áo để thay",
+    "note": ""
+  },
+  {
+    "kanji": "機関車",
+    "reading": "きかんしゃ",
+    "meaning": "Đầu máy xe lửa",
+    "note": ""
+  },
+  {
+    "kanji": "飢饉",
+    "reading": "ききん",
+    "meaning": "Nạn đói",
+    "note": ""
+  },
+  {
+    "kanji": "器具",
+    "reading": "きぐ",
+    "meaning": "Dụng cụ; đồ dùng",
+    "note": ""
+  },
+  {
+    "kanji": "記号",
+    "reading": "きごう",
+    "meaning": "Ký hiệu",
+    "note": ""
+  },
+  {
+    "kanji": "刻む",
+    "reading": "きざむ",
+    "meaning": "Băm nhỏ; khắc; ghi sâu",
+    "note": ""
+  },
+  {
+    "kanji": "儀式",
+    "reading": "ぎしき",
+    "meaning": "Nghi lễ; nghi thức",
+    "note": ""
+  },
+  {
+    "kanji": "基準",
+    "reading": "きじゅん",
+    "meaning": "Tiêu chuẩn; căn cứ đánh giá",
+    "note": ""
+  },
+  {
+    "kanji": "規準",
+    "reading": "きじゅん",
+    "meaning": "Chuẩn mực; quy chuẩn",
+    "note": ""
+  },
+  {
+    "kanji": "起床",
+    "reading": "きしょう",
+    "meaning": "Thức dậy; ra khỏi giường",
+    "note": ""
+  },
+  {
+    "kanji": "着せる",
+    "reading": "きせる",
+    "meaning": "Mặc quần áo cho ai",
+    "note": ""
+  },
+  {
+    "kanji": "基礎",
+    "reading": "きそ",
+    "meaning": "Nền tảng; cơ sở",
+    "note": ""
+  },
+  {
+    "kanji": "気体",
+    "reading": "きたい",
+    "meaning": "Chất khí",
+    "note": ""
+  },
+  {
+    "kanji": "基地",
+    "reading": "きち",
+    "meaning": "Căn cứ",
+    "note": ""
+  },
+  {
+    "kanji": "切っ掛け",
+    "reading": "きっかけ",
+    "meaning": "Cơ duyên; dịp khởi đầu",
+    "note": ""
+  },
+  {
+    "kanji": "基盤",
+    "reading": "きばん",
+    "meaning": "Nền móng; cơ sở",
+    "note": ""
+  },
+  {
+    "kanji": "客席",
+    "reading": "きゃくせき",
+    "meaning": "Chỗ ngồi của khán giả, khách",
+    "note": ""
+  },
+  {
+    "kanji": "客間",
+    "reading": "きゃくま",
+    "meaning": "Phòng khách",
+    "note": ""
+  },
+  {
+    "kanji": "休業",
+    "reading": "きゅうぎょう",
+    "meaning": "Tạm ngừng kinh doanh; đóng cửa nghỉ",
+    "note": ""
+  },
+  {
+    "kanji": "休講",
+    "reading": "きゅうこう",
+    "meaning": "Hủy buổi học, bài giảng",
+    "note": ""
+  },
+  {
+    "kanji": "休息",
+    "reading": "きゅうそく",
+    "meaning": "Nghỉ ngơi",
+    "note": ""
+  },
+  {
+    "kanji": "給与",
+    "reading": "きゅうよ",
+    "meaning": "Tiền lương; khoản được cấp",
+    "note": ""
+  },
+  {
+    "kanji": "休養",
+    "reading": "きゅうよう",
+    "meaning": "Nghỉ dưỡng; nghỉ để hồi phục",
+    "note": ""
+  },
+  {
+    "kanji": "清い",
+    "reading": "きよい",
+    "meaning": "Trong sạch; thanh khiết",
+    "note": ""
+  },
+  {
+    "kanji": "強化",
+    "reading": "きょうか",
+    "meaning": "Tăng cường; củng cố",
+    "note": ""
+  },
+  {
+    "kanji": "境界",
+    "reading": "きょうかい",
+    "meaning": "Ranh giới",
+    "note": ""
+  },
+  {
+    "kanji": "行事",
+    "reading": "ぎょうじ",
+    "meaning": "Sự kiện; hoạt động theo thông lệ",
+    "note": ""
+  },
+  {
+    "kanji": "恐縮",
+    "reading": "きょうしゅく",
+    "meaning": "Áy náy; cảm kích; xin lỗi vì làm phiền",
+    "note": ""
+  },
+  {
+    "kanji": "教養",
+    "reading": "きょうよう",
+    "meaning": "Giáo dưỡng; kiến thức văn hóa",
+    "note": ""
+  },
+  {
+    "kanji": "行列",
+    "reading": "ぎょうれつ",
+    "meaning": "Hàng người; đoàn người; ma trận",
+    "note": ""
+  },
+  {
+    "kanji": "漁業",
+    "reading": "ぎょぎょう",
+    "meaning": "Ngành đánh bắt cá; ngư nghiệp",
+    "note": ""
+  },
+  {
+    "kanji": "曲線",
+    "reading": "きょくせん",
+    "meaning": "Đường cong",
+    "note": ""
+  },
+  {
+    "kanji": "規律",
+    "reading": "きりつ",
+    "meaning": "Kỷ luật; quy tắc",
+    "note": ""
+  },
+  {
+    "kanji": "斬る",
+    "reading": "きる",
+    "meaning": "Chém; chặt bằng kiếm",
+    "note": ""
+  },
+  {
+    "kanji": "気を付ける",
+    "reading": "きをつける",
+    "meaning": "Chú ý; cẩn thận",
+    "note": ""
+  },
+  {
+    "kanji": "金魚",
+    "reading": "きんぎょ",
+    "meaning": "Cá vàng",
+    "note": ""
+  },
+  {
+    "kanji": "区域",
+    "reading": "くいき",
+    "meaning": "Khu vực; phạm vi",
+    "note": ""
+  },
+  {
+    "kanji": "偶数",
+    "reading": "ぐうすう",
+    "meaning": "Số chẵn",
+    "note": ""
+  },
+  {
+    "kanji": "空想",
+    "reading": "くうそう",
+    "meaning": "Tưởng tượng; mơ mộng",
+    "note": ""
+  },
+  {
+    "kanji": "空中",
+    "reading": "くうちゅう",
+    "meaning": "Trên không; không trung",
+    "note": ""
+  },
+  {
+    "kanji": "釘",
+    "reading": "くぎ",
+    "meaning": "Đinh",
+    "note": ""
+  },
+  {
+    "kanji": "区切る",
+    "reading": "くぎる",
+    "meaning": "Chia đoạn; phân chia; ngắt",
+    "note": ""
+  },
+  {
+    "kanji": "櫛",
+    "reading": "くし",
+    "meaning": "Lược chải tóc",
+    "note": ""
+  },
+  {
+    "kanji": "嚏",
+    "reading": "くしゃみ",
+    "meaning": "Hắt hơi",
+    "note": ""
+  },
+  {
+    "kanji": "苦情",
+    "reading": "くじょう",
+    "meaning": "Lời phàn nàn; khiếu nại",
+    "note": ""
+  },
+  {
+    "kanji": "苦心",
+    "reading": "くしん",
+    "meaning": "Khổ tâm; lao tâm tìm cách",
+    "note": ""
+  },
+  {
+    "kanji": "屑",
+    "reading": "くず",
+    "meaning": "Rác vụn; phế liệu",
+    "note": ""
+  },
+  {
+    "kanji": "崩す",
+    "reading": "くずす",
+    "meaning": "Phá; làm sụp; đổi tiền lẻ",
+    "note": ""
+  },
+  {
+    "kanji": "薬指",
+    "reading": "くすりゆび",
+    "meaning": "Ngón áp út",
+    "note": ""
+  },
+  {
+    "kanji": "崩れる",
+    "reading": "くずれる",
+    "meaning": "Sụp đổ; vỡ vụn; mất trật tự",
+    "note": ""
+  },
+  {
+    "kanji": "砕く",
+    "reading": "くだく",
+    "meaning": "Đập vỡ; nghiền nhỏ",
+    "note": ""
+  },
+  {
+    "kanji": "砕ける",
+    "reading": "くだける",
+    "meaning": "Vỡ; bị nghiền; trở nên thân mật",
+    "note": ""
+  },
+  {
+    "kanji": "草臥れる",
+    "reading": "くたびれる",
+    "meaning": "Mệt mỏi; rã rời",
+    "note": ""
+  },
+  {
+    "kanji": "下らない",
+    "reading": "くだらない",
+    "meaning": "Vô bổ; tầm thường",
+    "note": ""
+  },
+  {
+    "kanji": "下る",
+    "reading": "くだる",
+    "meaning": "Đi xuống; xuôi xuống",
+    "note": ""
+  },
+  {
+    "kanji": "唇",
+    "reading": "くちびる",
+    "meaning": "Môi",
+    "note": ""
+  },
+  {
+    "kanji": "口紅",
+    "reading": "くちべに",
+    "meaning": "Son môi",
+    "note": ""
+  },
+  {
+    "kanji": "くっ付く",
+    "reading": "くっつく",
+    "meaning": "Dính vào; bám sát",
+    "note": ""
+  },
+  {
+    "kanji": "くっ付ける",
+    "reading": "くっつける",
+    "meaning": "Gắn; dán vào",
+    "note": ""
+  },
+  {
+    "kanji": "諄い",
+    "reading": "くどい",
+    "meaning": "Dài dòng; dai dẳng; vị quá đậm",
+    "note": ""
+  },
+  {
+    "kanji": "句読点",
+    "reading": "くとうてん",
+    "meaning": "Dấu câu",
+    "note": ""
+  },
+  {
+    "kanji": "配る",
+    "reading": "くばる",
+    "meaning": "Phân phát; phân phối",
+    "note": ""
+  },
+  {
+    "kanji": "工夫",
+    "reading": "くふう",
+    "meaning": "Sự tìm tòi; nghĩ cách làm hiệu quả",
+    "note": ""
+  },
+  {
+    "kanji": "区分",
+    "reading": "くぶん",
+    "meaning": "Phân chia; phân loại",
+    "note": ""
+  },
+  {
+    "kanji": "組合せ",
+    "reading": "くみあわせ",
+    "meaning": "Sự kết hợp; cách ghép",
+    "note": ""
+  },
+  {
+    "kanji": "組み立てる",
+    "reading": "くみたてる",
+    "meaning": "Lắp ráp; dựng lên",
+    "note": ""
+  },
+  {
+    "kanji": "汲む",
+    "reading": "くむ",
+    "meaning": "Múc; lấy nước",
+    "note": ""
+  },
+  {
+    "kanji": "酌む",
+    "reading": "くむ",
+    "meaning": "Rót rượu",
+    "note": ""
+  },
+  {
+    "kanji": "悔しい",
+    "reading": "くやしい",
+    "meaning": "Ấm ức; tức vì thua hoặc thất bại",
+    "note": ""
+  },
+  {
+    "kanji": "悔やむ",
+    "reading": "くやむ",
+    "meaning": "Hối tiếc; thương tiếc",
+    "note": ""
+  },
+  {
+    "kanji": "包む",
+    "reading": "くるむ",
+    "meaning": "Bọc; gói",
+    "note": ""
+  },
+  {
+    "kanji": "呉れ呉れも",
+    "reading": "くれぐれも",
+    "meaning": "Tha thiết; hết sức; nhiều lần",
+    "note": ""
+  },
+  {
+    "kanji": "咥える",
+    "reading": "くわえる",
+    "meaning": "Ngậm; cắn giữ trong miệng",
+    "note": ""
+  },
+  {
+    "kanji": "郡",
+    "reading": "ぐん",
+    "meaning": "Huyện; quận hành chính",
+    "note": ""
+  },
+  {
+    "kanji": "稽古",
+    "reading": "けいこ",
+    "meaning": "Luyện tập; học thực hành",
+    "note": ""
+  },
+  {
+    "kanji": "敬語",
+    "reading": "けいご",
+    "meaning": "Kính ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "蛍光灯",
+    "reading": "けいこうとう",
+    "meaning": "Đèn huỳnh quang",
+    "note": ""
+  },
+  {
+    "kanji": "形式",
+    "reading": "けいしき",
+    "meaning": "Hình thức; định dạng",
+    "note": ""
+  },
+  {
+    "kanji": "継続",
+    "reading": "けいぞく",
+    "meaning": "Sự tiếp tục; duy trì",
+    "note": ""
+  },
+  {
+    "kanji": "毛糸",
+    "reading": "けいと",
+    "meaning": "Sợi len",
+    "note": ""
+  },
+  {
+    "kanji": "経度",
+    "reading": "けいど",
+    "meaning": "Kinh độ",
+    "note": ""
+  },
+  {
+    "kanji": "系統",
+    "reading": "けいとう",
+    "meaning": "Hệ thống; dòng dõi",
+    "note": ""
+  },
+  {
+    "kanji": "芸能",
+    "reading": "げいのう",
+    "meaning": "Nghệ thuật biểu diễn; hoạt động giải trí",
+    "note": ""
+  },
+  {
+    "kanji": "競馬",
+    "reading": "けいば",
+    "meaning": "Đua ngựa",
+    "note": ""
+  },
+  {
+    "kanji": "警備",
+    "reading": "けいび",
+    "meaning": "Canh gác; bảo vệ an ninh",
+    "note": ""
+  },
+  {
+    "kanji": "形容詞",
+    "reading": "けいようし",
+    "meaning": "Tính từ đuôi i",
+    "note": ""
+  },
+  {
+    "kanji": "形容動詞",
+    "reading": "けいようどうし",
+    "meaning": "Tính từ đuôi na",
+    "note": ""
+  },
+  {
+    "kanji": "外科",
+    "reading": "げか",
+    "meaning": "Khoa ngoại; ngoại khoa",
+    "note": ""
+  },
+  {
+    "kanji": "毛皮",
+    "reading": "けがわ",
+    "meaning": "Da lông thú",
+    "note": ""
+  },
+  {
+    "kanji": "激増",
+    "reading": "げきぞう",
+    "meaning": "Tăng mạnh; tăng đột biến",
+    "note": ""
+  },
+  {
+    "kanji": "下車",
+    "reading": "げしゃ",
+    "meaning": "Xuống xe",
+    "note": ""
+  },
+  {
+    "kanji": "下旬",
+    "reading": "げじゅん",
+    "meaning": "Mười ngày cuối tháng",
+    "note": ""
+  },
+  {
+    "kanji": "下水",
+    "reading": "げすい",
+    "meaning": "Nước thải; cống thoát nước",
+    "note": ""
+  },
+  {
+    "kanji": "削る",
+    "reading": "けずる",
+    "meaning": "Gọt; bào; cắt giảm",
+    "note": ""
+  },
+  {
+    "kanji": "桁",
+    "reading": "けた",
+    "meaning": "Chữ số; hàng số; dầm ngang",
+    "note": ""
+  },
+  {
+    "kanji": "下駄",
+    "reading": "げた",
+    "meaning": "Guốc gỗ geta",
+    "note": ""
+  },
+  {
+    "kanji": "血圧",
+    "reading": "けつあつ",
+    "meaning": "Huyết áp",
+    "note": ""
+  },
+  {
+    "kanji": "血液",
+    "reading": "けつえき",
+    "meaning": "Máu",
+    "note": ""
+  },
+  {
+    "kanji": "月給",
+    "reading": "げっきゅう",
+    "meaning": "Lương tháng",
+    "note": ""
+  },
+  {
+    "kanji": "傑作",
+    "reading": "けっさく",
+    "meaning": "Kiệt tác; tác phẩm xuất sắc",
+    "note": ""
+  },
+  {
+    "kanji": "月末",
+    "reading": "げつまつ",
+    "meaning": "Cuối tháng",
+    "note": ""
+  },
+  {
+    "kanji": "気配",
+    "reading": "けはい",
+    "meaning": "Dấu hiệu; cảm giác có ai hoặc điều gì",
+    "note": ""
+  },
+  {
+    "kanji": "下品",
+    "reading": "げひん",
+    "meaning": "Thô tục; thiếu lịch sự",
+    "note": ""
+  },
+  {
+    "kanji": "煙い",
+    "reading": "けむい",
+    "meaning": "Đầy khói; khói làm cay mắt",
+    "note": ""
+  },
+  {
+    "kanji": "蹴る",
+    "reading": "ける",
+    "meaning": "Đá bằng chân",
+    "note": ""
+  },
+  {
+    "kanji": "険しい",
+    "reading": "けわしい",
+    "meaning": "Dốc hiểm trở; nghiêm nghị",
+    "note": ""
+  },
+  {
+    "kanji": "見学",
+    "reading": "けんがく",
+    "meaning": "Tham quan học tập; quan sát thực tế",
+    "note": ""
+  },
+  {
+    "kanji": "謙虚",
+    "reading": "けんきょ",
+    "meaning": "Khiêm tốn",
+    "note": ""
+  },
+  {
+    "kanji": "原稿",
+    "reading": "げんこう",
+    "meaning": "Bản thảo",
+    "note": ""
+  },
+  {
+    "kanji": "原産",
+    "reading": "げんさん",
+    "meaning": "Nơi xuất xứ; nguồn gốc sản vật",
+    "note": ""
+  },
+  {
+    "kanji": "原始",
+    "reading": "げんし",
+    "meaning": "Nguyên thủy; thời sơ khai",
+    "note": ""
+  },
+  {
+    "kanji": "研修",
+    "reading": "けんしゅう",
+    "meaning": "Đào tạo thực tế; tập huấn",
+    "note": ""
+  },
+  {
+    "kanji": "厳重",
+    "reading": "げんじゅう",
+    "meaning": "Nghiêm ngặt; chặt chẽ",
+    "note": ""
+  },
+  {
+    "kanji": "謙遜",
+    "reading": "けんそん",
+    "meaning": "Sự khiêm nhường",
+    "note": ""
+  },
+  {
+    "kanji": "県庁",
+    "reading": "けんちょう",
+    "meaning": "Trụ sở chính quyền tỉnh",
+    "note": ""
+  },
+  {
+    "kanji": "限度",
+    "reading": "げんど",
+    "meaning": "Giới hạn; mức tối đa",
+    "note": ""
+  },
+  {
+    "kanji": "現に",
+    "reading": "げんに",
+    "meaning": "Thực sự; trên thực tế",
+    "note": ""
+  },
+  {
+    "kanji": "顕微鏡",
+    "reading": "けんびきょう",
+    "meaning": "Kính hiển vi",
+    "note": ""
+  },
+  {
+    "kanji": "原理",
+    "reading": "げんり",
+    "meaning": "Nguyên lý",
+    "note": ""
+  },
+  {
+    "kanji": "原料",
+    "reading": "げんりょう",
+    "meaning": "Nguyên liệu",
+    "note": ""
+  },
+  {
+    "kanji": "碁",
+    "reading": "ご",
+    "meaning": "Cờ vây",
+    "note": ""
+  },
+  {
+    "kanji": "恋しい",
+    "reading": "こいしい",
+    "meaning": "Nhớ nhung; thương nhớ",
+    "note": ""
+  },
+  {
+    "kanji": "請う",
+    "reading": "こう",
+    "meaning": "Cầu xin; yêu cầu",
+    "note": ""
+  },
+  {
+    "kanji": "工員",
+    "reading": "こういん",
+    "meaning": "Công nhân nhà máy",
+    "note": ""
+  },
+  {
+    "kanji": "強引",
+    "reading": "ごういん",
+    "meaning": "Cưỡng ép; áp đặt; làm bằng mọi giá",
+    "note": ""
+  },
+  {
+    "kanji": "公害",
+    "reading": "こうがい",
+    "meaning": "Ô nhiễm môi trường do hoạt động sản xuất",
+    "note": ""
+  },
+  {
+    "kanji": "高級",
+    "reading": "こうきゅう",
+    "meaning": "Cao cấp",
+    "note": ""
+  },
+  {
+    "kanji": "公共",
+    "reading": "こうきょう",
+    "meaning": "Công cộng; chung của xã hội",
+    "note": ""
+  },
+  {
+    "kanji": "工芸",
+    "reading": "こうげい",
+    "meaning": "Thủ công mỹ nghệ",
+    "note": ""
+  },
+  {
+    "kanji": "孝行",
+    "reading": "こうこう",
+    "meaning": "Lòng hiếu thảo",
+    "note": ""
+  },
+  {
+    "kanji": "交差",
+    "reading": "こうさ",
+    "meaning": "Giao nhau; sự cắt nhau",
+    "note": ""
+  },
+  {
+    "kanji": "講師",
+    "reading": "こうし",
+    "meaning": "Giảng viên; người thuyết giảng",
+    "note": ""
+  },
+  {
+    "kanji": "工事",
+    "reading": "こうじ",
+    "meaning": "Công trình; việc thi công",
+    "note": ""
+  },
+  {
+    "kanji": "公式",
+    "reading": "こうしき",
+    "meaning": "Chính thức; công thức",
+    "note": ""
+  },
+  {
+    "kanji": "口実",
+    "reading": "こうじつ",
+    "meaning": "Cái cớ; lý do viện ra",
+    "note": ""
+  },
+  {
+    "kanji": "校舎",
+    "reading": "こうしゃ",
+    "meaning": "Tòa nhà trường học",
+    "note": ""
+  },
+  {
+    "kanji": "公衆",
+    "reading": "こうしゅう",
+    "meaning": "Công chúng",
+    "note": ""
+  },
+  {
+    "kanji": "香水",
+    "reading": "こうすい",
+    "meaning": "Nước hoa",
+    "note": ""
+  },
+  {
+    "kanji": "公正",
+    "reading": "こうせい",
+    "meaning": "Công bằng; công chính",
+    "note": ""
+  },
+  {
+    "kanji": "功績",
+    "reading": "こうせき",
+    "meaning": "Công lao; thành tích",
+    "note": ""
+  },
+  {
+    "kanji": "光線",
+    "reading": "こうせん",
+    "meaning": "Tia sáng",
+    "note": ""
+  },
+  {
+    "kanji": "高層",
+    "reading": "こうそう",
+    "meaning": "Tầng cao; cao tầng",
+    "note": ""
+  },
+  {
+    "kanji": "構造",
+    "reading": "こうぞう",
+    "meaning": "Cấu trúc; kết cấu",
+    "note": ""
+  },
+  {
+    "kanji": "交替",
+    "reading": "こうたい",
+    "meaning": "Thay phiên; luân phiên",
+    "note": ""
+  },
+  {
+    "kanji": "耕地",
+    "reading": "こうち",
+    "meaning": "Đất canh tác",
+    "note": ""
+  },
+  {
+    "kanji": "交通機関",
+    "reading": "こうつうきかん",
+    "meaning": "Phương tiện, cơ quan giao thông",
+    "note": ""
+  },
+  {
+    "kanji": "校庭",
+    "reading": "こうてい",
+    "meaning": "Sân trường",
+    "note": ""
+  },
+  {
+    "kanji": "肯定",
+    "reading": "こうてい",
+    "meaning": "Khẳng định; công nhận",
+    "note": ""
+  },
+  {
+    "kanji": "高度",
+    "reading": "こうど",
+    "meaning": "Độ cao; trình độ cao",
+    "note": ""
+  },
+  {
+    "kanji": "高等",
+    "reading": "こうとう",
+    "meaning": "Cao đẳng; cấp cao",
+    "note": ""
+  },
+  {
+    "kanji": "合同",
+    "reading": "ごうどう",
+    "meaning": "Hợp nhất; phối hợp chung",
+    "note": ""
+  },
+  {
+    "kanji": "後輩",
+    "reading": "こうはい",
+    "meaning": "Đàn em; người vào sau",
+    "note": ""
+  },
+  {
+    "kanji": "公表",
+    "reading": "こうひょう",
+    "meaning": "Công bố",
+    "note": ""
+  },
+  {
+    "kanji": "鉱物",
+    "reading": "こうぶつ",
+    "meaning": "Khoáng vật",
+    "note": ""
+  },
+  {
+    "kanji": "公務",
+    "reading": "こうむ",
+    "meaning": "Công vụ; việc công",
+    "note": ""
+  },
+  {
+    "kanji": "項目",
+    "reading": "こうもく",
+    "meaning": "Hạng mục; mục",
+    "note": ""
+  },
+  {
+    "kanji": "紅葉",
+    "reading": "こうよう",
+    "meaning": "Lá đổi màu mùa thu; lá đỏ",
+    "note": ""
+  },
+  {
+    "kanji": "合理",
+    "reading": "ごうり",
+    "meaning": "Tính hợp lý",
+    "note": ""
+  },
+  {
+    "kanji": "交流",
+    "reading": "こうりゅう",
+    "meaning": "Giao lưu; trao đổi; dòng điện xoay chiều",
+    "note": ""
+  },
+  {
+    "kanji": "合流",
+    "reading": "ごうりゅう",
+    "meaning": "Hợp lưu; nhập dòng; nhập nhóm",
+    "note": ""
+  },
+  {
+    "kanji": "効力",
+    "reading": "こうりょく",
+    "meaning": "Hiệu lực; tác dụng",
+    "note": ""
+  },
+  {
+    "kanji": "超える",
+    "reading": "こえる",
+    "meaning": "Vượt quá; vượt qua",
+    "note": ""
+  },
+  {
+    "kanji": "焦がす",
+    "reading": "こがす",
+    "meaning": "Làm cháy khét; làm sém",
+    "note": ""
+  },
+  {
+    "kanji": "国王",
+    "reading": "こくおう",
+    "meaning": "Quốc vương; nhà vua",
+    "note": ""
+  },
+  {
+    "kanji": "国籍",
+    "reading": "こくせき",
+    "meaning": "Quốc tịch",
+    "note": ""
+  },
+  {
+    "kanji": "国立",
+    "reading": "こくりつ",
+    "meaning": "Do nhà nước thành lập; quốc lập",
+    "note": ""
+  },
+  {
+    "kanji": "ご苦労様",
+    "reading": "ごくろうさま",
+    "meaning": "Cảm ơn đã vất vả làm việc",
+    "note": ""
+  },
+  {
+    "kanji": "焦げる",
+    "reading": "こげる",
+    "meaning": "Bị cháy khét; bị sém",
+    "note": ""
+  },
+  {
+    "kanji": "凍える",
+    "reading": "こごえる",
+    "meaning": "Cóng; rét cóng",
+    "note": ""
+  },
+  {
+    "kanji": "心当たり",
+    "reading": "こころあたり",
+    "meaning": "Manh mối trong trí nhớ; điều có thể đoán ra",
+    "note": ""
+  },
+  {
+    "kanji": "心得る",
+    "reading": "こころえる",
+    "meaning": "Hiểu rõ; nắm được; ghi nhớ",
+    "note": ""
+  },
+  {
+    "kanji": "腰掛け",
+    "reading": "こしかけ",
+    "meaning": "Ghế ngồi; chỗ ngồi tạm",
+    "note": ""
+  },
+  {
+    "kanji": "腰掛ける",
+    "reading": "こしかける",
+    "meaning": "Ngồi xuống",
+    "note": ""
+  },
+  {
+    "kanji": "五十音",
+    "reading": "ごじゅうおん",
+    "meaning": "Bảng năm mươi âm tiếng Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "胡椒",
+    "reading": "こしょう",
+    "meaning": "Hạt tiêu",
+    "note": ""
+  },
+  {
+    "kanji": "拵える",
+    "reading": "こしらえる",
+    "meaning": "Làm ra; tạo ra; chuẩn bị",
+    "note": ""
+  },
+  {
+    "kanji": "超す",
+    "reading": "こす",
+    "meaning": "Vượt qua; trải qua",
+    "note": ""
+  },
+  {
+    "kanji": "擦る",
+    "reading": "こする",
+    "meaning": "Chà; cọ; xát",
+    "note": ""
+  },
+  {
+    "kanji": "個体",
+    "reading": "こたい",
+    "meaning": "Cá thể",
+    "note": ""
+  },
+  {
+    "kanji": "小遣い",
+    "reading": "こづかい",
+    "meaning": "Tiền tiêu vặt",
+    "note": ""
+  },
+  {
+    "kanji": "古典",
+    "reading": "こてん",
+    "meaning": "Tác phẩm cổ điển; kinh điển",
+    "note": ""
+  },
+  {
+    "kanji": "琴",
+    "reading": "こと",
+    "meaning": "Đàn koto",
+    "note": ""
+  },
+  {
+    "kanji": "言付ける",
+    "reading": "ことづける",
+    "meaning": "Nhắn lại; gửi lời",
+    "note": ""
+  },
+  {
+    "kanji": "言葉遣い",
+    "reading": "ことばづかい",
+    "meaning": "Cách dùng từ; lời ăn tiếng nói",
+    "note": ""
+  },
+  {
+    "kanji": "御無沙汰",
+    "reading": "ごぶさた",
+    "meaning": "Lâu không thăm hỏi, liên lạc",
+    "note": ""
+  },
+  {
+    "kanji": "零す",
+    "reading": "こぼす",
+    "meaning": "Làm đổ; làm rơi vãi; than phiền",
+    "note": ""
+  },
+  {
+    "kanji": "零れる",
+    "reading": "こぼれる",
+    "meaning": "Đổ ra; tràn ra; rơi vãi",
+    "note": ""
+  },
+  {
+    "kanji": "御免",
+    "reading": "ごめん",
+    "meaning": "Xin lỗi; xin miễn; tha thứ",
+    "note": ""
+  },
+  {
+    "kanji": "ごめん下さい",
+    "reading": "ごめんください",
+    "meaning": "Xin hỏi có ai ở nhà không; xin phép vào",
+    "note": ""
+  },
+  {
+    "kanji": "小指",
+    "reading": "こゆび",
+    "meaning": "Ngón út",
+    "note": ""
+  },
+  {
+    "kanji": "娯楽",
+    "reading": "ごらく",
+    "meaning": "Giải trí",
+    "note": ""
+  },
+  {
+    "kanji": "御覧",
+    "reading": "ごらん",
+    "meaning": "Việc xem, nhìn; kính mời xem",
+    "note": ""
+  },
+  {
+    "kanji": "転がす",
+    "reading": "ころがす",
+    "meaning": "Lăn một vật",
+    "note": ""
+  },
+  {
+    "kanji": "転がる",
+    "reading": "ころがる",
+    "meaning": "Lăn; ngã lăn",
+    "note": ""
+  },
+  {
+    "kanji": "紺",
+    "reading": "こん",
+    "meaning": "Màu xanh nước biển đậm",
+    "note": ""
+  },
+  {
+    "kanji": "混合",
+    "reading": "こんごう",
+    "meaning": "Trộn lẫn; hỗn hợp",
+    "note": ""
+  },
+  {
+    "kanji": "献立",
+    "reading": "こんだて",
+    "meaning": "Thực đơn",
+    "note": ""
+  },
+  {
+    "kanji": "在学",
+    "reading": "ざいがく",
+    "meaning": "Đang theo học; đang là học sinh, sinh viên",
+    "note": ""
+  },
+  {
+    "kanji": "再三",
+    "reading": "さいさん",
+    "meaning": "Nhiều lần; hết lần này đến lần khác",
+    "note": ""
+  },
+  {
+    "kanji": "祭日",
+    "reading": "さいじつ",
+    "meaning": "Ngày lễ",
+    "note": ""
+  },
+  {
+    "kanji": "採点",
+    "reading": "さいてん",
+    "meaning": "Chấm điểm",
+    "note": ""
+  },
+  {
+    "kanji": "災難",
+    "reading": "さいなん",
+    "meaning": "Tai nạn; tai họa; điều không may",
+    "note": ""
+  },
+  {
+    "kanji": "裁縫",
+    "reading": "さいほう",
+    "meaning": "May vá",
+    "note": ""
+  },
+  {
+    "kanji": "材木",
+    "reading": "ざいもく",
+    "meaning": "Gỗ dùng trong xây dựng",
+    "note": ""
+  },
+  {
+    "kanji": "逆さ",
+    "reading": "さかさ",
+    "meaning": "Ngược; lộn ngược",
+    "note": ""
+  },
+  {
+    "kanji": "逆さま",
+    "reading": "さかさま",
+    "meaning": "Đảo ngược; lộn đầu xuống",
+    "note": ""
+  },
+  {
+    "kanji": "捜す",
+    "reading": "さがす",
+    "meaning": "Tìm kiếm người, vật thất lạc",
+    "note": ""
+  },
+  {
+    "kanji": "遡る",
+    "reading": "さかのぼる",
+    "meaning": "Ngược dòng; quay về quá khứ",
+    "note": ""
+  },
+  {
+    "kanji": "酒場",
+    "reading": "さかば",
+    "meaning": "Quán rượu",
+    "note": ""
+  },
+  {
+    "kanji": "一昨昨日",
+    "reading": "さきおととい",
+    "meaning": "Ba ngày trước; hôm kia nữa",
+    "note": ""
+  },
+  {
+    "kanji": "先程",
+    "reading": "さきほど",
+    "meaning": "Vừa nãy; lúc trước",
+    "note": ""
+  },
+  {
+    "kanji": "裂く",
+    "reading": "さく",
+    "meaning": "Xé; rạch; chia tách",
+    "note": ""
+  },
+  {
+    "kanji": "索引",
+    "reading": "さくいん",
+    "meaning": "Mục lục tra cứu; chỉ mục",
+    "note": ""
+  },
+  {
+    "kanji": "作者",
+    "reading": "さくしゃ",
+    "meaning": "Tác giả",
+    "note": ""
+  },
+  {
+    "kanji": "削除",
+    "reading": "さくじょ",
+    "meaning": "Xóa; loại bỏ",
+    "note": ""
+  },
+  {
+    "kanji": "作成",
+    "reading": "さくせい",
+    "meaning": "Lập; soạn; tạo tài liệu",
+    "note": ""
+  },
+  {
+    "kanji": "作製",
+    "reading": "さくせい",
+    "meaning": "Chế tạo; làm ra vật phẩm",
+    "note": ""
+  },
+  {
+    "kanji": "探る",
+    "reading": "さぐる",
+    "meaning": "Dò tìm; thăm dò",
+    "note": ""
+  },
+  {
+    "kanji": "囁く",
+    "reading": "ささやく",
+    "meaning": "Thì thầm",
+    "note": ""
+  },
+  {
+    "kanji": "刺さる",
+    "reading": "ささる",
+    "meaning": "Đâm vào; mắc vào",
+    "note": ""
+  },
+  {
+    "kanji": "匙",
+    "reading": "さじ",
+    "meaning": "Thìa; muỗng",
+    "note": ""
+  },
+  {
+    "kanji": "座敷",
+    "reading": "ざしき",
+    "meaning": "Phòng trải chiếu tatami",
+    "note": ""
+  },
+  {
+    "kanji": "差し支え",
+    "reading": "さしつかえ",
+    "meaning": "Trở ngại; điều bất tiện",
+    "note": ""
+  },
+  {
+    "kanji": "差し引き",
+    "reading": "さしひき",
+    "meaning": "Khấu trừ; chênh lệch sau khi trừ",
+    "note": ""
+  },
+  {
+    "kanji": "刺身",
+    "reading": "さしみ",
+    "meaning": "Sashimi; cá sống thái lát",
+    "note": ""
+  },
+  {
+    "kanji": "刺す",
+    "reading": "さす",
+    "meaning": "Đâm; chích; chọc",
+    "note": ""
+  },
+  {
+    "kanji": "射す",
+    "reading": "さす",
+    "meaning": "Chiếu vào; rọi vào",
+    "note": ""
+  },
+  {
+    "kanji": "挿す",
+    "reading": "さす",
+    "meaning": "Cắm vào; giắt vào",
+    "note": ""
+  },
+  {
+    "kanji": "注す",
+    "reading": "さす",
+    "meaning": "Rót; nhỏ thuốc; châm thêm",
+    "note": ""
+  },
+  {
+    "kanji": "流石",
+    "reading": "さすが",
+    "meaning": "Quả nhiên; đúng là; tuy vậy",
+    "note": ""
+  },
+  {
+    "kanji": "撮影",
+    "reading": "さつえい",
+    "meaning": "Chụp ảnh; quay phim",
+    "note": ""
+  },
+  {
+    "kanji": "雑音",
+    "reading": "ざつおん",
+    "meaning": "Tiếng nhiễu; tạp âm",
+    "note": ""
+  },
+  {
+    "kanji": "早速",
+    "reading": "さっそく",
+    "meaning": "Ngay lập tức; không chậm trễ",
+    "note": ""
+  },
+  {
+    "kanji": "錆",
+    "reading": "さび",
+    "meaning": "Gỉ sét",
+    "note": ""
+  },
+  {
+    "kanji": "錆びる",
+    "reading": "さびる",
+    "meaning": "Bị gỉ",
+    "note": ""
+  },
+  {
+    "kanji": "座布団",
+    "reading": "ざぶとん",
+    "meaning": "Đệm ngồi kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "冷ます",
+    "reading": "さます",
+    "meaning": "Làm nguội; để nguội",
+    "note": ""
+  },
+  {
+    "kanji": "妨げる",
+    "reading": "さまたげる",
+    "meaning": "Cản trở; ngăn chặn",
+    "note": ""
+  },
+  {
+    "kanji": "冷める",
+    "reading": "さめる",
+    "meaning": "Nguội đi; giảm nhiệt tình",
+    "note": ""
+  },
+  {
+    "kanji": "騒がしい",
+    "reading": "さわがしい",
+    "meaning": "Ồn ào; náo động",
+    "note": ""
+  },
+  {
+    "kanji": "爽やか",
+    "reading": "さわやか",
+    "meaning": "Sảng khoái; mát lành",
+    "note": ""
+  },
+  {
+    "kanji": "三角",
+    "reading": "さんかく",
+    "meaning": "Tam giác",
+    "note": ""
+  },
+  {
+    "kanji": "算数",
+    "reading": "さんすう",
+    "meaning": "Số học",
+    "note": ""
+  },
+  {
+    "kanji": "酸性",
+    "reading": "さんせい",
+    "meaning": "Tính axit",
+    "note": ""
+  },
+  {
+    "kanji": "産地",
+    "reading": "さんち",
+    "meaning": "Vùng sản xuất; nơi sản xuất",
+    "note": ""
+  },
+  {
+    "kanji": "山林",
+    "reading": "さんりん",
+    "meaning": "Rừng núi",
+    "note": ""
+  },
+  {
+    "kanji": "仕上がる",
+    "reading": "しあがる",
+    "meaning": "Hoàn thành; làm xong",
+    "note": ""
+  },
+  {
+    "kanji": "明々後日",
+    "reading": "しあさって",
+    "meaning": "Ba ngày sau; ngày kia nữa",
+    "note": ""
+  },
+  {
+    "kanji": "寺院",
+    "reading": "じいん",
+    "meaning": "Chùa; tự viện",
+    "note": ""
+  },
+  {
+    "kanji": "自衛",
+    "reading": "じえい",
+    "meaning": "Tự vệ",
+    "note": ""
+  },
+  {
+    "kanji": "塩辛い",
+    "reading": "しおからい",
+    "meaning": "Mặn",
+    "note": ""
+  },
+  {
+    "kanji": "司会",
+    "reading": "しかい",
+    "meaning": "Dẫn chương trình; chủ trì",
+    "note": ""
+  },
+  {
+    "kanji": "四角",
+    "reading": "しかく",
+    "meaning": "Hình vuông; hình tứ giác",
+    "note": ""
+  },
+  {
+    "kanji": "四角い",
+    "reading": "しかくい",
+    "meaning": "Vuông; có dạng tứ giác",
+    "note": ""
+  },
+  {
+    "kanji": "時間割",
+    "reading": "じかんわり",
+    "meaning": "Thời khóa biểu",
+    "note": ""
+  },
+  {
+    "kanji": "四季",
+    "reading": "しき",
+    "meaning": "Bốn mùa",
+    "note": ""
+  },
+  {
+    "kanji": "敷地",
+    "reading": "しきち",
+    "meaning": "Khu đất; mặt bằng",
+    "note": ""
+  },
+  {
+    "kanji": "至急",
+    "reading": "しきゅう",
+    "meaning": "Khẩn cấp; gấp",
+    "note": ""
+  },
+  {
+    "kanji": "敷く",
+    "reading": "しく",
+    "meaning": "Trải; lát; đặt xuống",
+    "note": ""
+  },
+  {
+    "kanji": "茂る",
+    "reading": "しげる",
+    "meaning": "Mọc rậm; um tùm",
+    "note": ""
+  },
+  {
+    "kanji": "持参",
+    "reading": "じさん",
+    "meaning": "Mang theo; đem đến",
+    "note": ""
+  },
+  {
+    "kanji": "磁石",
+    "reading": "じしゃく",
+    "meaning": "Nam châm",
+    "note": ""
+  },
+  {
+    "kanji": "四捨五入",
+    "reading": "ししゃごにゅう",
+    "meaning": "Làm tròn số",
+    "note": ""
+  },
+  {
+    "kanji": "始終",
+    "reading": "しじゅう",
+    "meaning": "Suốt; luôn luôn",
+    "note": ""
+  },
+  {
+    "kanji": "自習",
+    "reading": "じしゅう",
+    "meaning": "Tự học",
+    "note": ""
+  },
+  {
+    "kanji": "静まる",
+    "reading": "しずまる",
+    "meaning": "Yên tĩnh lại; lắng xuống",
+    "note": ""
+  },
+  {
+    "kanji": "姿勢",
+    "reading": "しせい",
+    "meaning": "Tư thế; thái độ",
+    "note": ""
+  },
+  {
+    "kanji": "自然科学",
+    "reading": "しぜんかがく",
+    "meaning": "Khoa học tự nhiên",
+    "note": ""
+  },
+  {
+    "kanji": "時速",
+    "reading": "じそく",
+    "meaning": "Vận tốc tính theo giờ",
+    "note": ""
+  },
+  {
+    "kanji": "子孫",
+    "reading": "しそん",
+    "meaning": "Con cháu; hậu duệ",
+    "note": ""
+  },
+  {
+    "kanji": "死体",
+    "reading": "したい",
+    "meaning": "Thi thể; xác chết",
+    "note": ""
+  },
+  {
+    "kanji": "下書き",
+    "reading": "したがき",
+    "meaning": "Bản nháp; bản viết sơ",
+    "note": ""
+  },
+  {
+    "kanji": "下町",
+    "reading": "したまち",
+    "meaning": "Khu phố dân cư, buôn bán bình dân",
+    "note": ""
+  },
+  {
+    "kanji": "自治",
+    "reading": "じち",
+    "meaning": "Tự trị",
+    "note": ""
+  },
+  {
+    "kanji": "実感",
+    "reading": "じっかん",
+    "meaning": "Cảm nhận thực tế; cảm giác chân thực",
+    "note": ""
+  },
+  {
+    "kanji": "湿気",
+    "reading": "しっけ",
+    "meaning": "Hơi ẩm; sự ẩm ướt",
+    "note": ""
+  },
+  {
+    "kanji": "実習",
+    "reading": "じっしゅう",
+    "meaning": "Thực tập; thực hành",
+    "note": ""
+  },
+  {
+    "kanji": "実績",
+    "reading": "じっせき",
+    "meaning": "Thành tích thực tế; kết quả đạt được",
+    "note": ""
+  },
+  {
+    "kanji": "湿度",
+    "reading": "しつど",
+    "meaning": "Độ ẩm",
+    "note": ""
+  },
+  {
+    "kanji": "執筆",
+    "reading": "しっぴつ",
+    "meaning": "Chấp bút; viết bài",
+    "note": ""
+  },
+  {
+    "kanji": "実物",
+    "reading": "じつぶつ",
+    "meaning": "Vật thật; hiện vật",
+    "note": ""
+  },
+  {
+    "kanji": "尻尾",
+    "reading": "しっぽ",
+    "meaning": "Đuôi con vật",
+    "note": ""
+  },
+  {
+    "kanji": "実用",
+    "reading": "じつよう",
+    "meaning": "Ứng dụng thực tế; công dụng",
+    "note": ""
+  },
+  {
+    "kanji": "実力",
+    "reading": "じつりょく",
+    "meaning": "Thực lực; năng lực thực tế",
+    "note": ""
+  },
+  {
+    "kanji": "実例",
+    "reading": "じつれい",
+    "meaning": "Ví dụ thực tế",
+    "note": ""
+  },
+  {
+    "kanji": "失恋",
+    "reading": "しつれん",
+    "meaning": "Thất tình; tình yêu tan vỡ",
+    "note": ""
+  },
+  {
+    "kanji": "指定",
+    "reading": "してい",
+    "meaning": "Chỉ định; quy định cụ thể",
+    "note": ""
+  },
+  {
+    "kanji": "私鉄",
+    "reading": "してつ",
+    "meaning": "Đường sắt tư nhân",
+    "note": ""
+  },
+  {
+    "kanji": "児童",
+    "reading": "じどう",
+    "meaning": "Trẻ em; học sinh nhỏ tuổi",
+    "note": ""
+  },
+  {
+    "kanji": "縛る",
+    "reading": "しばる",
+    "meaning": "Buộc; trói; ràng buộc",
+    "note": ""
+  },
+  {
+    "kanji": "地盤",
+    "reading": "じばん",
+    "meaning": "Nền đất; địa bàn",
+    "note": ""
+  },
+  {
+    "kanji": "痺れる",
+    "reading": "しびれる",
+    "meaning": "Tê; tê cóng",
+    "note": ""
+  },
+  {
+    "kanji": "紙幣",
+    "reading": "しへい",
+    "meaning": "Tiền giấy",
+    "note": ""
+  },
+  {
+    "kanji": "萎む",
+    "reading": "しぼむ",
+    "meaning": "Héo; teo; xẹp xuống",
+    "note": ""
+  },
+  {
+    "kanji": "絞る",
+    "reading": "しぼる",
+    "meaning": "Vắt; ép; thu hẹp",
+    "note": ""
+  },
+  {
+    "kanji": "縞",
+    "reading": "しま",
+    "meaning": "Sọc; vằn",
+    "note": ""
+  },
+  {
+    "kanji": "地味",
+    "reading": "じみ",
+    "meaning": "Giản dị; không nổi bật",
+    "note": ""
+  },
+  {
+    "kanji": "氏名",
+    "reading": "しめい",
+    "meaning": "Họ và tên",
+    "note": ""
+  },
+  {
+    "kanji": "締切",
+    "reading": "しめきり",
+    "meaning": "Hạn chót; thời điểm đóng nhận",
+    "note": ""
+  },
+  {
+    "kanji": "締め切る",
+    "reading": "しめきる",
+    "meaning": "Đóng kín; kết thúc nhận đăng ký",
+    "note": ""
+  },
+  {
+    "kanji": "湿る",
+    "reading": "しめる",
+    "meaning": "Ẩm; bị ướt",
+    "note": ""
+  },
+  {
+    "kanji": "社会科学",
+    "reading": "しゃかいかがく",
+    "meaning": "Khoa học xã hội",
+    "note": ""
+  },
+  {
+    "kanji": "蛇口",
+    "reading": "じゃぐち",
+    "meaning": "Vòi nước",
+    "note": ""
+  },
+  {
+    "kanji": "弱点",
+    "reading": "じゃくてん",
+    "meaning": "Điểm yếu",
+    "note": ""
+  },
+  {
+    "kanji": "車庫",
+    "reading": "しゃこ",
+    "meaning": "Nhà để xe; gara",
+    "note": ""
+  },
+  {
+    "kanji": "車掌",
+    "reading": "しゃしょう",
+    "meaning": "Nhân viên phục vụ, soát vé trên tàu",
+    "note": ""
+  },
+  {
+    "kanji": "写生",
+    "reading": "しゃせい",
+    "meaning": "Vẽ tả thực; ký họa",
+    "note": ""
+  },
+  {
+    "kanji": "社説",
+    "reading": "しゃせつ",
+    "meaning": "Xã luận",
+    "note": ""
+  },
+  {
+    "kanji": "吃逆",
+    "reading": "しゃっくり",
+    "meaning": "Nấc cụt",
+    "note": ""
+  },
+  {
+    "kanji": "車輪",
+    "reading": "しゃりん",
+    "meaning": "Bánh xe",
+    "note": ""
+  },
+  {
+    "kanji": "洒落",
+    "reading": "しゃれ",
+    "meaning": "Lời nói đùa; chơi chữ",
+    "note": ""
+  },
+  {
+    "kanji": "じゃん拳",
+    "reading": "じゃんけん",
+    "meaning": "Trò kéo, búa, bao",
+    "note": ""
+  },
+  {
+    "kanji": "集会",
+    "reading": "しゅうかい",
+    "meaning": "Cuộc tập họp; hội nghị",
+    "note": ""
+  },
+  {
+    "kanji": "住居",
+    "reading": "じゅうきょ",
+    "meaning": "Nơi ở; chỗ ở",
+    "note": ""
+  },
+  {
+    "kanji": "集金",
+    "reading": "しゅうきん",
+    "meaning": "Thu tiền",
+    "note": ""
+  },
+  {
+    "kanji": "集合",
+    "reading": "しゅうごう",
+    "meaning": "Tập trung; tập hợp",
+    "note": ""
+  },
+  {
+    "kanji": "習字",
+    "reading": "しゅうじ",
+    "meaning": "Luyện viết chữ đẹp",
+    "note": ""
+  },
+  {
+    "kanji": "修繕",
+    "reading": "しゅうぜん",
+    "meaning": "Tu sửa; sửa chữa",
+    "note": ""
+  },
+  {
+    "kanji": "重体",
+    "reading": "じゅうたい",
+    "meaning": "Tình trạng nguy kịch",
+    "note": ""
+  },
+  {
+    "kanji": "絨毯",
+    "reading": "じゅうたん",
+    "meaning": "Thảm trải sàn",
+    "note": ""
+  },
+  {
+    "kanji": "終点",
+    "reading": "しゅうてん",
+    "meaning": "Điểm cuối; ga cuối",
+    "note": ""
+  },
+  {
+    "kanji": "重点",
+    "reading": "じゅうてん",
+    "meaning": "Trọng điểm; điểm cần chú trọng",
+    "note": ""
+  },
+  {
+    "kanji": "就任",
+    "reading": "しゅうにん",
+    "meaning": "Nhậm chức",
+    "note": ""
+  },
+  {
+    "kanji": "周辺",
+    "reading": "しゅうへん",
+    "meaning": "Vùng xung quanh; khu lân cận",
+    "note": ""
+  },
+  {
+    "kanji": "重役",
+    "reading": "じゅうやく",
+    "meaning": "Lãnh đạo cấp cao; thành viên ban giám đốc",
+    "note": ""
+  },
+  {
+    "kanji": "終了",
+    "reading": "しゅうりょう",
+    "meaning": "Kết thúc; hoàn tất",
+    "note": ""
+  },
+  {
+    "kanji": "重量",
+    "reading": "じゅうりょう",
+    "meaning": "Trọng lượng",
+    "note": ""
+  },
+  {
+    "kanji": "重力",
+    "reading": "じゅうりょく",
+    "meaning": "Trọng lực",
+    "note": ""
+  },
+  {
+    "kanji": "熟語",
+    "reading": "じゅくご",
+    "meaning": "Từ ghép; từ ghép Kanji; thành ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "祝日",
+    "reading": "しゅくじつ",
+    "meaning": "Ngày lễ quốc gia",
+    "note": ""
+  },
+  {
+    "kanji": "縮小",
+    "reading": "しゅくしょう",
+    "meaning": "Thu nhỏ; cắt giảm",
+    "note": ""
+  },
+  {
+    "kanji": "受験",
+    "reading": "じゅけん",
+    "meaning": "Dự thi; tham gia kỳ thi",
+    "note": ""
+  },
+  {
+    "kanji": "主語",
+    "reading": "しゅご",
+    "meaning": "Chủ ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "出勤",
+    "reading": "しゅっきん",
+    "meaning": "Đi làm; có mặt tại nơi làm việc",
+    "note": ""
+  },
+  {
+    "kanji": "述語",
+    "reading": "じゅつご",
+    "meaning": "Vị ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "出張",
+    "reading": "しゅっちょう",
+    "meaning": "Đi công tác",
+    "note": ""
+  },
+  {
+    "kanji": "寿命",
+    "reading": "じゅみょう",
+    "meaning": "Tuổi thọ",
+    "note": ""
+  },
+  {
+    "kanji": "主役",
+    "reading": "しゅやく",
+    "meaning": "Vai chính; người đóng vai chính",
+    "note": ""
+  },
+  {
+    "kanji": "受話器",
+    "reading": "じゅわき",
+    "meaning": "Ống nghe điện thoại",
+    "note": ""
+  },
+  {
+    "kanji": "循環",
+    "reading": "じゅんかん",
+    "meaning": "Tuần hoàn; chu trình",
+    "note": ""
+  },
+  {
+    "kanji": "巡査",
+    "reading": "じゅんさ",
+    "meaning": "Cảnh sát tuần tra",
+    "note": ""
+  },
+  {
+    "kanji": "順々",
+    "reading": "じゅんじゅん",
+    "meaning": "Lần lượt; theo thứ tự",
+    "note": ""
+  },
+  {
+    "kanji": "順序",
+    "reading": "じゅんじょ",
+    "meaning": "Thứ tự; trình tự",
+    "note": ""
+  },
+  {
+    "kanji": "純情",
+    "reading": "じゅんじょう",
+    "meaning": "Trong sáng; ngây thơ trong tình cảm",
+    "note": ""
+  },
+  {
+    "kanji": "純粋",
+    "reading": "じゅんすい",
+    "meaning": "Thuần khiết; thuần túy",
+    "note": ""
+  },
+  {
+    "kanji": "消化",
+    "reading": "しょうか",
+    "meaning": "Tiêu hóa",
+    "note": ""
+  },
+  {
+    "kanji": "小学生",
+    "reading": "しょうがくせい",
+    "meaning": "Học sinh tiểu học",
+    "note": ""
+  },
+  {
+    "kanji": "将棋",
+    "reading": "しょうぎ",
+    "meaning": "Cờ shogi Nhật Bản",
+    "note": ""
+  },
+  {
+    "kanji": "蒸気",
+    "reading": "じょうき",
+    "meaning": "Hơi nước",
+    "note": ""
+  },
+  {
+    "kanji": "定規",
+    "reading": "じょうぎ",
+    "meaning": "Thước kẻ",
+    "note": ""
+  },
+  {
+    "kanji": "上級",
+    "reading": "じょうきゅう",
+    "meaning": "Trình độ cao; cấp cao",
+    "note": ""
+  },
+  {
+    "kanji": "商業",
+    "reading": "しょうぎょう",
+    "meaning": "Thương nghiệp; thương mại",
+    "note": ""
+  },
+  {
+    "kanji": "消極的",
+    "reading": "しょうきょくてき",
+    "meaning": "Thụ động; thiếu tích cực",
+    "note": ""
+  },
+  {
+    "kanji": "賞金",
+    "reading": "しょうきん",
+    "meaning": "Tiền thưởng",
+    "note": ""
+  },
+  {
+    "kanji": "上下",
+    "reading": "じょうげ",
+    "meaning": "Trên dưới; lên xuống",
+    "note": ""
+  },
+  {
+    "kanji": "障子",
+    "reading": "しょうじ",
+    "meaning": "Cửa trượt dán giấy kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "商社",
+    "reading": "しょうしゃ",
+    "meaning": "Công ty thương mại",
+    "note": ""
+  },
+  {
+    "kanji": "乗車",
+    "reading": "じょうしゃ",
+    "meaning": "Lên tàu, xe; việc đi tàu, xe",
+    "note": ""
+  },
+  {
+    "kanji": "上旬",
+    "reading": "じょうじゅん",
+    "meaning": "Mười ngày đầu tháng",
+    "note": ""
+  },
+  {
+    "kanji": "小数",
+    "reading": "しょうすう",
+    "meaning": "Số thập phân",
+    "note": ""
+  },
+  {
+    "kanji": "生ずる",
+    "reading": "しょうずる",
+    "meaning": "Phát sinh; nảy sinh",
+    "note": ""
+  },
+  {
+    "kanji": "商店",
+    "reading": "しょうてん",
+    "meaning": "Cửa hàng",
+    "note": ""
+  },
+  {
+    "kanji": "焦点",
+    "reading": "しょうてん",
+    "meaning": "Tiêu điểm; trọng tâm",
+    "note": ""
+  },
+  {
+    "kanji": "消毒",
+    "reading": "しょうどく",
+    "meaning": "Khử trùng; sát khuẩn",
+    "note": ""
+  },
+  {
+    "kanji": "勝敗",
+    "reading": "しょうはい",
+    "meaning": "Thắng bại",
+    "note": ""
+  },
+  {
+    "kanji": "蒸発",
+    "reading": "じょうはつ",
+    "meaning": "Bốc hơi; mất tích không rõ tung tích",
+    "note": ""
+  },
+  {
+    "kanji": "賞品",
+    "reading": "しょうひん",
+    "meaning": "Phần thưởng; vật trao giải",
+    "note": ""
+  },
+  {
+    "kanji": "勝負",
+    "reading": "しょうぶ",
+    "meaning": "Trận đấu; sự phân thắng bại",
+    "note": ""
+  },
+  {
+    "kanji": "小便",
+    "reading": "しょうべん",
+    "meaning": "Nước tiểu; đi tiểu",
+    "note": ""
+  },
+  {
+    "kanji": "消防署",
+    "reading": "しょうぼうしょ",
+    "meaning": "Trạm cứu hỏa",
+    "note": ""
+  },
+  {
+    "kanji": "正味",
+    "reading": "しょうみ",
+    "meaning": "Khối lượng tịnh; giá trị thực",
+    "note": ""
+  },
+  {
+    "kanji": "正面",
+    "reading": "しょうめん",
+    "meaning": "Chính diện; phía trước",
+    "note": ""
+  },
+  {
+    "kanji": "消耗",
+    "reading": "しょうもう",
+    "meaning": "Tiêu hao; hao mòn",
+    "note": ""
+  },
+  {
+    "kanji": "省略",
+    "reading": "しょうりゃく",
+    "meaning": "Lược bỏ; viết tắt",
+    "note": ""
+  },
+  {
+    "kanji": "初級",
+    "reading": "しょきゅう",
+    "meaning": "Sơ cấp",
+    "note": ""
+  },
+  {
+    "kanji": "助教授",
+    "reading": "じょきょうじゅ",
+    "meaning": "Chức danh trợ giáo sư trong hệ thống cũ",
+    "note": ""
+  },
+  {
+    "kanji": "食塩",
+    "reading": "しょくえん",
+    "meaning": "Muối ăn",
+    "note": ""
+  },
+  {
+    "kanji": "職人",
+    "reading": "しょくにん",
+    "meaning": "Thợ thủ công; người thợ lành nghề",
+    "note": ""
+  },
+  {
+    "kanji": "初旬",
+    "reading": "しょじゅん",
+    "meaning": "Mười ngày đầu tháng",
+    "note": ""
+  },
+  {
+    "kanji": "書籍",
+    "reading": "しょせき",
+    "meaning": "Sách; ấn phẩm",
+    "note": ""
+  },
+  {
+    "kanji": "食器",
+    "reading": "しょっき",
+    "meaning": "Bát đĩa; đồ dùng ăn uống",
+    "note": ""
+  },
+  {
+    "kanji": "書店",
+    "reading": "しょてん",
+    "meaning": "Nhà sách; hiệu sách",
+    "note": ""
+  },
+  {
+    "kanji": "書道",
+    "reading": "しょどう",
+    "meaning": "Thư pháp",
+    "note": ""
+  },
+  {
+    "kanji": "白髪",
+    "reading": "しらが",
+    "meaning": "Tóc bạc",
+    "note": ""
+  },
+  {
+    "kanji": "知り合い",
+    "reading": "しりあい",
+    "meaning": "Người quen",
+    "note": ""
+  },
+  {
+    "kanji": "私立",
+    "reading": "しりつ",
+    "meaning": "Tư lập; do tư nhân thành lập",
+    "note": ""
+  },
+  {
+    "kanji": "資料",
+    "reading": "しりょう",
+    "meaning": "Tài liệu; tư liệu",
+    "note": ""
+  },
+  {
+    "kanji": "汁",
+    "reading": "しる",
+    "meaning": "Nước dùng; súp; dịch lỏng",
+    "note": ""
+  },
+  {
+    "kanji": "素人",
+    "reading": "しろうと",
+    "meaning": "Người nghiệp dư; người không chuyên",
+    "note": ""
+  },
+  {
+    "kanji": "芯",
+    "reading": "しん",
+    "meaning": "Lõi; ruột; bấc",
+    "note": ""
+  },
+  {
+    "kanji": "新幹線",
+    "reading": "しんかんせん",
+    "meaning": "Tàu cao tốc Shinkansen",
+    "note": ""
+  },
+  {
+    "kanji": "真空",
+    "reading": "しんくう",
+    "meaning": "Chân không",
+    "note": ""
+  },
+  {
+    "kanji": "心身",
+    "reading": "しんしん",
+    "meaning": "Thể chất và tinh thần",
+    "note": ""
+  },
+  {
+    "kanji": "信ずる",
+    "reading": "しんずる",
+    "meaning": "Tin; tin tưởng",
+    "note": ""
+  },
+  {
+    "kanji": "申請",
+    "reading": "しんせい",
+    "meaning": "Nộp đơn; xin phép",
+    "note": ""
+  },
+  {
+    "kanji": "人造",
+    "reading": "じんぞう",
+    "meaning": "Nhân tạo",
+    "note": ""
+  },
+  {
+    "kanji": "寝台",
+    "reading": "しんだい",
+    "meaning": "Giường; giường nằm trên tàu",
+    "note": ""
+  },
+  {
+    "kanji": "診断",
+    "reading": "しんだん",
+    "meaning": "Chẩn đoán",
+    "note": ""
+  },
+  {
+    "kanji": "侵入",
+    "reading": "しんにゅう",
+    "meaning": "Xâm nhập; đột nhập",
+    "note": ""
+  },
+  {
+    "kanji": "人文科学",
+    "reading": "じんぶんかがく",
+    "meaning": "Khoa học nhân văn",
+    "note": ""
+  },
+  {
+    "kanji": "人命",
+    "reading": "じんめい",
+    "meaning": "Mạng người; tính mạng con người",
+    "note": ""
+  },
+  {
+    "kanji": "深夜",
+    "reading": "しんや",
+    "meaning": "Đêm khuya",
+    "note": ""
+  },
+  {
+    "kanji": "森林",
+    "reading": "しんりん",
+    "meaning": "Rừng",
+    "note": ""
+  },
+  {
+    "kanji": "親類",
+    "reading": "しんるい",
+    "meaning": "Họ hàng",
+    "note": ""
+  },
+  {
+    "kanji": "針路",
+    "reading": "しんろ",
+    "meaning": "Hướng đi; hải trình",
+    "note": ""
+  },
+  {
+    "kanji": "神話",
+    "reading": "しんわ",
+    "meaning": "Thần thoại",
+    "note": ""
+  },
+  {
+    "kanji": "酢",
+    "reading": "す",
+    "meaning": "Giấm",
+    "note": ""
+  },
+  {
+    "kanji": "水産",
+    "reading": "すいさん",
+    "meaning": "Thủy sản; ngành thủy sản",
+    "note": ""
+  },
+  {
+    "kanji": "炊事",
+    "reading": "すいじ",
+    "meaning": "Nấu nướng; việc bếp núc",
+    "note": ""
+  },
+  {
+    "kanji": "水蒸気",
+    "reading": "すいじょうき",
+    "meaning": "Hơi nước",
+    "note": ""
+  },
+  {
+    "kanji": "水素",
+    "reading": "すいそ",
+    "meaning": "Khí hiđrô",
+    "note": ""
+  },
+  {
+    "kanji": "垂直",
+    "reading": "すいちょく",
+    "meaning": "Thẳng đứng; vuông góc",
+    "note": ""
+  },
+  {
+    "kanji": "推定",
+    "reading": "すいてい",
+    "meaning": "Ước tính; suy đoán",
+    "note": ""
+  },
+  {
+    "kanji": "水滴",
+    "reading": "すいてき",
+    "meaning": "Giọt nước",
+    "note": ""
+  },
+  {
+    "kanji": "水筒",
+    "reading": "すいとう",
+    "meaning": "Bình đựng nước mang theo",
+    "note": ""
+  },
+  {
+    "kanji": "随筆",
+    "reading": "ずいひつ",
+    "meaning": "Tùy bút",
+    "note": ""
+  },
+  {
+    "kanji": "水分",
+    "reading": "すいぶん",
+    "meaning": "Lượng nước; độ ẩm",
+    "note": ""
+  },
+  {
+    "kanji": "水平",
+    "reading": "すいへい",
+    "meaning": "Ngang; nằm ngang",
+    "note": ""
+  },
+  {
+    "kanji": "水平線",
+    "reading": "すいへいせん",
+    "meaning": "Đường chân trời trên biển",
+    "note": ""
+  },
+  {
+    "kanji": "水曜",
+    "reading": "すいよう",
+    "meaning": "Thứ tư",
+    "note": ""
+  },
+  {
+    "kanji": "図々しい",
+    "reading": "ずうずうしい",
+    "meaning": "Trơ trẽn; vô duyên",
+    "note": ""
+  },
+  {
+    "kanji": "末っ子",
+    "reading": "すえっこ",
+    "meaning": "Con út",
+    "note": ""
+  },
+  {
+    "kanji": "図鑑",
+    "reading": "ずかん",
+    "meaning": "Sách tra cứu bằng hình ảnh",
+    "note": ""
+  },
+  {
+    "kanji": "杉",
+    "reading": "すぎ",
+    "meaning": "Cây tuyết tùng Nhật Bản",
+    "note": ""
+  },
+  {
+    "kanji": "好き嫌い",
+    "reading": "すききらい",
+    "meaning": "Sự thích và ghét; kén chọn",
+    "note": ""
+  },
+  {
+    "kanji": "好き好き",
+    "reading": "すきずき",
+    "meaning": "Tùy sở thích mỗi người",
+    "note": ""
+  },
+  {
+    "kanji": "透き通る",
+    "reading": "すきとおる",
+    "meaning": "Trong suốt; nhìn xuyên qua được",
+    "note": ""
+  },
+  {
+    "kanji": "隙間",
+    "reading": "すきま",
+    "meaning": "Khe hở; khoảng trống",
+    "note": ""
+  },
+  {
+    "kanji": "少なくとも",
+    "reading": "すくなくとも",
+    "meaning": "Ít nhất",
+    "note": ""
+  },
+  {
+    "kanji": "図形",
+    "reading": "ずけい",
+    "meaning": "Hình; hình dạng hình học",
+    "note": ""
+  },
+  {
+    "kanji": "鈴",
+    "reading": "すず",
+    "meaning": "Chuông nhỏ; lục lạc",
+    "note": ""
+  },
+  {
+    "kanji": "涼む",
+    "reading": "すずむ",
+    "meaning": "Hóng mát; làm mát cơ thể",
+    "note": ""
+  },
+  {
+    "kanji": "酸っぱい",
+    "reading": "すっぱい",
+    "meaning": "Chua",
+    "note": ""
+  },
+  {
+    "kanji": "素直",
+    "reading": "すなお",
+    "meaning": "Ngoan ngoãn; thật thà; dễ tiếp thu",
+    "note": ""
+  },
+  {
+    "kanji": "頭脳",
+    "reading": "ずのう",
+    "meaning": "Bộ óc; trí tuệ",
+    "note": ""
+  },
+  {
+    "kanji": "図表",
+    "reading": "ずひょう",
+    "meaning": "Biểu đồ; đồ thị",
+    "note": ""
+  },
+  {
+    "kanji": "住まい",
+    "reading": "すまい",
+    "meaning": "Nơi ở; nhà ở",
+    "note": ""
+  },
+  {
+    "kanji": "済まない",
+    "reading": "すまない",
+    "meaning": "Xin lỗi; áy náy",
+    "note": ""
+  },
+  {
+    "kanji": "墨",
+    "reading": "すみ",
+    "meaning": "Mực tàu",
+    "note": ""
+  },
+  {
+    "kanji": "澄む",
+    "reading": "すむ",
+    "meaning": "Trở nên trong; trong trẻo",
+    "note": ""
+  },
+  {
+    "kanji": "清む",
+    "reading": "すむ",
+    "meaning": "Trở nên trong sạch, trong suốt",
+    "note": ""
+  },
+  {
+    "kanji": "相撲",
+    "reading": "すもう",
+    "meaning": "Môn vật sumo",
+    "note": ""
+  },
+  {
+    "kanji": "刷る",
+    "reading": "する",
+    "meaning": "In",
+    "note": ""
+  },
+  {
+    "kanji": "狡い",
+    "reading": "ずるい",
+    "meaning": "Gian xảo; không công bằng",
+    "note": ""
+  },
+  {
+    "kanji": "すれ違う",
+    "reading": "すれちがう",
+    "meaning": "Đi lướt qua nhau; không hiểu ý nhau",
+    "note": ""
+  },
+  {
+    "kanji": "寸法",
+    "reading": "すんぽう",
+    "meaning": "Kích thước; số đo",
+    "note": ""
+  },
+  {
+    "kanji": "姓",
+    "reading": "せい",
+    "meaning": "Họ; tên họ",
+    "note": ""
+  },
+  {
+    "kanji": "税関",
+    "reading": "ぜいかん",
+    "meaning": "Hải quan",
+    "note": ""
+  },
+  {
+    "kanji": "制作",
+    "reading": "せいさく",
+    "meaning": "Sáng tác; sản xuất tác phẩm nghệ thuật",
+    "note": ""
+  },
+  {
+    "kanji": "製作",
+    "reading": "せいさく",
+    "meaning": "Chế tạo; sản xuất đồ vật",
+    "note": ""
+  },
+  {
+    "kanji": "性質",
+    "reading": "せいしつ",
+    "meaning": "Tính chất; đặc tính",
+    "note": ""
+  },
+  {
+    "kanji": "清書",
+    "reading": "せいしょ",
+    "meaning": "Chép sạch; viết lại bản đẹp",
+    "note": ""
+  },
+  {
+    "kanji": "青少年",
+    "reading": "せいしょうねん",
+    "meaning": "Thanh thiếu niên",
+    "note": ""
+  },
+  {
+    "kanji": "整数",
+    "reading": "せいすう",
+    "meaning": "Số nguyên",
+    "note": ""
+  },
+  {
+    "kanji": "清掃",
+    "reading": "せいそう",
+    "meaning": "Quét dọn; vệ sinh",
+    "note": ""
+  },
+  {
+    "kanji": "生長",
+    "reading": "せいちょう",
+    "meaning": "Sinh trưởng; lớn lên",
+    "note": ""
+  },
+  {
+    "kanji": "政党",
+    "reading": "せいとう",
+    "meaning": "Đảng chính trị",
+    "note": ""
+  },
+  {
+    "kanji": "生年月日",
+    "reading": "せいねんがっぴ",
+    "meaning": "Ngày tháng năm sinh",
+    "note": ""
+  },
+  {
+    "kanji": "性能",
+    "reading": "せいのう",
+    "meaning": "Tính năng; hiệu năng",
+    "note": ""
+  },
+  {
+    "kanji": "整備",
+    "reading": "せいび",
+    "meaning": "Bảo dưỡng; chỉnh trang; hoàn thiện",
+    "note": ""
+  },
+  {
+    "kanji": "成分",
+    "reading": "せいぶん",
+    "meaning": "Thành phần",
+    "note": ""
+  },
+  {
+    "kanji": "性別",
+    "reading": "せいべつ",
+    "meaning": "Giới tính",
+    "note": ""
+  },
+  {
+    "kanji": "正方形",
+    "reading": "せいほうけい",
+    "meaning": "Hình vuông",
+    "note": ""
+  },
+  {
+    "kanji": "正門",
+    "reading": "せいもん",
+    "meaning": "Cổng chính",
+    "note": ""
+  },
+  {
+    "kanji": "西暦",
+    "reading": "せいれき",
+    "meaning": "Dương lịch; Công nguyên",
+    "note": ""
+  },
+  {
+    "kanji": "背負う",
+    "reading": "せおう",
+    "meaning": "Cõng; gánh vác",
+    "note": ""
+  },
+  {
+    "kanji": "赤道",
+    "reading": "せきどう",
+    "meaning": "Đường xích đạo",
+    "note": ""
+  },
+  {
+    "kanji": "折角",
+    "reading": "せっかく",
+    "meaning": "Mất công; khó khăn lắm mới; nhân dịp quý",
+    "note": ""
+  },
+  {
+    "kanji": "接近",
+    "reading": "せっきん",
+    "meaning": "Tiến gần; tiếp cận",
+    "note": ""
+  },
+  {
+    "kanji": "石鹸",
+    "reading": "せっけん",
+    "meaning": "Xà phòng",
+    "note": ""
+  },
+  {
+    "kanji": "接する",
+    "reading": "せっする",
+    "meaning": "Tiếp xúc; tiếp giáp; đối xử",
+    "note": ""
+  },
+  {
+    "kanji": "接続",
+    "reading": "せつぞく",
+    "meaning": "Kết nối; nối tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "瀬戸物",
+    "reading": "せともの",
+    "meaning": "Đồ gốm sứ",
+    "note": ""
+  },
+  {
+    "kanji": "是非とも",
+    "reading": "ぜひとも",
+    "meaning": "Nhất định; bằng mọi cách",
+    "note": ""
+  },
+  {
+    "kanji": "迫る",
+    "reading": "せまる",
+    "meaning": "Đến gần; thúc ép",
+    "note": ""
+  },
+  {
+    "kanji": "攻める",
+    "reading": "せめる",
+    "meaning": "Tấn công; tiến đánh",
+    "note": ""
+  },
+  {
+    "kanji": "栓",
+    "reading": "せん",
+    "meaning": "Nút đậy; van; chốt",
+    "note": ""
+  },
+  {
+    "kanji": "前後",
+    "reading": "ぜんご",
+    "meaning": "Trước sau; khoảng chừng",
+    "note": ""
+  },
+  {
+    "kanji": "洗剤",
+    "reading": "せんざい",
+    "meaning": "Chất tẩy rửa",
+    "note": ""
+  },
+  {
+    "kanji": "全集",
+    "reading": "ぜんしゅう",
+    "meaning": "Toàn tập tác phẩm",
+    "note": ""
+  },
+  {
+    "kanji": "全身",
+    "reading": "ぜんしん",
+    "meaning": "Toàn thân",
+    "note": ""
+  },
+  {
+    "kanji": "扇子",
+    "reading": "せんす",
+    "meaning": "Quạt xếp",
+    "note": ""
+  },
+  {
+    "kanji": "専制",
+    "reading": "せんせい",
+    "meaning": "Chế độ chuyên chế; độc đoán",
+    "note": ""
+  },
+  {
+    "kanji": "先々月",
+    "reading": "せんせんげつ",
+    "meaning": "Tháng trước nữa",
+    "note": ""
+  },
+  {
+    "kanji": "先々週",
+    "reading": "せんせんしゅう",
+    "meaning": "Tuần trước nữa",
+    "note": ""
+  },
+  {
+    "kanji": "先祖",
+    "reading": "せんぞ",
+    "meaning": "Tổ tiên",
+    "note": ""
+  },
+  {
+    "kanji": "先端",
+    "reading": "せんたん",
+    "meaning": "Đầu mút; mũi nhọn",
+    "note": ""
+  },
+  {
+    "kanji": "宣伝",
+    "reading": "せんでん",
+    "meaning": "Tuyên truyền; quảng bá",
+    "note": ""
+  },
+  {
+    "kanji": "先頭",
+    "reading": "せんとう",
+    "meaning": "Đầu hàng; vị trí dẫn đầu",
+    "note": ""
+  },
+  {
+    "kanji": "全般",
+    "reading": "ぜんぱん",
+    "meaning": "Toàn bộ; nói chung",
+    "note": ""
+  },
+  {
+    "kanji": "扇風機",
+    "reading": "せんぷうき",
+    "meaning": "Quạt điện",
+    "note": ""
+  },
+  {
+    "kanji": "線路",
+    "reading": "せんろ",
+    "meaning": "Đường ray",
+    "note": ""
+  },
+  {
+    "kanji": "相違",
+    "reading": "そうい",
+    "meaning": "Sự khác nhau; khác biệt",
+    "note": ""
+  },
+  {
+    "kanji": "雑巾",
+    "reading": "ぞうきん",
+    "meaning": "Giẻ lau",
+    "note": ""
+  },
+  {
+    "kanji": "増減",
+    "reading": "ぞうげん",
+    "meaning": "Tăng giảm; biến động",
+    "note": ""
+  },
+  {
+    "kanji": "倉庫",
+    "reading": "そうこ",
+    "meaning": "Kho hàng",
+    "note": ""
+  },
+  {
+    "kanji": "相互",
+    "reading": "そうご",
+    "meaning": "Lẫn nhau; tương hỗ",
+    "note": ""
+  },
+  {
+    "kanji": "創作",
+    "reading": "そうさく",
+    "meaning": "Sáng tác; tác phẩm sáng tạo",
+    "note": ""
+  },
+  {
+    "kanji": "葬式",
+    "reading": "そうしき",
+    "meaning": "Tang lễ",
+    "note": ""
+  },
+  {
+    "kanji": "造船",
+    "reading": "ぞうせん",
+    "meaning": "Đóng tàu",
+    "note": ""
+  },
+  {
+    "kanji": "騒々しい",
+    "reading": "そうぞうしい",
+    "meaning": "Ồn ào; huyên náo",
+    "note": ""
+  },
+  {
+    "kanji": "増大",
+    "reading": "ぞうだい",
+    "meaning": "Gia tăng; tăng lớn",
+    "note": ""
+  },
+  {
+    "kanji": "送別",
+    "reading": "そうべつ",
+    "meaning": "Tiễn biệt",
+    "note": ""
+  },
+  {
+    "kanji": "草履",
+    "reading": "ぞうり",
+    "meaning": "Dép zori kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "総理大臣",
+    "reading": "そうりだいじん",
+    "meaning": "Thủ tướng",
+    "note": ""
+  },
+  {
+    "kanji": "送料",
+    "reading": "そうりょう",
+    "meaning": "Phí vận chuyển; bưu phí",
+    "note": ""
+  },
+  {
+    "kanji": "属する",
+    "reading": "ぞくする",
+    "meaning": "Thuộc về; trực thuộc",
+    "note": ""
+  },
+  {
+    "kanji": "続々",
+    "reading": "ぞくぞく",
+    "meaning": "Lần lượt; liên tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "速達",
+    "reading": "そくたつ",
+    "meaning": "Chuyển phát nhanh",
+    "note": ""
+  },
+  {
+    "kanji": "測定",
+    "reading": "そくてい",
+    "meaning": "Đo lường",
+    "note": ""
+  },
+  {
+    "kanji": "測量",
+    "reading": "そくりょう",
+    "meaning": "Đo đạc địa hình",
+    "note": ""
+  },
+  {
+    "kanji": "速力",
+    "reading": "そくりょく",
+    "meaning": "Tốc lực; tốc độ",
+    "note": ""
+  },
+  {
+    "kanji": "素質",
+    "reading": "そしつ",
+    "meaning": "Tố chất; năng khiếu",
+    "note": ""
+  },
+  {
+    "kanji": "祖先",
+    "reading": "そせん",
+    "meaning": "Tổ tiên",
+    "note": ""
+  },
+  {
+    "kanji": "率直",
+    "reading": "そっちょく",
+    "meaning": "Thẳng thắn; bộc trực",
+    "note": ""
+  },
+  {
+    "kanji": "その上",
+    "reading": "そのうえ",
+    "meaning": "Hơn nữa; thêm vào đó",
+    "note": ""
+  },
+  {
+    "kanji": "その為",
+    "reading": "そのため",
+    "meaning": "Vì thế; vì lý do đó",
+    "note": ""
+  },
+  {
+    "kanji": "その外",
+    "reading": "そのほか",
+    "meaning": "Ngoài ra; những thứ khác",
+    "note": ""
+  },
+  {
+    "kanji": "蕎麦",
+    "reading": "そば",
+    "meaning": "Mì soba; kiều mạch",
+    "note": ""
+  },
+  {
+    "kanji": "剃る",
+    "reading": "そる",
+    "meaning": "Cạo; cạo râu",
+    "note": ""
+  },
+  {
+    "kanji": "反る",
+    "reading": "そる",
+    "meaning": "Cong; vênh; ưỡn ra sau",
+    "note": ""
+  },
+  {
+    "kanji": "逸れる",
+    "reading": "それる",
+    "meaning": "Lệch; chệch hướng; lạc đề",
+    "note": ""
+  },
+  {
+    "kanji": "揃う",
+    "reading": "そろう",
+    "meaning": "Có đủ; tập hợp đầy đủ; đồng đều",
+    "note": ""
+  },
+  {
+    "kanji": "揃える",
+    "reading": "そろえる",
+    "meaning": "Sắp cho đều; chuẩn bị đầy đủ",
+    "note": ""
+  },
+  {
+    "kanji": "算盤",
+    "reading": "そろばん",
+    "meaning": "Bàn tính",
+    "note": ""
+  },
+  {
+    "kanji": "存じる",
+    "reading": "ぞんじる",
+    "meaning": "Biết; nghĩ, tin, theo lối khiêm nhường",
+    "note": ""
+  },
+  {
+    "kanji": "存ずる",
+    "reading": "ぞんずる",
+    "meaning": "Biết; nghĩ, theo lối khiêm nhường",
+    "note": ""
+  },
+  {
+    "kanji": "損得",
+    "reading": "そんとく",
+    "meaning": "Thiệt hơn; được mất",
+    "note": ""
+  },
+  {
+    "kanji": "第一",
+    "reading": "だいいち",
+    "meaning": "Thứ nhất; quan trọng nhất",
+    "note": ""
+  },
+  {
+    "kanji": "大学院",
+    "reading": "だいがくいん",
+    "meaning": "Trường, chương trình sau đại học",
+    "note": ""
+  },
+  {
+    "kanji": "大工",
+    "reading": "だいく",
+    "meaning": "Thợ mộc",
+    "note": ""
+  },
+  {
+    "kanji": "体系",
+    "reading": "たいけい",
+    "meaning": "Hệ thống; hệ thống lý luận",
+    "note": ""
+  },
+  {
+    "kanji": "太鼓",
+    "reading": "たいこ",
+    "meaning": "Trống",
+    "note": ""
+  },
+  {
+    "kanji": "対策",
+    "reading": "たいさく",
+    "meaning": "Biện pháp đối phó",
+    "note": ""
+  },
+  {
+    "kanji": "大して",
+    "reading": "たいして",
+    "meaning": "Mấy; bao nhiêu, thường dùng với phủ định",
+    "note": ""
+  },
+  {
+    "kanji": "対照",
+    "reading": "たいしょう",
+    "meaning": "Đối chiếu; tương phản",
+    "note": ""
+  },
+  {
+    "kanji": "大小",
+    "reading": "だいしょう",
+    "meaning": "Lớn nhỏ; kích thước",
+    "note": ""
+  },
+  {
+    "kanji": "体制",
+    "reading": "たいせい",
+    "meaning": "Thể chế; cơ cấu",
+    "note": ""
+  },
+  {
+    "kanji": "体積",
+    "reading": "たいせき",
+    "meaning": "Thể tích",
+    "note": ""
+  },
+  {
+    "kanji": "体操",
+    "reading": "たいそう",
+    "meaning": "Thể dục",
+    "note": ""
+  },
+  {
+    "kanji": "大層",
+    "reading": "たいそう",
+    "meaning": "Rất; hết sức; phóng đại",
+    "note": ""
+  },
+  {
+    "kanji": "大分",
+    "reading": "だいぶん",
+    "meaning": "Khá nhiều; đáng kể",
+    "note": ""
+  },
+  {
+    "kanji": "大木",
+    "reading": "たいぼく",
+    "meaning": "Cây to",
+    "note": ""
+  },
+  {
+    "kanji": "題名",
+    "reading": "だいめい",
+    "meaning": "Nhan đề; tên tác phẩm",
+    "note": ""
+  },
+  {
+    "kanji": "代名詞",
+    "reading": "だいめいし",
+    "meaning": "Đại từ",
+    "note": ""
+  },
+  {
+    "kanji": "対立",
+    "reading": "たいりつ",
+    "meaning": "Đối lập; đối đầu",
+    "note": ""
+  },
+  {
+    "kanji": "田植え",
+    "reading": "たうえ",
+    "meaning": "Cấy lúa",
+    "note": ""
+  },
+  {
+    "kanji": "絶えず",
+    "reading": "たえず",
+    "meaning": "Không ngừng; liên tục",
+    "note": ""
+  },
+  {
+    "kanji": "楕円",
+    "reading": "だえん",
+    "meaning": "Hình elip",
+    "note": ""
+  },
+  {
+    "kanji": "高める",
+    "reading": "たかめる",
+    "meaning": "Nâng cao; làm tăng",
+    "note": ""
+  },
+  {
+    "kanji": "耕す",
+    "reading": "たがやす",
+    "meaning": "Cày; canh tác đất",
+    "note": ""
+  },
+  {
+    "kanji": "滝",
+    "reading": "たき",
+    "meaning": "Thác nước",
+    "note": ""
+  },
+  {
+    "kanji": "炊く",
+    "reading": "たく",
+    "meaning": "Nấu cơm; nấu bằng nước",
+    "note": ""
+  },
+  {
+    "kanji": "焚く",
+    "reading": "たく",
+    "meaning": "Đốt lửa; nhóm lửa",
+    "note": ""
+  },
+  {
+    "kanji": "蓄える",
+    "reading": "たくわえる",
+    "meaning": "Tích trữ; dự trữ",
+    "note": ""
+  },
+  {
+    "kanji": "竹",
+    "reading": "たけ",
+    "meaning": "Tre; trúc",
+    "note": ""
+  },
+  {
+    "kanji": "助かる",
+    "reading": "たすかる",
+    "meaning": "Được cứu; thoát nạn; được giúp đỡ",
+    "note": ""
+  },
+  {
+    "kanji": "但し",
+    "reading": "ただし",
+    "meaning": "Tuy nhiên; với điều kiện là",
+    "note": ""
+  },
+  {
+    "kanji": "畳む",
+    "reading": "たたむ",
+    "meaning": "Gấp; xếp lại",
+    "note": ""
+  },
+  {
+    "kanji": "立ち止まる",
+    "reading": "たちどまる",
+    "meaning": "Dừng bước; đứng lại",
+    "note": ""
+  },
+  {
+    "kanji": "忽ち",
+    "reading": "たちまち",
+    "meaning": "Ngay lập tức; trong chốc lát",
+    "note": ""
+  },
+  {
+    "kanji": "建つ",
+    "reading": "たつ",
+    "meaning": "Được xây; mọc lên",
+    "note": ""
+  },
+  {
+    "kanji": "発つ",
+    "reading": "たつ",
+    "meaning": "Khởi hành; xuất phát",
+    "note": ""
+  },
+  {
+    "kanji": "脱線",
+    "reading": "だっせん",
+    "meaning": "Trật đường ray; lạc đề",
+    "note": ""
+  },
+  {
+    "kanji": "妥当",
+    "reading": "だとう",
+    "meaning": "Thỏa đáng; hợp lý",
+    "note": ""
+  },
+  {
+    "kanji": "例える",
+    "reading": "たとえる",
+    "meaning": "Ví; so sánh với",
+    "note": ""
+  },
+  {
+    "kanji": "頼もしい",
+    "reading": "たのもしい",
+    "meaning": "Đáng tin cậy; đầy hứa hẹn",
+    "note": ""
+  },
+  {
+    "kanji": "足袋",
+    "reading": "たび",
+    "meaning": "Tất tabi tách ngón kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "騙す",
+    "reading": "だます",
+    "meaning": "Lừa; lừa gạt",
+    "note": ""
+  },
+  {
+    "kanji": "溜まる",
+    "reading": "たまる",
+    "meaning": "Tích tụ; dồn lại",
+    "note": ""
+  },
+  {
+    "kanji": "溜息",
+    "reading": "ためいき",
+    "meaning": "Tiếng thở dài",
+    "note": ""
+  },
+  {
+    "kanji": "躊躇う",
+    "reading": "ためらう",
+    "meaning": "Do dự; ngập ngừng",
+    "note": ""
+  },
+  {
+    "kanji": "溜める",
+    "reading": "ためる",
+    "meaning": "Tích; để dành; dồn lại",
+    "note": ""
+  },
+  {
+    "kanji": "足る",
+    "reading": "たる",
+    "meaning": "Đủ; xứng đáng",
+    "note": ""
+  },
+  {
+    "kanji": "段階",
+    "reading": "だんかい",
+    "meaning": "Giai đoạn; cấp độ",
+    "note": ""
+  },
+  {
+    "kanji": "短期",
+    "reading": "たんき",
+    "meaning": "Ngắn hạn",
+    "note": ""
+  },
+  {
+    "kanji": "炭鉱",
+    "reading": "たんこう",
+    "meaning": "Mỏ than",
+    "note": ""
+  },
+  {
+    "kanji": "短所",
+    "reading": "たんしょ",
+    "meaning": "Nhược điểm; sở đoản",
+    "note": ""
+  },
+  {
+    "kanji": "箪笥",
+    "reading": "たんす",
+    "meaning": "Tủ ngăn kéo; tủ quần áo",
+    "note": ""
+  },
+  {
+    "kanji": "淡水",
+    "reading": "たんすい",
+    "meaning": "Nước ngọt, không phải nước mặn",
+    "note": ""
+  },
+  {
+    "kanji": "断水",
+    "reading": "だんすい",
+    "meaning": "Cúp nước; ngừng cấp nước",
+    "note": ""
+  },
+  {
+    "kanji": "単数",
+    "reading": "たんすう",
+    "meaning": "Số ít",
+    "note": ""
+  },
+  {
+    "kanji": "団地",
+    "reading": "だんち",
+    "meaning": "Khu chung cư; khu nhà tập thể",
+    "note": ""
+  },
+  {
+    "kanji": "断定",
+    "reading": "だんてい",
+    "meaning": "Khẳng định chắc chắn; kết luận",
+    "note": ""
+  },
+  {
+    "kanji": "短編",
+    "reading": "たんぺん",
+    "meaning": "Truyện ngắn; tác phẩm ngắn",
+    "note": ""
+  },
+  {
+    "kanji": "田んぼ",
+    "reading": "たんぼ",
+    "meaning": "Ruộng lúa",
+    "note": ""
+  },
+  {
+    "kanji": "誓う",
+    "reading": "ちかう",
+    "meaning": "Thề; tuyên thệ",
+    "note": ""
+  },
+  {
+    "kanji": "地下水",
+    "reading": "ちかすい",
+    "meaning": "Nước ngầm",
+    "note": ""
+  },
+  {
+    "kanji": "近々",
+    "reading": "ちかぢか",
+    "meaning": "Sắp tới; trong thời gian gần",
+    "note": ""
+  },
+  {
+    "kanji": "近付ける",
+    "reading": "ちかづける",
+    "meaning": "Đưa lại gần; cho đến gần",
+    "note": ""
+  },
+  {
+    "kanji": "近寄る",
+    "reading": "ちかよる",
+    "meaning": "Lại gần; tiến đến gần",
+    "note": ""
+  },
+  {
+    "kanji": "力強い",
+    "reading": "ちからづよい",
+    "meaning": "Mạnh mẽ; làm vững lòng",
+    "note": ""
+  },
+  {
+    "kanji": "地質",
+    "reading": "ちしつ",
+    "meaning": "Địa chất",
+    "note": ""
+  },
+  {
+    "kanji": "知人",
+    "reading": "ちじん",
+    "meaning": "Người quen",
+    "note": ""
+  },
+  {
+    "kanji": "地帯",
+    "reading": "ちたい",
+    "meaning": "Vùng; khu vực; vành đai",
+    "note": ""
+  },
+  {
+    "kanji": "縮む",
+    "reading": "ちぢむ",
+    "meaning": "Co lại; rút ngắn lại",
+    "note": ""
+  },
+  {
+    "kanji": "縮める",
+    "reading": "ちぢめる",
+    "meaning": "Rút ngắn; thu hẹp",
+    "note": ""
+  },
+  {
+    "kanji": "縮れる",
+    "reading": "ちぢれる",
+    "meaning": "Quăn; xoăn",
+    "note": ""
+  },
+  {
+    "kanji": "地点",
+    "reading": "ちてん",
+    "meaning": "Địa điểm; điểm trên bản đồ",
+    "note": ""
+  },
+  {
+    "kanji": "地名",
+    "reading": "ちめい",
+    "meaning": "Địa danh",
+    "note": ""
+  },
+  {
+    "kanji": "茶色い",
+    "reading": "ちゃいろい",
+    "meaning": "Có màu nâu",
+    "note": ""
+  },
+  {
+    "kanji": "着々",
+    "reading": "ちゃくちゃく",
+    "meaning": "Đều đặn; từng bước chắc chắn",
+    "note": ""
+  },
+  {
+    "kanji": "中間",
+    "reading": "ちゅうかん",
+    "meaning": "Ở giữa; trung gian",
+    "note": ""
+  },
+  {
+    "kanji": "中旬",
+    "reading": "ちゅうじゅん",
+    "meaning": "Mười ngày giữa tháng",
+    "note": ""
+  },
+  {
+    "kanji": "抽象",
+    "reading": "ちゅうしょう",
+    "meaning": "Trừu tượng",
+    "note": ""
+  },
+  {
+    "kanji": "中世",
+    "reading": "ちゅうせい",
+    "meaning": "Thời trung đại",
+    "note": ""
+  },
+  {
+    "kanji": "中性",
+    "reading": "ちゅうせい",
+    "meaning": "Trung tính; trung hòa",
+    "note": ""
+  },
+  {
+    "kanji": "中途",
+    "reading": "ちゅうと",
+    "meaning": "Giữa chừng; đang dở",
+    "note": ""
+  },
+  {
+    "kanji": "中年",
+    "reading": "ちゅうねん",
+    "meaning": "Tuổi trung niên",
+    "note": ""
+  },
+  {
+    "kanji": "超過",
+    "reading": "ちょうか",
+    "meaning": "Vượt quá; quá mức",
+    "note": ""
+  },
+  {
+    "kanji": "彫刻",
+    "reading": "ちょうこく",
+    "meaning": "Điêu khắc; chạm khắc",
+    "note": ""
+  },
+  {
+    "kanji": "長所",
+    "reading": "ちょうしょ",
+    "meaning": "Ưu điểm; sở trường",
+    "note": ""
+  },
+  {
+    "kanji": "長女",
+    "reading": "ちょうじょ",
+    "meaning": "Con gái cả",
+    "note": ""
+  },
+  {
+    "kanji": "調整",
+    "reading": "ちょうせい",
+    "meaning": "Điều chỉnh; phối hợp cho phù hợp",
+    "note": ""
+  },
+  {
+    "kanji": "調節",
+    "reading": "ちょうせつ",
+    "meaning": "Điều tiết; điều chỉnh mức độ",
+    "note": ""
+  },
+  {
+    "kanji": "長短",
+    "reading": "ちょうたん",
+    "meaning": "Dài ngắn; ưu và nhược điểm",
+    "note": ""
+  },
+  {
+    "kanji": "頂点",
+    "reading": "ちょうてん",
+    "meaning": "Đỉnh; đỉnh điểm",
+    "note": ""
+  },
+  {
+    "kanji": "長男",
+    "reading": "ちょうなん",
+    "meaning": "Con trai cả",
+    "note": ""
+  },
+  {
+    "kanji": "長方形",
+    "reading": "ちょうほうけい",
+    "meaning": "Hình chữ nhật",
+    "note": ""
+  },
+  {
+    "kanji": "調味料",
+    "reading": "ちょうみりょう",
+    "meaning": "Gia vị",
+    "note": ""
+  },
+  {
+    "kanji": "直後",
+    "reading": "ちょくご",
+    "meaning": "Ngay sau",
+    "note": ""
+  },
+  {
+    "kanji": "直線",
+    "reading": "ちょくせん",
+    "meaning": "Đường thẳng",
+    "note": ""
+  },
+  {
+    "kanji": "直前",
+    "reading": "ちょくぜん",
+    "meaning": "Ngay trước",
+    "note": ""
+  },
+  {
+    "kanji": "直通",
+    "reading": "ちょくつう",
+    "meaning": "Đi thẳng tuyến; thông suốt trực tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "直流",
+    "reading": "ちょくりゅう",
+    "meaning": "Dòng điện một chiều",
+    "note": ""
+  },
+  {
+    "kanji": "貯蔵",
+    "reading": "ちょぞう",
+    "meaning": "Dự trữ; lưu trữ",
+    "note": ""
+  },
+  {
+    "kanji": "直角",
+    "reading": "ちょっかく",
+    "meaning": "Góc vuông",
+    "note": ""
+  },
+  {
+    "kanji": "直径",
+    "reading": "ちょっけい",
+    "meaning": "Đường kính",
+    "note": ""
+  },
+  {
+    "kanji": "散らかす",
+    "reading": "ちらかす",
+    "meaning": "Bày bừa; làm vương vãi",
+    "note": ""
+  },
+  {
+    "kanji": "散らかる",
+    "reading": "ちらかる",
+    "meaning": "Bừa bộn; nằm rải rác",
+    "note": ""
+  },
+  {
+    "kanji": "散らす",
+    "reading": "ちらす",
+    "meaning": "Rải; làm phân tán",
+    "note": ""
+  },
+  {
+    "kanji": "塵紙",
+    "reading": "ちりがみ",
+    "meaning": "Giấy mềm; giấy vệ sinh",
+    "note": ""
+  },
+  {
+    "kanji": "散る",
+    "reading": "ちる",
+    "meaning": "Rụng; tan tác",
+    "note": ""
+  },
+  {
+    "kanji": "追加",
+    "reading": "ついか",
+    "meaning": "Bổ sung; thêm vào",
+    "note": ""
+  },
+  {
+    "kanji": "通貨",
+    "reading": "つうか",
+    "meaning": "Tiền tệ",
+    "note": ""
+  },
+  {
+    "kanji": "通勤",
+    "reading": "つうきん",
+    "meaning": "Đi làm hằng ngày; đi lại giữa nhà và nơi làm việc",
+    "note": ""
+  },
+  {
+    "kanji": "通ずる",
+    "reading": "つうずる",
+    "meaning": "Thông đến; nối với; hiểu nhau",
+    "note": ""
+  },
+  {
+    "kanji": "通知",
+    "reading": "つうち",
+    "meaning": "Thông báo",
+    "note": ""
+  },
+  {
+    "kanji": "通帳",
+    "reading": "つうちょう",
+    "meaning": "Sổ tài khoản ngân hàng",
+    "note": ""
+  },
+  {
+    "kanji": "通訳",
+    "reading": "つうやく",
+    "meaning": "Phiên dịch; người phiên dịch",
+    "note": ""
+  },
+  {
+    "kanji": "通用",
+    "reading": "つうよう",
+    "meaning": "Được chấp nhận; có giá trị sử dụng",
+    "note": ""
+  },
+  {
+    "kanji": "通路",
+    "reading": "つうろ",
+    "meaning": "Lối đi",
+    "note": ""
+  },
+  {
+    "kanji": "付き合う",
+    "reading": "つきあう",
+    "meaning": "Giao du; hẹn hò; đồng hành cùng",
+    "note": ""
+  },
+  {
+    "kanji": "突き当たり",
+    "reading": "つきあたり",
+    "meaning": "Cuối đường; chỗ đường kết thúc",
+    "note": ""
+  },
+  {
+    "kanji": "突き当たる",
+    "reading": "つきあたる",
+    "meaning": "Đâm phải; gặp phải trở ngại",
+    "note": ""
+  },
+  {
+    "kanji": "月日",
+    "reading": "つきひ",
+    "meaning": "Ngày tháng; thời gian",
+    "note": ""
+  },
+  {
+    "kanji": "点く",
+    "reading": "つく",
+    "meaning": "Đèn sáng lên; lửa cháy lên",
+    "note": ""
+  },
+  {
+    "kanji": "突く",
+    "reading": "つく",
+    "meaning": "Chọc; đâm; thúc",
+    "note": ""
+  },
+  {
+    "kanji": "次ぐ",
+    "reading": "つぐ",
+    "meaning": "Tiếp theo; đứng sau về thứ hạng",
+    "note": ""
+  },
+  {
+    "kanji": "浸ける",
+    "reading": "つける",
+    "meaning": "Ngâm; nhúng vào",
+    "note": ""
+  },
+  {
+    "kanji": "着ける",
+    "reading": "つける",
+    "meaning": "Đeo; gắn vào; mặc lên người",
+    "note": ""
+  },
+  {
+    "kanji": "伝わる",
+    "reading": "つたわる",
+    "meaning": "Được truyền đạt; lan truyền",
+    "note": ""
+  },
+  {
+    "kanji": "突っ込む",
+    "reading": "つっこむ",
+    "meaning": "Lao vào; chọc sâu vào; hỏi xoáy",
+    "note": ""
+  },
+  {
+    "kanji": "努める",
+    "reading": "つとめる",
+    "meaning": "Nỗ lực; cố gắng",
+    "note": ""
+  },
+  {
+    "kanji": "務める",
+    "reading": "つとめる",
+    "meaning": "Đảm nhiệm; làm tròn vai trò",
+    "note": ""
+  },
+  {
+    "kanji": "綱",
+    "reading": "つな",
+    "meaning": "Dây thừng",
+    "note": ""
+  },
+  {
+    "kanji": "繋がり",
+    "reading": "つながり",
+    "meaning": "Mối liên hệ; sự kết nối",
+    "note": ""
+  },
+  {
+    "kanji": "繋がる",
+    "reading": "つながる",
+    "meaning": "Nối liền; liên quan",
+    "note": ""
+  },
+  {
+    "kanji": "繋げる",
+    "reading": "つなげる",
+    "meaning": "Nối; kết nối",
+    "note": ""
+  },
+  {
+    "kanji": "粒",
+    "reading": "つぶ",
+    "meaning": "Hạt; viên nhỏ",
+    "note": ""
+  },
+  {
+    "kanji": "潰す",
+    "reading": "つぶす",
+    "meaning": "Nghiền nát; làm tiêu tan; giết thời gian",
+    "note": ""
+  },
+  {
+    "kanji": "潰れる",
+    "reading": "つぶれる",
+    "meaning": "Bị bẹp; bị nghiền; phá sản",
+    "note": ""
+  },
+  {
+    "kanji": "躓く",
+    "reading": "つまずく",
+    "meaning": "Vấp; vấp ngã",
+    "note": ""
+  },
+  {
+    "kanji": "詰まる",
+    "reading": "つまる",
+    "meaning": "Tắc; bị nhét đầy; bí ý",
+    "note": ""
+  },
+  {
+    "kanji": "積む",
+    "reading": "つむ",
+    "meaning": "Chất lên; xếp chồng; tích lũy",
+    "note": ""
+  },
+  {
+    "kanji": "爪",
+    "reading": "つめ",
+    "meaning": "Móng tay, chân; vuốt",
+    "note": ""
+  },
+  {
+    "kanji": "艶",
+    "reading": "つや",
+    "meaning": "Độ bóng; vẻ bóng mượt",
+    "note": ""
+  },
+  {
+    "kanji": "強気",
+    "reading": "つよき",
+    "meaning": "Cứng rắn; tự tin; mạnh bạo",
+    "note": ""
+  },
+  {
+    "kanji": "釣り合う",
+    "reading": "つりあう",
+    "meaning": "Cân bằng; cân xứng; xứng đôi",
+    "note": ""
+  },
+  {
+    "kanji": "吊る",
+    "reading": "つる",
+    "meaning": "Treo; mắc lên",
+    "note": ""
+  },
+  {
+    "kanji": "吊す",
+    "reading": "つるす",
+    "meaning": "Treo lên",
+    "note": ""
+  },
+  {
+    "kanji": "出合い",
+    "reading": "であい",
+    "meaning": "Cuộc gặp gỡ",
+    "note": ""
+  },
+  {
+    "kanji": "手洗い",
+    "reading": "てあらい",
+    "meaning": "Rửa tay; nhà vệ sinh",
+    "note": ""
+  },
+  {
+    "kanji": "定員",
+    "reading": "ていいん",
+    "meaning": "Số người quy định; sức chứa",
+    "note": ""
+  },
+  {
+    "kanji": "低下",
+    "reading": "ていか",
+    "meaning": "Giảm xuống; suy giảm",
+    "note": ""
+  },
+  {
+    "kanji": "定価",
+    "reading": "ていか",
+    "meaning": "Giá niêm yết",
+    "note": ""
+  },
+  {
+    "kanji": "定期券",
+    "reading": "ていきけん",
+    "meaning": "Vé tháng; vé đi lại định kỳ",
+    "note": ""
+  },
+  {
+    "kanji": "定休日",
+    "reading": "ていきゅうび",
+    "meaning": "Ngày nghỉ cố định của cửa hàng",
+    "note": ""
+  },
+  {
+    "kanji": "停止",
+    "reading": "ていし",
+    "meaning": "Dừng; đình chỉ",
+    "note": ""
+  },
+  {
+    "kanji": "停車",
+    "reading": "ていしゃ",
+    "meaning": "Dừng xe; dừng tàu",
+    "note": ""
+  },
+  {
+    "kanji": "停電",
+    "reading": "ていでん",
+    "meaning": "Mất điện",
+    "note": ""
+  },
+  {
+    "kanji": "出入り",
+    "reading": "でいり",
+    "meaning": "Ra vào; đi lại",
+    "note": ""
+  },
+  {
+    "kanji": "出入口",
+    "reading": "でいりぐち",
+    "meaning": "Lối ra vào",
+    "note": ""
+  },
+  {
+    "kanji": "手入れ",
+    "reading": "ていれ",
+    "meaning": "Chăm sóc; bảo dưỡng; chỉnh sửa",
+    "note": ""
+  },
+  {
+    "kanji": "出来上がり",
+    "reading": "できあがり",
+    "meaning": "Sản phẩm hoàn thành; mức độ hoàn thiện",
+    "note": ""
+  },
+  {
+    "kanji": "出来上がる",
+    "reading": "できあがる",
+    "meaning": "Hoàn thành; làm xong",
+    "note": ""
+  },
+  {
+    "kanji": "的確",
+    "reading": "てきかく",
+    "meaning": "Chính xác; thích đáng",
+    "note": ""
+  },
+  {
+    "kanji": "適確",
+    "reading": "てきかく",
+    "meaning": "Chính xác; đúng đắn",
+    "note": ""
+  },
+  {
+    "kanji": "手首",
+    "reading": "てくび",
+    "meaning": "Cổ tay",
+    "note": ""
+  },
+  {
+    "kanji": "凸凹",
+    "reading": "でこぼこ",
+    "meaning": "Gồ ghề; lồi lõm",
+    "note": ""
+  },
+  {
+    "kanji": "手頃",
+    "reading": "てごろ",
+    "meaning": "Vừa phải; vừa túi tiền; vừa tay",
+    "note": ""
+  },
+  {
+    "kanji": "出鱈目",
+    "reading": "でたらめ",
+    "meaning": "Vớ vẩn; bịa đặt; tùy tiện",
+    "note": ""
+  },
+  {
+    "kanji": "手帳",
+    "reading": "てちょう",
+    "meaning": "Sổ tay",
+    "note": ""
+  },
+  {
+    "kanji": "鉄橋",
+    "reading": "てっきょう",
+    "meaning": "Cầu sắt; cầu đường sắt",
+    "note": ""
+  },
+  {
+    "kanji": "手続き",
+    "reading": "てつづき",
+    "meaning": "Thủ tục",
+    "note": ""
+  },
+  {
+    "kanji": "鉄砲",
+    "reading": "てっぽう",
+    "meaning": "Súng",
+    "note": ""
+  },
+  {
+    "kanji": "手拭い",
+    "reading": "てぬぐい",
+    "meaning": "Khăn lau tay",
+    "note": ""
+  },
+  {
+    "kanji": "手前",
+    "reading": "てまえ",
+    "meaning": "Phía trước gần mình; phía bên này",
+    "note": ""
+  },
+  {
+    "kanji": "出迎え",
+    "reading": "でむかえ",
+    "meaning": "Việc ra đón",
+    "note": ""
+  },
+  {
+    "kanji": "出迎える",
+    "reading": "でむかえる",
+    "meaning": "Ra đón; đón tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "照らす",
+    "reading": "てらす",
+    "meaning": "Chiếu sáng; soi rọi",
+    "note": ""
+  },
+  {
+    "kanji": "照る",
+    "reading": "てる",
+    "meaning": "Chiếu sáng; nắng chiếu",
+    "note": ""
+  },
+  {
+    "kanji": "展開",
+    "reading": "てんかい",
+    "meaning": "Triển khai; phát triển diễn biến",
+    "note": ""
+  },
+  {
+    "kanji": "伝記",
+    "reading": "でんき",
+    "meaning": "Tiểu sử; truyện ký",
+    "note": ""
+  },
+  {
+    "kanji": "電球",
+    "reading": "でんきゅう",
+    "meaning": "Bóng đèn",
+    "note": ""
+  },
+  {
+    "kanji": "点数",
+    "reading": "てんすう",
+    "meaning": "Điểm số; số món",
+    "note": ""
+  },
+  {
+    "kanji": "伝染",
+    "reading": "でんせん",
+    "meaning": "Sự lây nhiễm; truyền nhiễm",
+    "note": ""
+  },
+  {
+    "kanji": "電池",
+    "reading": "でんち",
+    "meaning": "Pin",
+    "note": ""
+  },
+  {
+    "kanji": "電柱",
+    "reading": "でんちゅう",
+    "meaning": "Cột điện",
+    "note": ""
+  },
+  {
+    "kanji": "転々",
+    "reading": "てんてん",
+    "meaning": "Chuyển hết nơi này đến nơi khác",
+    "note": ""
+  },
+  {
+    "kanji": "点々",
+    "reading": "てんてん",
+    "meaning": "Lốm đốm; rải rác đây đó",
+    "note": ""
+  },
+  {
+    "kanji": "天皇",
+    "reading": "てんのう",
+    "meaning": "Thiên hoàng Nhật Bản",
+    "note": ""
+  },
+  {
+    "kanji": "電波",
+    "reading": "でんぱ",
+    "meaning": "Sóng điện từ; sóng vô tuyến",
+    "note": ""
+  },
+  {
+    "kanji": "電流",
+    "reading": "でんりゅう",
+    "meaning": "Dòng điện",
+    "note": ""
+  },
+  {
+    "kanji": "電力",
+    "reading": "でんりょく",
+    "meaning": "Điện lực; công suất điện",
+    "note": ""
+  },
+  {
+    "kanji": "問い合わせ",
+    "reading": "といあわせ",
+    "meaning": "Sự hỏi thông tin; liên hệ tra cứu",
+    "note": ""
+  },
+  {
+    "kanji": "銅",
+    "reading": "どう",
+    "meaning": "Đồng, kim loại",
+    "note": ""
+  },
+  {
+    "kanji": "統一",
+    "reading": "とういつ",
+    "meaning": "Thống nhất; đồng nhất",
+    "note": ""
+  },
+  {
+    "kanji": "同格",
+    "reading": "どうかく",
+    "meaning": "Đồng cấp; cùng thứ bậc",
+    "note": ""
+  },
+  {
+    "kanji": "峠",
+    "reading": "とうげ",
+    "meaning": "Đèo; lúc khó khăn nhất",
+    "note": ""
+  },
+  {
+    "kanji": "統計",
+    "reading": "とうけい",
+    "meaning": "Thống kê",
+    "note": ""
+  },
+  {
+    "kanji": "動作",
+    "reading": "どうさ",
+    "meaning": "Động tác; hoạt động",
+    "note": ""
+  },
+  {
+    "kanji": "東西",
+    "reading": "とうざい",
+    "meaning": "Đông và tây; khắp nơi",
+    "note": ""
+  },
+  {
+    "kanji": "当日",
+    "reading": "とうじつ",
+    "meaning": "Đúng ngày đó; ngày diễn ra sự kiện",
+    "note": ""
+  },
+  {
+    "kanji": "投書",
+    "reading": "とうしょ",
+    "meaning": "Gửi thư đóng góp ý kiến cho báo",
+    "note": ""
+  },
+  {
+    "kanji": "登場",
+    "reading": "とうじょう",
+    "meaning": "Xuất hiện; lên sân khấu",
+    "note": ""
+  },
+  {
+    "kanji": "灯台",
+    "reading": "とうだい",
+    "meaning": "Hải đăng",
+    "note": ""
+  },
+  {
+    "kanji": "盗難",
+    "reading": "とうなん",
+    "meaning": "Vụ trộm; việc bị mất cắp",
+    "note": ""
+  },
+  {
+    "kanji": "当番",
+    "reading": "とうばん",
+    "meaning": "Trực; phiên trực",
+    "note": ""
+  },
+  {
+    "kanji": "等分",
+    "reading": "とうぶん",
+    "meaning": "Chia đều",
+    "note": ""
+  },
+  {
+    "kanji": "透明",
+    "reading": "とうめい",
+    "meaning": "Trong suốt",
+    "note": ""
+  },
+  {
+    "kanji": "灯油",
+    "reading": "とうゆ",
+    "meaning": "Dầu hỏa",
+    "note": ""
+  },
+  {
+    "kanji": "東洋",
+    "reading": "とうよう",
+    "meaning": "Phương Đông",
+    "note": ""
+  },
+  {
+    "kanji": "童話",
+    "reading": "どうわ",
+    "meaning": "Truyện cổ tích; truyện thiếu nhi",
+    "note": ""
+  },
+  {
+    "kanji": "通り掛かる",
+    "reading": "とおりかかる",
+    "meaning": "Tình cờ đi ngang qua",
+    "note": ""
+  },
+  {
+    "kanji": "溶かす",
+    "reading": "とかす",
+    "meaning": "Làm tan chảy; hòa tan",
+    "note": ""
+  },
+  {
+    "kanji": "尖る",
+    "reading": "とがる",
+    "meaning": "Nhọn; trở nên nhọn; cáu kỉnh",
+    "note": ""
+  },
+  {
+    "kanji": "溶く",
+    "reading": "とく",
+    "meaning": "Hòa tan; đánh tan trong chất lỏng",
+    "note": ""
+  },
+  {
+    "kanji": "退く",
+    "reading": "どく",
+    "meaning": "Tránh ra; nhường chỗ",
+    "note": ""
+  },
+  {
+    "kanji": "特殊",
+    "reading": "とくしゅ",
+    "meaning": "Đặc thù; đặc biệt",
+    "note": ""
+  },
+  {
+    "kanji": "特色",
+    "reading": "とくしょく",
+    "meaning": "Đặc sắc; nét riêng",
+    "note": ""
+  },
+  {
+    "kanji": "特長",
+    "reading": "とくちょう",
+    "meaning": "Ưu thế nổi bật; sở trường",
+    "note": ""
+  },
+  {
+    "kanji": "特定",
+    "reading": "とくてい",
+    "meaning": "Xác định cụ thể; chỉ định",
+    "note": ""
+  },
+  {
+    "kanji": "特売",
+    "reading": "とくばい",
+    "meaning": "Bán giảm giá đặc biệt",
+    "note": ""
+  },
+  {
+    "kanji": "溶け込む",
+    "reading": "とけこむ",
+    "meaning": "Hòa tan vào; hòa nhập",
+    "note": ""
+  },
+  {
+    "kanji": "溶ける",
+    "reading": "とける",
+    "meaning": "Tan chảy; tan ra",
+    "note": ""
+  },
+  {
+    "kanji": "退ける",
+    "reading": "どける",
+    "meaning": "Dời đi; bỏ sang một bên",
+    "note": ""
+  },
+  {
+    "kanji": "床の間",
+    "reading": "とこのま",
+    "meaning": "Hốc trang trí trong phòng kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "所々",
+    "reading": "ところどころ",
+    "meaning": "Chỗ này chỗ kia; một số nơi",
+    "note": ""
+  },
+  {
+    "kanji": "都心",
+    "reading": "としん",
+    "meaning": "Trung tâm thành phố",
+    "note": ""
+  },
+  {
+    "kanji": "戸棚",
+    "reading": "とだな",
+    "meaning": "Tủ có cửa; tủ đựng đồ",
+    "note": ""
+  },
+  {
+    "kanji": "疾っくに",
+    "reading": "とっくに",
+    "meaning": "Đã từ lâu; sớm đã",
+    "note": ""
+  },
+  {
+    "kanji": "整う",
+    "reading": "ととのう",
+    "meaning": "Được sắp xếp; sẵn sàng; chỉnh tề",
+    "note": ""
+  },
+  {
+    "kanji": "留まる",
+    "reading": "とどまる",
+    "meaning": "Ở lại; dừng ở; giới hạn trong",
+    "note": ""
+  },
+  {
+    "kanji": "怒鳴る",
+    "reading": "どなる",
+    "meaning": "Quát; hét lớn",
+    "note": ""
+  },
+  {
+    "kanji": "飛び込む",
+    "reading": "とびこむ",
+    "meaning": "Nhảy vào; lao vào",
+    "note": ""
+  },
+  {
+    "kanji": "跳ぶ",
+    "reading": "とぶ",
+    "meaning": "Nhảy; bật lên",
+    "note": ""
+  },
+  {
+    "kanji": "泊める",
+    "reading": "とめる",
+    "meaning": "Cho ở trọ; cho ngủ lại",
+    "note": ""
+  },
+  {
+    "kanji": "兎も角",
+    "reading": "ともかく",
+    "meaning": "Dù sao; tạm gác chuyện đó",
+    "note": ""
+  },
+  {
+    "kanji": "捕える",
+    "reading": "とらえる",
+    "meaning": "Bắt giữ; nắm bắt",
+    "note": ""
+  },
+  {
+    "kanji": "取り入れる",
+    "reading": "とりいれる",
+    "meaning": "Đưa vào; tiếp nhận; thu hoạch",
+    "note": ""
+  },
+  {
+    "kanji": "取り消す",
+    "reading": "とりけす",
+    "meaning": "Hủy bỏ",
+    "note": ""
+  },
+  {
+    "kanji": "取り出す",
+    "reading": "とりだす",
+    "meaning": "Lấy ra; rút ra",
+    "note": ""
+  },
+  {
+    "kanji": "採る",
+    "reading": "とる",
+    "meaning": "Hái; thu lấy; áp dụng",
+    "note": ""
+  },
+  {
+    "kanji": "捕る",
+    "reading": "とる",
+    "meaning": "Bắt; đánh bắt",
+    "note": ""
+  },
+  {
+    "kanji": "丼",
+    "reading": "どんぶり",
+    "meaning": "Tô lớn; cơm tô có thức ăn phủ trên",
+    "note": ""
+  },
+  {
+    "kanji": "内科",
+    "reading": "ないか",
+    "meaning": "Nội khoa; khoa nội",
+    "note": ""
+  },
+  {
+    "kanji": "内線",
+    "reading": "ないせん",
+    "meaning": "Đường dây nội bộ; máy lẻ",
+    "note": ""
+  },
+  {
+    "kanji": "治す",
+    "reading": "なおす",
+    "meaning": "Chữa; chữa khỏi",
+    "note": ""
+  },
+  {
+    "kanji": "永い",
+    "reading": "ながい",
+    "meaning": "Dài lâu; lâu dài",
+    "note": ""
+  },
+  {
+    "kanji": "仲直り",
+    "reading": "なかなおり",
+    "meaning": "Làm hòa",
+    "note": ""
+  },
+  {
+    "kanji": "長引く",
+    "reading": "ながびく",
+    "meaning": "Kéo dài; dây dưa",
+    "note": ""
+  },
+  {
+    "kanji": "中身",
+    "reading": "なかみ",
+    "meaning": "Nội dung; đồ bên trong",
+    "note": ""
+  },
+  {
+    "kanji": "中味",
+    "reading": "なかみ",
+    "meaning": "Phần bên trong; nội dung",
+    "note": ""
+  },
+  {
+    "kanji": "中指",
+    "reading": "なかゆび",
+    "meaning": "Ngón giữa",
+    "note": ""
+  },
+  {
+    "kanji": "仲良し",
+    "reading": "なかよし",
+    "meaning": "Bạn thân; quan hệ thân thiết",
+    "note": ""
+  },
+  {
+    "kanji": "慰める",
+    "reading": "なぐさめる",
+    "meaning": "An ủi; xoa dịu",
+    "note": ""
+  },
+  {
+    "kanji": "亡くす",
+    "reading": "なくす",
+    "meaning": "Mất người thân do qua đời",
+    "note": ""
+  },
+  {
+    "kanji": "殴る",
+    "reading": "なぐる",
+    "meaning": "Đánh; đấm",
+    "note": ""
+  },
+  {
+    "kanji": "為す",
+    "reading": "なす",
+    "meaning": "Làm; thực hiện",
+    "note": ""
+  },
+  {
+    "kanji": "謎謎",
+    "reading": "なぞなぞ",
+    "meaning": "Câu đố",
+    "note": ""
+  },
+  {
+    "kanji": "懐かしい",
+    "reading": "なつかしい",
+    "meaning": "Gợi nhớ thân thương; hoài niệm",
+    "note": ""
+  },
+  {
+    "kanji": "撫でる",
+    "reading": "なでる",
+    "meaning": "Vuốt ve; xoa nhẹ",
+    "note": ""
+  },
+  {
+    "kanji": "斜め",
+    "reading": "ななめ",
+    "meaning": "Nghiêng; chéo",
+    "note": ""
+  },
+  {
+    "kanji": "何しろ",
+    "reading": "なにしろ",
+    "meaning": "Dù sao đi nữa; bởi lẽ",
+    "note": ""
+  },
+  {
+    "kanji": "何々",
+    "reading": "なになに",
+    "meaning": "Cái gì đó; tên gọi thay thế",
+    "note": ""
+  },
+  {
+    "kanji": "何分",
+    "reading": "なにぶん",
+    "meaning": "Dù sao; vì hoàn cảnh; xin thông cảm",
+    "note": ""
+  },
+  {
+    "kanji": "生意気",
+    "reading": "なまいき",
+    "meaning": "Hỗn; tự phụ; xấc xược",
+    "note": ""
+  },
+  {
+    "kanji": "並木",
+    "reading": "なみき",
+    "meaning": "Hàng cây hai bên đường",
+    "note": ""
+  },
+  {
+    "kanji": "倣う",
+    "reading": "ならう",
+    "meaning": "Làm theo; noi gương",
+    "note": ""
+  },
+  {
+    "kanji": "鳴らす",
+    "reading": "ならす",
+    "meaning": "Làm kêu; rung chuông; bấm còi",
+    "note": ""
+  },
+  {
+    "kanji": "生る",
+    "reading": "なる",
+    "meaning": "Ra quả; đậu quả",
+    "note": ""
+  },
+  {
+    "kanji": "馴れる",
+    "reading": "なれる",
+    "meaning": "Quen; thuần; trở nên thân thuộc",
+    "note": ""
+  },
+  {
+    "kanji": "南極",
+    "reading": "なんきょく",
+    "meaning": "Nam Cực",
+    "note": ""
+  },
+  {
+    "kanji": "何となく",
+    "reading": "なんとなく",
+    "meaning": "Không hiểu sao; có cảm giác là",
+    "note": ""
+  },
+  {
+    "kanji": "何とも",
+    "reading": "なんとも",
+    "meaning": "Không chút nào; không biết nói sao",
+    "note": ""
+  },
+  {
+    "kanji": "南米",
+    "reading": "なんべい",
+    "meaning": "Nam Mỹ",
+    "note": ""
+  },
+  {
+    "kanji": "南北",
+    "reading": "なんぼく",
+    "meaning": "Nam và bắc",
+    "note": ""
+  },
+  {
+    "kanji": "煮える",
+    "reading": "にえる",
+    "meaning": "Sôi; chín khi nấu",
+    "note": ""
+  },
+  {
+    "kanji": "匂う",
+    "reading": "におう",
+    "meaning": "Có mùi; tỏa hương",
+    "note": ""
+  },
+  {
+    "kanji": "逃がす",
+    "reading": "にがす",
+    "meaning": "Thả; để thoát; bỏ lỡ",
+    "note": ""
+  },
+  {
+    "kanji": "憎い",
+    "reading": "にくい",
+    "meaning": "Đáng ghét; căm ghét",
+    "note": ""
+  },
+  {
+    "kanji": "憎む",
+    "reading": "にくむ",
+    "meaning": "Ghét; căm thù",
+    "note": ""
+  },
+  {
+    "kanji": "憎らしい",
+    "reading": "にくらしい",
+    "meaning": "Đáng ghét; đáng tức",
+    "note": ""
+  },
+  {
+    "kanji": "濁る",
+    "reading": "にごる",
+    "meaning": "Trở nên đục; vẩn đục",
+    "note": ""
+  },
+  {
+    "kanji": "虹",
+    "reading": "にじ",
+    "meaning": "Cầu vồng",
+    "note": ""
+  },
+  {
+    "kanji": "日時",
+    "reading": "にちじ",
+    "meaning": "Ngày giờ",
+    "note": ""
+  },
+  {
+    "kanji": "日用品",
+    "reading": "にちようひん",
+    "meaning": "Đồ dùng hằng ngày",
+    "note": ""
+  },
+  {
+    "kanji": "日課",
+    "reading": "にっか",
+    "meaning": "Việc làm hằng ngày; thói quen thường nhật",
+    "note": ""
+  },
+  {
+    "kanji": "日程",
+    "reading": "にってい",
+    "meaning": "Lịch trình",
+    "note": ""
+  },
+  {
+    "kanji": "鈍い",
+    "reading": "にぶい",
+    "meaning": "Cùn; chậm chạp; kém nhạy",
+    "note": ""
+  },
+  {
+    "kanji": "入社",
+    "reading": "にゅうしゃ",
+    "meaning": "Vào làm tại công ty",
+    "note": ""
+  },
+  {
+    "kanji": "女房",
+    "reading": "にょうぼう",
+    "meaning": "Vợ, cách gọi thân mật",
+    "note": ""
+  },
+  {
+    "kanji": "睨む",
+    "reading": "にらむ",
+    "meaning": "Lườm; nhìn chằm chằm; theo dõi sát",
+    "note": ""
+  },
+  {
+    "kanji": "煮る",
+    "reading": "にる",
+    "meaning": "Nấu; ninh; luộc",
+    "note": ""
+  },
+  {
+    "kanji": "俄",
+    "reading": "にわか",
+    "meaning": "Đột ngột; bất chợt",
+    "note": ""
+  },
+  {
+    "kanji": "縫う",
+    "reading": "ぬう",
+    "meaning": "May; khâu",
+    "note": ""
+  },
+  {
+    "kanji": "濡らす",
+    "reading": "ぬらす",
+    "meaning": "Làm ướt",
+    "note": ""
+  },
+  {
+    "kanji": "捻子",
+    "reading": "ねじ",
+    "meaning": "Ốc vít",
+    "note": ""
+  },
+  {
+    "kanji": "捩る",
+    "reading": "ねじる",
+    "meaning": "Vặn; xoắn",
+    "note": ""
+  },
+  {
+    "kanji": "熱する",
+    "reading": "ねっする",
+    "meaning": "Đun nóng; gia nhiệt",
+    "note": ""
+  },
+  {
+    "kanji": "寝巻",
+    "reading": "ねまき",
+    "meaning": "Quần áo ngủ",
+    "note": ""
+  },
+  {
+    "kanji": "寝間着",
+    "reading": "ねまき",
+    "meaning": "Đồ ngủ",
+    "note": ""
+  },
+  {
+    "kanji": "狙い",
+    "reading": "ねらい",
+    "meaning": "Mục tiêu; ý định nhắm tới",
+    "note": ""
+  },
+  {
+    "kanji": "狙う",
+    "reading": "ねらう",
+    "meaning": "Nhắm; nhằm vào",
+    "note": ""
+  },
+  {
+    "kanji": "年度",
+    "reading": "ねんど",
+    "meaning": "Niên độ; năm tài chính, năm học",
+    "note": ""
+  },
+  {
+    "kanji": "農産物",
+    "reading": "のうさんぶつ",
+    "meaning": "Nông sản",
+    "note": ""
+  },
+  {
+    "kanji": "農村",
+    "reading": "のうそん",
+    "meaning": "Nông thôn; làng quê",
+    "note": ""
+  },
+  {
+    "kanji": "濃度",
+    "reading": "のうど",
+    "meaning": "Nồng độ",
+    "note": ""
+  },
+  {
+    "kanji": "農薬",
+    "reading": "のうやく",
+    "meaning": "Thuốc bảo vệ thực vật",
+    "note": ""
+  },
+  {
+    "kanji": "能率",
+    "reading": "のうりつ",
+    "meaning": "Hiệu suất; năng suất",
+    "note": ""
+  },
+  {
+    "kanji": "鋸",
+    "reading": "のこぎり",
+    "meaning": "Cái cưa",
+    "note": ""
+  },
+  {
+    "kanji": "残らず",
+    "reading": "のこらず",
+    "meaning": "Không sót; toàn bộ",
+    "note": ""
+  },
+  {
+    "kanji": "載せる",
+    "reading": "のせる",
+    "meaning": "Đặt lên; cho lên; đăng tải",
+    "note": ""
+  },
+  {
+    "kanji": "覗く",
+    "reading": "のぞく",
+    "meaning": "Nhìn trộm; ngó vào",
+    "note": ""
+  },
+  {
+    "kanji": "延ばす",
+    "reading": "のばす",
+    "meaning": "Kéo dài; hoãn lại",
+    "note": ""
+  },
+  {
+    "kanji": "延びる",
+    "reading": "のびる",
+    "meaning": "Được kéo dài; bị hoãn",
+    "note": ""
+  },
+  {
+    "kanji": "上り",
+    "reading": "のぼり",
+    "meaning": "Chiều đi lên; chiều tàu hướng về Tokyo",
+    "note": ""
+  },
+  {
+    "kanji": "上る",
+    "reading": "のぼる",
+    "meaning": "Đi lên; lên đến",
+    "note": ""
+  },
+  {
+    "kanji": "糊",
+    "reading": "のり",
+    "meaning": "Hồ dán",
+    "note": ""
+  },
+  {
+    "kanji": "乗換",
+    "reading": "のりかえ",
+    "meaning": "Chuyển tuyến tàu, xe",
+    "note": ""
+  },
+  {
+    "kanji": "載る",
+    "reading": "のる",
+    "meaning": "Được đăng; được ghi lên",
+    "note": ""
+  },
+  {
+    "kanji": "呑気",
+    "reading": "のんき",
+    "meaning": "Vô tư; thong dong; không lo nghĩ",
+    "note": ""
+  },
+  {
+    "kanji": "灰色",
+    "reading": "はいいろ",
+    "meaning": "Màu xám",
+    "note": ""
+  },
+  {
+    "kanji": "俳句",
+    "reading": "はいく",
+    "meaning": "Thơ haiku",
+    "note": ""
+  },
+  {
+    "kanji": "売店",
+    "reading": "ばいてん",
+    "meaning": "Quầy bán hàng",
+    "note": ""
+  },
+  {
+    "kanji": "売買",
+    "reading": "ばいばい",
+    "meaning": "Mua bán",
+    "note": ""
+  },
+  {
+    "kanji": "這う",
+    "reading": "はう",
+    "meaning": "Bò; trườn",
+    "note": ""
+  },
+  {
+    "kanji": "生える",
+    "reading": "はえる",
+    "meaning": "Mọc; mọc lên",
+    "note": ""
+  },
+  {
+    "kanji": "剥がす",
+    "reading": "はがす",
+    "meaning": "Bóc ra; lột ra",
+    "note": ""
+  },
+  {
+    "kanji": "馬鹿らしい",
+    "reading": "ばからしい",
+    "meaning": "Vớ vẩn; ngớ ngẩn",
+    "note": ""
+  },
+  {
+    "kanji": "秤",
+    "reading": "はかり",
+    "meaning": "Cái cân",
+    "note": ""
+  },
+  {
+    "kanji": "測る",
+    "reading": "はかる",
+    "meaning": "Đo chiều dài, nhiệt độ, tốc độ",
+    "note": ""
+  },
+  {
+    "kanji": "量る",
+    "reading": "はかる",
+    "meaning": "Cân; đong; đo lượng",
+    "note": ""
+  },
+  {
+    "kanji": "吐き気",
+    "reading": "はきけ",
+    "meaning": "Buồn nôn",
+    "note": ""
+  },
+  {
+    "kanji": "掃く",
+    "reading": "はく",
+    "meaning": "Quét",
+    "note": ""
+  },
+  {
+    "kanji": "歯車",
+    "reading": "はぐるま",
+    "meaning": "Bánh răng",
+    "note": ""
+  },
+  {
+    "kanji": "挟まる",
+    "reading": "はさまる",
+    "meaning": "Bị kẹp giữa; mắc vào giữa",
+    "note": ""
+  },
+  {
+    "kanji": "挟む",
+    "reading": "はさむ",
+    "meaning": "Kẹp; chèn; xen vào",
+    "note": ""
+  },
+  {
+    "kanji": "梯子",
+    "reading": "はしご",
+    "meaning": "Thang leo",
+    "note": ""
+  },
+  {
+    "kanji": "始めに",
+    "reading": "はじめに",
+    "meaning": "Khi bắt đầu; đầu tiên",
+    "note": ""
+  },
+  {
+    "kanji": "初めに",
+    "reading": "はじめに",
+    "meaning": "Trước tiên; ở phần đầu",
+    "note": ""
+  },
+  {
+    "kanji": "斜",
+    "reading": "はす",
+    "meaning": "Chéo; xiên",
+    "note": ""
+  },
+  {
+    "kanji": "外れる",
+    "reading": "はずれる",
+    "meaning": "Rời khỏi; tuột; trật; sai lệch",
+    "note": ""
+  },
+  {
+    "kanji": "肌着",
+    "reading": "はだぎ",
+    "meaning": "Áo mặc trong; đồ lót",
+    "note": ""
+  },
+  {
+    "kanji": "果して",
+    "reading": "はたして",
+    "meaning": "Quả nhiên; liệu có thật",
+    "note": ""
+  },
+  {
+    "kanji": "鉢",
+    "reading": "はち",
+    "meaning": "Chậu; bát lớn",
+    "note": ""
+  },
+  {
+    "kanji": "発揮",
+    "reading": "はっき",
+    "meaning": "Phát huy; thể hiện khả năng",
+    "note": ""
+  },
+  {
+    "kanji": "発射",
+    "reading": "はっしゃ",
+    "meaning": "Bắn; phóng",
+    "note": ""
+  },
+  {
+    "kanji": "発想",
+    "reading": "はっそう",
+    "meaning": "Ý tưởng; cách nghĩ",
+    "note": ""
+  },
+  {
+    "kanji": "発電",
+    "reading": "はつでん",
+    "meaning": "Phát điện",
+    "note": ""
+  },
+  {
+    "kanji": "発売",
+    "reading": "はつばい",
+    "meaning": "Bắt đầu bán; phát hành",
+    "note": ""
+  },
+  {
+    "kanji": "派手",
+    "reading": "はで",
+    "meaning": "Lòe loẹt; nổi bật; phô trương",
+    "note": ""
+  },
+  {
+    "kanji": "話合い",
+    "reading": "はなしあい",
+    "meaning": "Thảo luận; bàn bạc",
+    "note": ""
+  },
+  {
+    "kanji": "話し掛ける",
+    "reading": "はなしかける",
+    "meaning": "Bắt chuyện; nói với ai",
+    "note": ""
+  },
+  {
+    "kanji": "話中",
+    "reading": "はなしちゅう",
+    "meaning": "Đang nói chuyện; điện thoại đang bận",
+    "note": ""
+  },
+  {
+    "kanji": "甚だしい",
+    "reading": "はなはだしい",
+    "meaning": "Quá mức; nghiêm trọng",
+    "note": ""
+  },
+  {
+    "kanji": "花火",
+    "reading": "はなび",
+    "meaning": "Pháo hoa",
+    "note": ""
+  },
+  {
+    "kanji": "花嫁",
+    "reading": "はなよめ",
+    "meaning": "Cô dâu",
+    "note": ""
+  },
+  {
+    "kanji": "放れる",
+    "reading": "はなれる",
+    "meaning": "Thoát ra; rời khỏi sự kiểm soát",
+    "note": ""
+  },
+  {
+    "kanji": "発条",
+    "reading": "ばね",
+    "meaning": "Lò xo",
+    "note": ""
+  },
+  {
+    "kanji": "跳ねる",
+    "reading": "はねる",
+    "meaning": "Nhảy; bật; bắn tóe",
+    "note": ""
+  },
+  {
+    "kanji": "破片",
+    "reading": "はへん",
+    "meaning": "Mảnh vỡ",
+    "note": ""
+  },
+  {
+    "kanji": "歯磨き",
+    "reading": "はみがき",
+    "meaning": "Đánh răng; kem đánh răng",
+    "note": ""
+  },
+  {
+    "kanji": "嵌める",
+    "reading": "はめる",
+    "meaning": "Lắp vào; đeo vào; gài bẫy",
+    "note": ""
+  },
+  {
+    "kanji": "早口",
+    "reading": "はやくち",
+    "meaning": "Nói nhanh",
+    "note": ""
+  },
+  {
+    "kanji": "流行る",
+    "reading": "はやる",
+    "meaning": "Thịnh hành; được ưa chuộng",
+    "note": ""
+  },
+  {
+    "kanji": "払い込む",
+    "reading": "はらいこむ",
+    "meaning": "Nộp tiền; chuyển tiền vào tài khoản",
+    "note": ""
+  },
+  {
+    "kanji": "払い戻す",
+    "reading": "はらいもどす",
+    "meaning": "Hoàn tiền; trả lại tiền",
+    "note": ""
+  },
+  {
+    "kanji": "針金",
+    "reading": "はりがね",
+    "meaning": "Dây thép; dây kim loại",
+    "note": ""
+  },
+  {
+    "kanji": "張り切る",
+    "reading": "はりきる",
+    "meaning": "Hăng hái; tràn đầy nhiệt tình",
+    "note": ""
+  },
+  {
+    "kanji": "反映",
+    "reading": "はんえい",
+    "meaning": "Phản ánh; sự phản chiếu",
+    "note": ""
+  },
+  {
+    "kanji": "半径",
+    "reading": "はんけい",
+    "meaning": "Bán kính",
+    "note": ""
+  },
+  {
+    "kanji": "判子",
+    "reading": "はんこ",
+    "meaning": "Con dấu cá nhân",
+    "note": ""
+  },
+  {
+    "kanji": "万歳",
+    "reading": "ばんざい",
+    "meaning": "Vạn tuế; hoan hô",
+    "note": ""
+  },
+  {
+    "kanji": "判事",
+    "reading": "はんじ",
+    "meaning": "Thẩm phán",
+    "note": ""
+  },
+  {
+    "kanji": "反省",
+    "reading": "はんせい",
+    "meaning": "Tự kiểm điểm; suy ngẫm lại lỗi của mình",
+    "note": ""
+  },
+  {
+    "kanji": "番地",
+    "reading": "ばんち",
+    "meaning": "Số nhà; số lô đất trong địa chỉ",
+    "note": ""
+  },
+  {
+    "kanji": "半島",
+    "reading": "はんとう",
+    "meaning": "Bán đảo",
+    "note": ""
+  },
+  {
+    "kanji": "日当たり",
+    "reading": "ひあたり",
+    "meaning": "Mức độ đón nắng; chỗ có nắng",
+    "note": ""
+  },
+  {
+    "kanji": "日帰り",
+    "reading": "ひがえり",
+    "meaning": "Đi và về trong ngày",
+    "note": ""
+  },
+  {
+    "kanji": "比較的",
+    "reading": "ひかくてき",
+    "meaning": "Tương đối; khá",
+    "note": ""
+  },
+  {
+    "kanji": "日陰",
+    "reading": "ひかげ",
+    "meaning": "Bóng râm; chỗ khuất nắng",
+    "note": ""
+  },
+  {
+    "kanji": "引き受ける",
+    "reading": "ひきうける",
+    "meaning": "Nhận làm; đảm nhận",
+    "note": ""
+  },
+  {
+    "kanji": "引き返す",
+    "reading": "ひきかえす",
+    "meaning": "Quay trở lại",
+    "note": ""
+  },
+  {
+    "kanji": "引算",
+    "reading": "ひきざん",
+    "meaning": "Phép trừ",
+    "note": ""
+  },
+  {
+    "kanji": "引き止める",
+    "reading": "ひきとめる",
+    "meaning": "Giữ lại; ngăn không cho đi",
+    "note": ""
+  },
+  {
+    "kanji": "卑怯",
+    "reading": "ひきょう",
+    "meaning": "Hèn hạ; không ngay thẳng",
+    "note": ""
+  },
+  {
+    "kanji": "引分け",
+    "reading": "ひきわけ",
+    "meaning": "Trận hòa; kết quả hòa",
+    "note": ""
+  },
+  {
+    "kanji": "日差し",
+    "reading": "ひざし",
+    "meaning": "Ánh nắng",
+    "note": ""
+  },
+  {
+    "kanji": "肘",
+    "reading": "ひじ",
+    "meaning": "Khuỷu tay",
+    "note": ""
+  },
+  {
+    "kanji": "引っ掛かる",
+    "reading": "ひっかかる",
+    "meaning": "Bị mắc; bị vướng; bị lừa",
+    "note": ""
+  },
+  {
+    "kanji": "筆記",
+    "reading": "ひっき",
+    "meaning": "Ghi chép bằng chữ",
+    "note": ""
+  },
+  {
+    "kanji": "ひっくり返す",
+    "reading": "ひっくりかえす",
+    "meaning": "Lật ngược; làm đổ",
+    "note": ""
+  },
+  {
+    "kanji": "引っ繰り返る",
+    "reading": "ひっくりかえる",
+    "meaning": "Bị lật; ngã lộn; đảo ngược",
+    "note": ""
+  },
+  {
+    "kanji": "引越し",
+    "reading": "ひっこし",
+    "meaning": "Chuyển nhà",
+    "note": ""
+  },
+  {
+    "kanji": "引っ込む",
+    "reading": "ひっこむ",
+    "meaning": "Rút vào; thụt vào; lui về",
+    "note": ""
+  },
+  {
+    "kanji": "筆者",
+    "reading": "ひっしゃ",
+    "meaning": "Người viết; tác giả bài viết",
+    "note": ""
+  },
+  {
+    "kanji": "必需品",
+    "reading": "ひつじゅひん",
+    "meaning": "Vật dụng thiết yếu",
+    "note": ""
+  },
+  {
+    "kanji": "人差し指",
+    "reading": "ひとさしゆび",
+    "meaning": "Ngón trỏ",
+    "note": ""
+  },
+  {
+    "kanji": "一通り",
+    "reading": "ひととおり",
+    "meaning": "Một lượt đầy đủ; thông thường",
+    "note": ""
+  },
+  {
+    "kanji": "人通り",
+    "reading": "ひとどおり",
+    "meaning": "Lượng người qua lại",
+    "note": ""
+  },
+  {
+    "kanji": "一まず",
+    "reading": "ひとまず",
+    "meaning": "Tạm thời; trước mắt",
+    "note": ""
+  },
+  {
+    "kanji": "瞳",
+    "reading": "ひとみ",
+    "meaning": "Con ngươi; đồng tử",
+    "note": ""
+  },
+  {
+    "kanji": "一休み",
+    "reading": "ひとやすみ",
+    "meaning": "Nghỉ một lát",
+    "note": ""
+  },
+  {
+    "kanji": "独り言",
+    "reading": "ひとりごと",
+    "meaning": "Lời nói một mình; độc thoại",
+    "note": ""
+  },
+  {
+    "kanji": "独りでに",
+    "reading": "ひとりでに",
+    "meaning": "Tự nhiên; tự nó",
+    "note": ""
+  },
+  {
+    "kanji": "皮肉",
+    "reading": "ひにく",
+    "meaning": "Mỉa mai; châm biếm",
+    "note": ""
+  },
+  {
+    "kanji": "日日",
+    "reading": "ひにち",
+    "meaning": "Ngày tháng; ngày cụ thể",
+    "note": ""
+  },
+  {
+    "kanji": "捻る",
+    "reading": "ひねる",
+    "meaning": "Vặn; xoắn; vắt óc suy nghĩ",
+    "note": ""
+  },
+  {
+    "kanji": "日の入り",
+    "reading": "ひのいり",
+    "meaning": "Hoàng hôn; lúc mặt trời lặn",
+    "note": ""
+  },
+  {
+    "kanji": "日の出",
+    "reading": "ひので",
+    "meaning": "Bình minh; lúc mặt trời mọc",
+    "note": ""
+  },
+  {
+    "kanji": "響き",
+    "reading": "ひびき",
+    "meaning": "Âm vang; tiếng vang",
+    "note": ""
+  },
+  {
+    "kanji": "響く",
+    "reading": "ひびく",
+    "meaning": "Vang; vang dội; ảnh hưởng đến",
+    "note": ""
+  },
+  {
+    "kanji": "皮膚",
+    "reading": "ひふ",
+    "meaning": "Da; làn da",
+    "note": ""
+  },
+  {
+    "kanji": "冷やす",
+    "reading": "ひやす",
+    "meaning": "Làm lạnh; ướp lạnh",
+    "note": ""
+  },
+  {
+    "kanji": "百科事典",
+    "reading": "ひゃっかじてん",
+    "meaning": "Bách khoa toàn thư",
+    "note": ""
+  },
+  {
+    "kanji": "美容",
+    "reading": "びよう",
+    "meaning": "Làm đẹp; chăm sóc sắc đẹp",
+    "note": ""
+  },
+  {
+    "kanji": "表紙",
+    "reading": "ひょうし",
+    "meaning": "Bìa sách",
+    "note": ""
+  },
+  {
+    "kanji": "標識",
+    "reading": "ひょうしき",
+    "meaning": "Biển báo; dấu hiệu nhận biết",
+    "note": ""
+  },
+  {
+    "kanji": "標準",
+    "reading": "ひょうじゅん",
+    "meaning": "Tiêu chuẩn; chuẩn",
+    "note": ""
+  },
+  {
+    "kanji": "標本",
+    "reading": "ひょうほん",
+    "meaning": "Mẫu vật; tiêu bản",
+    "note": ""
+  },
+  {
+    "kanji": "評論",
+    "reading": "ひょうろん",
+    "meaning": "Bình luận; phê bình",
+    "note": ""
+  },
+  {
+    "kanji": "平仮名",
+    "reading": "ひらがな",
+    "meaning": "Chữ hiragana",
+    "note": ""
+  },
+  {
+    "kanji": "昼寝",
+    "reading": "ひるね",
+    "meaning": "Ngủ trưa",
+    "note": ""
+  },
+  {
+    "kanji": "広げる",
+    "reading": "ひろげる",
+    "meaning": "Trải rộng; mở rộng",
+    "note": ""
+  },
+  {
+    "kanji": "広さ",
+    "reading": "ひろさ",
+    "meaning": "Độ rộng; diện tích",
+    "note": ""
+  },
+  {
+    "kanji": "広場",
+    "reading": "ひろば",
+    "meaning": "Quảng trường; khoảng đất rộng",
+    "note": ""
+  },
+  {
+    "kanji": "広々",
+    "reading": "ひろびろ",
+    "meaning": "Rộng rãi; bao la",
+    "note": ""
+  },
+  {
+    "kanji": "広める",
+    "reading": "ひろめる",
+    "meaning": "Phổ biến; mở rộng phạm vi",
+    "note": ""
+  },
+  {
+    "kanji": "便箋",
+    "reading": "びんせん",
+    "meaning": "Giấy viết thư",
+    "note": ""
+  },
+  {
+    "kanji": "瓶詰",
+    "reading": "びんづめ",
+    "meaning": "Việc đóng chai; đồ đóng chai",
+    "note": ""
+  },
+  {
+    "kanji": "風船",
+    "reading": "ふうせん",
+    "meaning": "Bóng bay",
+    "note": ""
+  },
+  {
+    "kanji": "不運",
+    "reading": "ふうん",
+    "meaning": "Không may; vận rủi",
+    "note": ""
+  },
+  {
+    "kanji": "殖える",
+    "reading": "ふえる",
+    "meaning": "Sinh sôi; tăng thêm",
+    "note": ""
+  },
+  {
+    "kanji": "深まる",
+    "reading": "ふかまる",
+    "meaning": "Sâu thêm; tăng mức độ",
+    "note": ""
+  },
+  {
+    "kanji": "不規則",
+    "reading": "ふきそく",
+    "meaning": "Không đều; không theo quy tắc",
+    "note": ""
+  },
+  {
+    "kanji": "普及",
+    "reading": "ふきゅう",
+    "meaning": "Phổ cập; lan rộng",
+    "note": ""
+  },
+  {
+    "kanji": "付近",
+    "reading": "ふきん",
+    "meaning": "Vùng lân cận; gần đó",
+    "note": ""
+  },
+  {
+    "kanji": "拭く",
+    "reading": "ふく",
+    "meaning": "Lau; chùi",
+    "note": ""
+  },
+  {
+    "kanji": "副詞",
+    "reading": "ふくし",
+    "meaning": "Phó từ; trạng từ",
+    "note": ""
+  },
+  {
+    "kanji": "複写",
+    "reading": "ふくしゃ",
+    "meaning": "Sao chép; bản sao",
+    "note": ""
+  },
+  {
+    "kanji": "複数",
+    "reading": "ふくすう",
+    "meaning": "Số nhiều; nhiều",
+    "note": ""
+  },
+  {
+    "kanji": "含める",
+    "reading": "ふくめる",
+    "meaning": "Bao gồm; tính cả",
+    "note": ""
+  },
+  {
+    "kanji": "膨らます",
+    "reading": "ふくらます",
+    "meaning": "Làm phồng; thổi phồng; mở rộng",
+    "note": ""
+  },
+  {
+    "kanji": "膨らむ",
+    "reading": "ふくらむ",
+    "meaning": "Phồng lên; nở ra",
+    "note": ""
+  },
+  {
+    "kanji": "不潔",
+    "reading": "ふけつ",
+    "meaning": "Mất vệ sinh; bẩn thỉu",
+    "note": ""
+  },
+  {
+    "kanji": "更ける",
+    "reading": "ふける",
+    "meaning": "Đêm về khuya; mùa tiến sâu",
+    "note": ""
+  },
+  {
+    "kanji": "符号",
+    "reading": "ふごう",
+    "meaning": "Ký hiệu; dấu",
+    "note": ""
+  },
+  {
+    "kanji": "夫妻",
+    "reading": "ふさい",
+    "meaning": "Vợ chồng",
+    "note": ""
+  },
+  {
+    "kanji": "塞がる",
+    "reading": "ふさがる",
+    "meaning": "Bị bịt; bị chiếm chỗ; đang bận",
+    "note": ""
+  },
+  {
+    "kanji": "塞ぐ",
+    "reading": "ふさぐ",
+    "meaning": "Bịt; chặn; lấp",
+    "note": ""
+  },
+  {
+    "kanji": "無沙汰",
+    "reading": "ぶさた",
+    "meaning": "Lâu không thăm hỏi; thiếu liên lạc",
+    "note": ""
+  },
+  {
+    "kanji": "武士",
+    "reading": "ぶし",
+    "meaning": "Võ sĩ samurai",
+    "note": ""
+  },
+  {
+    "kanji": "部首",
+    "reading": "ぶしゅ",
+    "meaning": "Bộ thủ của chữ Kanji",
+    "note": ""
+  },
+  {
+    "kanji": "襖",
+    "reading": "ふすま",
+    "meaning": "Cửa trượt ngăn phòng kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "附属",
+    "reading": "ふぞく",
+    "meaning": "Trực thuộc; đi kèm; phụ thuộc",
+    "note": ""
+  },
+  {
+    "kanji": "蓋",
+    "reading": "ふた",
+    "meaning": "Nắp; vung",
+    "note": ""
+  },
+  {
+    "kanji": "不通",
+    "reading": "ふつう",
+    "meaning": "Gián đoạn; không thông",
+    "note": ""
+  },
+  {
+    "kanji": "打付ける",
+    "reading": "ぶつける",
+    "meaning": "Va vào; ném vào; bày tỏ trực tiếp",
+    "note": ""
+  },
+  {
+    "kanji": "物騒",
+    "reading": "ぶっそう",
+    "meaning": "Nguy hiểm; bất an; không an toàn",
+    "note": ""
+  },
+  {
+    "kanji": "船便",
+    "reading": "ふなびん",
+    "meaning": "Bưu gửi đường biển",
+    "note": ""
+  },
+  {
+    "kanji": "部品",
+    "reading": "ぶひん",
+    "meaning": "Linh kiện; bộ phận",
+    "note": ""
+  },
+  {
+    "kanji": "吹雪",
+    "reading": "ふぶき",
+    "meaning": "Bão tuyết",
+    "note": ""
+  },
+  {
+    "kanji": "父母",
+    "reading": "ふぼ",
+    "meaning": "Cha mẹ",
+    "note": ""
+  },
+  {
+    "kanji": "踏切",
+    "reading": "ふみきり",
+    "meaning": "Đường ngang đường sắt",
+    "note": ""
+  },
+  {
+    "kanji": "麓",
+    "reading": "ふもと",
+    "meaning": "Chân núi",
+    "note": ""
+  },
+  {
+    "kanji": "増やす",
+    "reading": "ふやす",
+    "meaning": "Làm tăng; tăng thêm",
+    "note": ""
+  },
+  {
+    "kanji": "ぶら下げる",
+    "reading": "ぶらさげる",
+    "meaning": "Treo lủng lẳng; đeo thõng xuống",
+    "note": ""
+  },
+  {
+    "kanji": "振り仮名",
+    "reading": "ふりがな",
+    "meaning": "Chữ kana chú thích cách đọc",
+    "note": ""
+  },
+  {
+    "kanji": "振舞う",
+    "reading": "ふるまう",
+    "meaning": "Cư xử; chiêu đãi",
+    "note": ""
+  },
+  {
+    "kanji": "風呂敷",
+    "reading": "ふろしき",
+    "meaning": "Khăn vuông gói đồ kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "噴火",
+    "reading": "ふんか",
+    "meaning": "Sự phun trào núi lửa",
+    "note": ""
+  },
+  {
+    "kanji": "分解",
+    "reading": "ぶんかい",
+    "meaning": "Phân giải; tháo rời",
+    "note": ""
+  },
+  {
+    "kanji": "文芸",
+    "reading": "ぶんげい",
+    "meaning": "Văn nghệ; văn học nghệ thuật",
+    "note": ""
+  },
+  {
+    "kanji": "文献",
+    "reading": "ぶんけん",
+    "meaning": "Tài liệu tham khảo; thư tịch",
+    "note": ""
+  },
+  {
+    "kanji": "噴水",
+    "reading": "ふんすい",
+    "meaning": "Đài phun nước",
+    "note": ""
+  },
+  {
+    "kanji": "分数",
+    "reading": "ぶんすう",
+    "meaning": "Phân số",
+    "note": ""
+  },
+  {
+    "kanji": "文体",
+    "reading": "ぶんたい",
+    "meaning": "Văn phong; thể văn",
+    "note": ""
+  },
+  {
+    "kanji": "分布",
+    "reading": "ぶんぷ",
+    "meaning": "Sự phân bố",
+    "note": ""
+  },
+  {
+    "kanji": "文房具",
+    "reading": "ぶんぼうぐ",
+    "meaning": "Văn phòng phẩm; đồ dùng học tập",
+    "note": ""
+  },
+  {
+    "kanji": "文脈",
+    "reading": "ぶんみゃく",
+    "meaning": "Ngữ cảnh; mạch văn",
+    "note": ""
+  },
+  {
+    "kanji": "分量",
+    "reading": "ぶんりょう",
+    "meaning": "Lượng; số lượng cần dùng",
+    "note": ""
+  },
+  {
+    "kanji": "分類",
+    "reading": "ぶんるい",
+    "meaning": "Phân loại",
+    "note": ""
+  },
+  {
+    "kanji": "閉会",
+    "reading": "へいかい",
+    "meaning": "Bế mạc",
+    "note": ""
+  },
+  {
+    "kanji": "平気",
+    "reading": "へいき",
+    "meaning": "Bình thản; không sao; không ngại",
+    "note": ""
+  },
+  {
+    "kanji": "並行",
+    "reading": "へいこう",
+    "meaning": "Song song; tiến hành đồng thời",
+    "note": ""
+  },
+  {
+    "kanji": "平日",
+    "reading": "へいじつ",
+    "meaning": "Ngày thường; ngày làm việc",
+    "note": ""
+  },
+  {
+    "kanji": "兵隊",
+    "reading": "へいたい",
+    "meaning": "Binh lính",
+    "note": ""
+  },
+  {
+    "kanji": "平凡",
+    "reading": "へいぼん",
+    "meaning": "Bình thường; tầm thường",
+    "note": ""
+  },
+  {
+    "kanji": "平野",
+    "reading": "へいや",
+    "meaning": "Đồng bằng",
+    "note": ""
+  },
+  {
+    "kanji": "凹む",
+    "reading": "へこむ",
+    "meaning": "Bị lõm; xuống tinh thần",
+    "note": ""
+  },
+  {
+    "kanji": "臍",
+    "reading": "へそ",
+    "meaning": "Rốn",
+    "note": ""
+  },
+  {
+    "kanji": "隔てる",
+    "reading": "へだてる",
+    "meaning": "Ngăn cách; để cách nhau",
+    "note": ""
+  },
+  {
+    "kanji": "別荘",
+    "reading": "べっそう",
+    "meaning": "Biệt thự nghỉ dưỡng",
+    "note": ""
+  },
+  {
+    "kanji": "別々",
+    "reading": "べつべつ",
+    "meaning": "Riêng rẽ; tách biệt",
+    "note": ""
+  },
+  {
+    "kanji": "編集",
+    "reading": "へんしゅう",
+    "meaning": "Biên tập",
+    "note": ""
+  },
+  {
+    "kanji": "便所",
+    "reading": "べんじょ",
+    "meaning": "Nhà vệ sinh",
+    "note": ""
+  },
+  {
+    "kanji": "望遠鏡",
+    "reading": "ぼうえんきょう",
+    "meaning": "Kính viễn vọng",
+    "note": ""
+  },
+  {
+    "kanji": "方角",
+    "reading": "ほうがく",
+    "meaning": "Phương hướng",
+    "note": ""
+  },
+  {
+    "kanji": "箒",
+    "reading": "ほうき",
+    "meaning": "Chổi",
+    "note": ""
+  },
+  {
+    "kanji": "方言",
+    "reading": "ほうげん",
+    "meaning": "Phương ngữ; tiếng địa phương",
+    "note": ""
+  },
+  {
+    "kanji": "坊さん",
+    "reading": "ぼうさん",
+    "meaning": "Nhà sư",
+    "note": ""
+  },
+  {
+    "kanji": "防止",
+    "reading": "ぼうし",
+    "meaning": "Ngăn ngừa; phòng chống",
+    "note": ""
+  },
+  {
+    "kanji": "方針",
+    "reading": "ほうしん",
+    "meaning": "Phương châm; định hướng",
+    "note": ""
+  },
+  {
+    "kanji": "包装",
+    "reading": "ほうそう",
+    "meaning": "Bao gói; đóng gói",
+    "note": ""
+  },
+  {
+    "kanji": "法則",
+    "reading": "ほうそく",
+    "meaning": "Quy luật; định luật",
+    "note": ""
+  },
+  {
+    "kanji": "包帯",
+    "reading": "ほうたい",
+    "meaning": "Băng gạc",
+    "note": ""
+  },
+  {
+    "kanji": "膨大",
+    "reading": "ぼうだい",
+    "meaning": "Khổng lồ; rất lớn về lượng",
+    "note": ""
+  },
+  {
+    "kanji": "庖丁",
+    "reading": "ほうちょう",
+    "meaning": "Dao bếp",
+    "note": ""
+  },
+  {
+    "kanji": "方程式",
+    "reading": "ほうていしき",
+    "meaning": "Phương trình",
+    "note": ""
+  },
+  {
+    "kanji": "防犯",
+    "reading": "ぼうはん",
+    "meaning": "Phòng chống tội phạm",
+    "note": ""
+  },
+  {
+    "kanji": "方面",
+    "reading": "ほうめん",
+    "meaning": "Phương diện; khu vực; hướng",
+    "note": ""
+  },
+  {
+    "kanji": "坊や",
+    "reading": "ぼうや",
+    "meaning": "Bé trai; cậu bé",
+    "note": ""
+  },
+  {
+    "kanji": "放る",
+    "reading": "ほうる",
+    "meaning": "Ném; quăng; bỏ mặc",
+    "note": ""
+  },
+  {
+    "kanji": "朗らか",
+    "reading": "ほがらか",
+    "meaning": "Vui vẻ; cởi mở",
+    "note": ""
+  },
+  {
+    "kanji": "牧場",
+    "reading": "ぼくじょう",
+    "meaning": "Trang trại chăn nuôi; đồng cỏ",
+    "note": ""
+  },
+  {
+    "kanji": "牧畜",
+    "reading": "ぼくちく",
+    "meaning": "Chăn nuôi gia súc",
+    "note": ""
+  },
+  {
+    "kanji": "保健",
+    "reading": "ほけん",
+    "meaning": "Chăm sóc, giữ gìn sức khỏe",
+    "note": ""
+  },
+  {
+    "kanji": "干す",
+    "reading": "ほす",
+    "meaning": "Phơi; làm khô",
+    "note": ""
+  },
+  {
+    "kanji": "北極",
+    "reading": "ほっきょく",
+    "meaning": "Bắc Cực",
+    "note": ""
+  },
+  {
+    "kanji": "坊っちゃん",
+    "reading": "ぼっちゃん",
+    "meaning": "Cậu chủ; con trai nhà người khác",
+    "note": ""
+  },
+  {
+    "kanji": "解く",
+    "reading": "ほどく",
+    "meaning": "Tháo; cởi; gỡ",
+    "note": ""
+  },
+  {
+    "kanji": "堀",
+    "reading": "ほり",
+    "meaning": "Hào; mương bao quanh",
+    "note": ""
+  },
+  {
+    "kanji": "掘る",
+    "reading": "ほる",
+    "meaning": "Đào; khai quật",
+    "note": ""
+  },
+  {
+    "kanji": "彫る",
+    "reading": "ほる",
+    "meaning": "Chạm; khắc; điêu khắc",
+    "note": ""
+  },
+  {
+    "kanji": "襤褸",
+    "reading": "ぼろ",
+    "meaning": "Giẻ rách; đồ tồi tàn; sơ hở",
+    "note": ""
+  },
+  {
+    "kanji": "盆",
+    "reading": "ぼん",
+    "meaning": "Khay; lễ hội Obon",
+    "note": ""
+  },
+  {
+    "kanji": "盆地",
+    "reading": "ぼんち",
+    "meaning": "Bồn địa; vùng trũng giữa núi",
+    "note": ""
+  },
+  {
+    "kanji": "本部",
+    "reading": "ほんぶ",
+    "meaning": "Trụ sở chính; ban điều hành",
+    "note": ""
+  },
+  {
+    "kanji": "本来",
+    "reading": "ほんらい",
+    "meaning": "Vốn dĩ; ban đầu; về bản chất",
+    "note": ""
+  },
+  {
+    "kanji": "枚数",
+    "reading": "まいすう",
+    "meaning": "Số tờ; số miếng vật mỏng",
+    "note": ""
+  },
+  {
+    "kanji": "毎度",
+    "reading": "まいど",
+    "meaning": "Mỗi lần; lần nào cũng",
+    "note": ""
+  },
+  {
+    "kanji": "巻く",
+    "reading": "まく",
+    "meaning": "Cuốn; quấn",
+    "note": ""
+  },
+  {
+    "kanji": "撒く",
+    "reading": "まく",
+    "meaning": "Rải; rắc; vẩy",
+    "note": ""
+  },
+  {
+    "kanji": "蒔く",
+    "reading": "まく",
+    "meaning": "Gieo hạt",
+    "note": ""
+  },
+  {
+    "kanji": "枕",
+    "reading": "まくら",
+    "meaning": "Gối kê đầu",
+    "note": ""
+  },
+  {
+    "kanji": "曲げる",
+    "reading": "まげる",
+    "meaning": "Uốn cong; bẻ cong",
+    "note": ""
+  },
+  {
+    "kanji": "摩擦",
+    "reading": "まさつ",
+    "meaning": "Ma sát; cọ xát; xung đột",
+    "note": ""
+  },
+  {
+    "kanji": "交ざる",
+    "reading": "まざる",
+    "meaning": "Lẫn vào; pha trộn vào",
+    "note": ""
+  },
+  {
+    "kanji": "混ざる",
+    "reading": "まざる",
+    "meaning": "Trộn lẫn; pha lẫn",
+    "note": ""
+  },
+  {
+    "kanji": "交じる",
+    "reading": "まじる",
+    "meaning": "Lẫn vào; tham gia cùng nhóm",
+    "note": ""
+  },
+  {
+    "kanji": "混じる",
+    "reading": "まじる",
+    "meaning": "Lẫn trong; pha lẫn",
+    "note": ""
+  },
+  {
+    "kanji": "交ぜる",
+    "reading": "まぜる",
+    "meaning": "Trộn; cho lẫn vào nhau",
+    "note": ""
+  },
+  {
+    "kanji": "混ぜる",
+    "reading": "まぜる",
+    "meaning": "Trộn; khuấy",
+    "note": ""
+  },
+  {
+    "kanji": "跨ぐ",
+    "reading": "またぐ",
+    "meaning": "Bước qua; dạng chân qua",
+    "note": ""
+  },
+  {
+    "kanji": "待合室",
+    "reading": "まちあいしつ",
+    "meaning": "Phòng chờ",
+    "note": ""
+  },
+  {
+    "kanji": "待ち合わせる",
+    "reading": "まちあわせる",
+    "meaning": "Hẹn gặp tại địa điểm và thời gian đã định",
+    "note": ""
+  },
+  {
+    "kanji": "街角",
+    "reading": "まちかど",
+    "meaning": "Góc phố",
+    "note": ""
+  },
+  {
+    "kanji": "真っ暗",
+    "reading": "まっくら",
+    "meaning": "Tối đen; tối mịt",
+    "note": ""
+  },
+  {
+    "kanji": "真っ黒",
+    "reading": "まっくろ",
+    "meaning": "Đen kịt",
+    "note": ""
+  },
+  {
+    "kanji": "真っ青",
+    "reading": "まっさお",
+    "meaning": "Xanh đậm; tái mét",
+    "note": ""
+  },
+  {
+    "kanji": "真っ先",
+    "reading": "まっさき",
+    "meaning": "Đầu tiên; trước hết",
+    "note": ""
+  },
+  {
+    "kanji": "真っ白",
+    "reading": "まっしろ",
+    "meaning": "Trắng tinh; trắng xóa",
+    "note": ""
+  },
+  {
+    "kanji": "祭る",
+    "reading": "まつる",
+    "meaning": "Thờ; cúng",
+    "note": ""
+  },
+  {
+    "kanji": "窓口",
+    "reading": "まどぐち",
+    "meaning": "Quầy giao dịch; cửa bán vé",
+    "note": ""
+  },
+  {
+    "kanji": "纏まる",
+    "reading": "まとまる",
+    "meaning": "Được thu xếp; được thống nhất",
+    "note": ""
+  },
+  {
+    "kanji": "纏める",
+    "reading": "まとめる",
+    "meaning": "Tổng hợp; gom lại; thu xếp",
+    "note": ""
+  },
+  {
+    "kanji": "真似る",
+    "reading": "まねる",
+    "meaning": "Bắt chước; noi theo",
+    "note": ""
+  },
+  {
+    "kanji": "眩しい",
+    "reading": "まぶしい",
+    "meaning": "Chói mắt; rực rỡ",
+    "note": ""
+  },
+  {
+    "kanji": "瞼",
+    "reading": "まぶた",
+    "meaning": "Mí mắt",
+    "note": ""
+  },
+  {
+    "kanji": "間も無く",
+    "reading": "まもなく",
+    "meaning": "Sắp; chẳng bao lâu nữa",
+    "note": ""
+  },
+  {
+    "kanji": "円い",
+    "reading": "まるい",
+    "meaning": "Tròn; tròn trịa",
+    "note": ""
+  },
+  {
+    "kanji": "稀",
+    "reading": "まれ",
+    "meaning": "Hiếm; hiếm khi",
+    "note": ""
+  },
+  {
+    "kanji": "回り道",
+    "reading": "まわりみち",
+    "meaning": "Đường vòng; đi vòng",
+    "note": ""
+  },
+  {
+    "kanji": "満員",
+    "reading": "まんいん",
+    "meaning": "Đầy người; hết chỗ",
+    "note": ""
+  },
+  {
+    "kanji": "満点",
+    "reading": "まんてん",
+    "meaning": "Điểm tối đa; điểm tuyệt đối",
+    "note": ""
+  },
+  {
+    "kanji": "見送る",
+    "reading": "みおくる",
+    "meaning": "Tiễn; tạm hoãn; bỏ qua cơ hội",
+    "note": ""
+  },
+  {
+    "kanji": "見下ろす",
+    "reading": "みおろす",
+    "meaning": "Nhìn xuống từ trên cao",
+    "note": ""
+  },
+  {
+    "kanji": "見掛け",
+    "reading": "みかけ",
+    "meaning": "Bề ngoài; vẻ ngoài",
+    "note": ""
+  },
+  {
+    "kanji": "三日月",
+    "reading": "みかづき",
+    "meaning": "Trăng lưỡi liềm",
+    "note": ""
+  },
+  {
+    "kanji": "岬",
+    "reading": "みさき",
+    "meaning": "Mũi đất nhô ra biển",
+    "note": ""
+  },
+  {
+    "kanji": "惨め",
+    "reading": "みじめ",
+    "meaning": "Thảm hại; khốn khổ",
+    "note": ""
+  },
+  {
+    "kanji": "店屋",
+    "reading": "みせや",
+    "meaning": "Cửa hàng; tiệm",
+    "note": ""
+  },
+  {
+    "kanji": "見出し",
+    "reading": "みだし",
+    "meaning": "Tiêu đề; đề mục",
+    "note": ""
+  },
+  {
+    "kanji": "道順",
+    "reading": "みちじゅん",
+    "meaning": "Đường đi; lộ trình",
+    "note": ""
+  },
+  {
+    "kanji": "見っともない",
+    "reading": "みっともない",
+    "meaning": "Khó coi; đáng xấu hổ",
+    "note": ""
+  },
+  {
+    "kanji": "見直す",
+    "reading": "みなおす",
+    "meaning": "Xem xét lại; đánh giá lại",
+    "note": ""
+  },
+  {
+    "kanji": "見慣れる",
+    "reading": "みなれる",
+    "meaning": "Quen mắt; quen nhìn thấy",
+    "note": ""
+  },
+  {
+    "kanji": "醜い",
+    "reading": "みにくい",
+    "meaning": "Xấu xí; đáng ghê tởm",
+    "note": ""
+  },
+  {
+    "kanji": "実る",
+    "reading": "みのる",
+    "meaning": "Kết trái; chín; đạt thành quả",
+    "note": ""
+  },
+  {
+    "kanji": "身分",
+    "reading": "みぶん",
+    "meaning": "Thân phận; địa vị",
+    "note": ""
+  },
+  {
+    "kanji": "見本",
+    "reading": "みほん",
+    "meaning": "Hàng mẫu; mẫu",
+    "note": ""
+  },
+  {
+    "kanji": "見舞う",
+    "reading": "みまう",
+    "meaning": "Thăm hỏi người bệnh; gặp phải tai họa",
+    "note": ""
+  },
+  {
+    "kanji": "未満",
+    "reading": "みまん",
+    "meaning": "Chưa đến; dưới một mức nào đó",
+    "note": ""
+  },
+  {
+    "kanji": "名字",
+    "reading": "みょうじ",
+    "meaning": "Họ; tên họ",
+    "note": ""
+  },
+  {
+    "kanji": "診る",
+    "reading": "みる",
+    "meaning": "Khám bệnh",
+    "note": ""
+  },
+  {
+    "kanji": "民間",
+    "reading": "みんかん",
+    "meaning": "Dân sự; tư nhân; trong dân",
+    "note": ""
+  },
+  {
+    "kanji": "民謡",
+    "reading": "みんよう",
+    "meaning": "Dân ca",
+    "note": ""
+  },
+  {
+    "kanji": "剥く",
+    "reading": "むく",
+    "meaning": "Bóc vỏ; gọt vỏ",
+    "note": ""
+  },
+  {
+    "kanji": "無限",
+    "reading": "むげん",
+    "meaning": "Vô hạn",
+    "note": ""
+  },
+  {
+    "kanji": "無地",
+    "reading": "むじ",
+    "meaning": "Trơn; không có hoa văn",
+    "note": ""
+  },
+  {
+    "kanji": "蒸し暑い",
+    "reading": "むしあつい",
+    "meaning": "Nóng ẩm; oi bức",
+    "note": ""
+  },
+  {
+    "kanji": "矛盾",
+    "reading": "むじゅん",
+    "meaning": "Mâu thuẫn",
+    "note": ""
+  },
+  {
+    "kanji": "蒸す",
+    "reading": "むす",
+    "meaning": "Hấp; trở nên oi nóng",
+    "note": ""
+  },
+  {
+    "kanji": "無数",
+    "reading": "むすう",
+    "meaning": "Vô số",
+    "note": ""
+  },
+  {
+    "kanji": "紫",
+    "reading": "むらさき",
+    "meaning": "Màu tím",
+    "note": ""
+  },
+  {
+    "kanji": "群れ",
+    "reading": "むれ",
+    "meaning": "Đàn; bầy; đám đông",
+    "note": ""
+  },
+  {
+    "kanji": "姪",
+    "reading": "めい",
+    "meaning": "Cháu gái, con của anh chị em",
+    "note": ""
+  },
+  {
+    "kanji": "名作",
+    "reading": "めいさく",
+    "meaning": "Tác phẩm nổi tiếng; kiệt tác",
+    "note": ""
+  },
+  {
+    "kanji": "名刺",
+    "reading": "めいし",
+    "meaning": "Danh thiếp",
+    "note": ""
+  },
+  {
+    "kanji": "名詞",
+    "reading": "めいし",
+    "meaning": "Danh từ",
+    "note": ""
+  },
+  {
+    "kanji": "名所",
+    "reading": "めいしょ",
+    "meaning": "Danh lam; địa điểm nổi tiếng",
+    "note": ""
+  },
+  {
+    "kanji": "迷信",
+    "reading": "めいしん",
+    "meaning": "Mê tín",
+    "note": ""
+  },
+  {
+    "kanji": "命ずる",
+    "reading": "めいずる",
+    "meaning": "Ra lệnh; bổ nhiệm",
+    "note": ""
+  },
+  {
+    "kanji": "名物",
+    "reading": "めいぶつ",
+    "meaning": "Đặc sản; sản vật nổi tiếng",
+    "note": ""
+  },
+  {
+    "kanji": "銘々",
+    "reading": "めいめい",
+    "meaning": "Mỗi người; từng người",
+    "note": ""
+  },
+  {
+    "kanji": "目上",
+    "reading": "めうえ",
+    "meaning": "Người trên; người lớn tuổi hoặc cấp trên",
+    "note": ""
+  },
+  {
+    "kanji": "恵まれる",
+    "reading": "めぐまれる",
+    "meaning": "Được hưởng may mắn; có điều kiện thuận lợi",
+    "note": ""
+  },
+  {
+    "kanji": "巡る",
+    "reading": "めぐる",
+    "meaning": "Đi vòng quanh; xoay quanh",
+    "note": ""
+  },
+  {
+    "kanji": "目指す",
+    "reading": "めざす",
+    "meaning": "Nhắm tới; hướng đến mục tiêu",
+    "note": ""
+  },
+  {
+    "kanji": "目覚し",
+    "reading": "めざまし",
+    "meaning": "Báo thức; đồng hồ báo thức",
+    "note": ""
+  },
+  {
+    "kanji": "目下",
+    "reading": "めした",
+    "meaning": "Người dưới; cấp dưới",
+    "note": ""
+  },
+  {
+    "kanji": "目印",
+    "reading": "めじるし",
+    "meaning": "Dấu mốc; dấu hiệu nhận biết",
+    "note": ""
+  },
+  {
+    "kanji": "目立つ",
+    "reading": "めだつ",
+    "meaning": "Nổi bật; dễ thấy",
+    "note": ""
+  },
+  {
+    "kanji": "滅茶苦茶",
+    "reading": "めちゃくちゃ",
+    "meaning": "Lộn xộn; vô lý; quá mức",
+    "note": ""
+  },
+  {
+    "kanji": "愛でたい",
+    "reading": "めでたい",
+    "meaning": "Đáng mừng; tốt lành",
+    "note": ""
+  },
+  {
+    "kanji": "目眩",
+    "reading": "めまい",
+    "meaning": "Chóng mặt; hoa mắt",
+    "note": ""
+  },
+  {
+    "kanji": "目安",
+    "reading": "めやす",
+    "meaning": "Mức tham khảo; tiêu chí ước lượng",
+    "note": ""
+  },
+  {
+    "kanji": "免税",
+    "reading": "めんぜい",
+    "meaning": "Miễn thuế",
+    "note": ""
+  },
+  {
+    "kanji": "面積",
+    "reading": "めんせき",
+    "meaning": "Diện tích",
+    "note": ""
+  },
+  {
+    "kanji": "面接",
+    "reading": "めんせつ",
+    "meaning": "Phỏng vấn",
+    "note": ""
+  },
+  {
+    "kanji": "面倒臭い",
+    "reading": "めんどうくさい",
+    "meaning": "Phiền phức; ngại làm",
+    "note": ""
+  },
+  {
+    "kanji": "儲かる",
+    "reading": "もうかる",
+    "meaning": "Có lãi; thu lợi",
+    "note": ""
+  },
+  {
+    "kanji": "儲ける",
+    "reading": "もうける",
+    "meaning": "Kiếm tiền; thu lợi",
+    "note": ""
+  },
+  {
+    "kanji": "申し訳ない",
+    "reading": "もうしわけない",
+    "meaning": "Rất xin lỗi; thật không phải",
+    "note": ""
+  },
+  {
+    "kanji": "木材",
+    "reading": "もくざい",
+    "meaning": "Gỗ; vật liệu gỗ",
+    "note": ""
+  },
+  {
+    "kanji": "目次",
+    "reading": "もくじ",
+    "meaning": "Mục lục",
+    "note": ""
+  },
+  {
+    "kanji": "潜る",
+    "reading": "もぐる",
+    "meaning": "Lặn; chui vào; ẩn mình",
+    "note": ""
+  },
+  {
+    "kanji": "若しかしたら",
+    "reading": "もしかしたら",
+    "meaning": "Có lẽ; biết đâu",
+    "note": ""
+  },
+  {
+    "kanji": "若しかすると",
+    "reading": "もしかすると",
+    "meaning": "Có thể; biết đâu là",
+    "note": ""
+  },
+  {
+    "kanji": "凭れる",
+    "reading": "もたれる",
+    "meaning": "Dựa vào; tựa vào",
+    "note": ""
+  },
+  {
+    "kanji": "餅",
+    "reading": "もち",
+    "meaning": "Bánh mochi; bánh giầy Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "勿体ない",
+    "reading": "もったいない",
+    "meaning": "Lãng phí; tiếc vì bỏ phí",
+    "note": ""
+  },
+  {
+    "kanji": "元々",
+    "reading": "もともと",
+    "meaning": "Vốn dĩ; ngay từ đầu",
+    "note": ""
+  },
+  {
+    "kanji": "物置",
+    "reading": "ものおき",
+    "meaning": "Nhà kho; chỗ chứa đồ",
+    "note": ""
+  },
+  {
+    "kanji": "物語る",
+    "reading": "ものがたる",
+    "meaning": "Kể; cho thấy; nói lên",
+    "note": ""
+  },
+  {
+    "kanji": "物差し",
+    "reading": "ものさし",
+    "meaning": "Thước đo; tiêu chuẩn đánh giá",
+    "note": ""
+  },
+  {
+    "kanji": "物凄い",
+    "reading": "ものすごい",
+    "meaning": "Ghê gớm; cực kỳ; đáng kinh ngạc",
+    "note": ""
+  },
+  {
+    "kanji": "揉む",
+    "reading": "もむ",
+    "meaning": "Xoa bóp; vò; nhào",
+    "note": ""
+  },
+  {
+    "kanji": "燃やす",
+    "reading": "もやす",
+    "meaning": "Đốt cháy",
+    "note": ""
+  },
+  {
+    "kanji": "催し",
+    "reading": "もよおし",
+    "meaning": "Sự kiện; hoạt động được tổ chức",
+    "note": ""
+  },
+  {
+    "kanji": "盛る",
+    "reading": "もる",
+    "meaning": "Xới thức ăn; chất đầy; pha thuốc",
+    "note": ""
+  },
+  {
+    "kanji": "問答",
+    "reading": "もんどう",
+    "meaning": "Hỏi đáp; đối đáp",
+    "note": ""
+  },
+  {
+    "kanji": "喧しい",
+    "reading": "やかましい",
+    "meaning": "Ồn ào; nghiêm khắc; hay xét nét",
+    "note": ""
+  },
+  {
+    "kanji": "夜間",
+    "reading": "やかん",
+    "meaning": "Ban đêm",
+    "note": ""
+  },
+  {
+    "kanji": "薬缶",
+    "reading": "やかん",
+    "meaning": "Ấm đun nước",
+    "note": ""
+  },
+  {
+    "kanji": "役者",
+    "reading": "やくしゃ",
+    "meaning": "Diễn viên",
+    "note": ""
+  },
+  {
+    "kanji": "役所",
+    "reading": "やくしょ",
+    "meaning": "Cơ quan hành chính; công sở",
+    "note": ""
+  },
+  {
+    "kanji": "訳す",
+    "reading": "やくす",
+    "meaning": "Dịch ngôn ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "役人",
+    "reading": "やくにん",
+    "meaning": "Công chức; viên chức nhà nước",
+    "note": ""
+  },
+  {
+    "kanji": "薬品",
+    "reading": "やくひん",
+    "meaning": "Dược phẩm; hóa chất",
+    "note": ""
+  },
+  {
+    "kanji": "役目",
+    "reading": "やくめ",
+    "meaning": "Nhiệm vụ; vai trò",
+    "note": ""
+  },
+  {
+    "kanji": "火傷",
+    "reading": "やけど",
+    "meaning": "Vết bỏng; bị bỏng",
+    "note": ""
+  },
+  {
+    "kanji": "夜行",
+    "reading": "やこう",
+    "meaning": "Đi ban đêm; chuyến tàu đêm",
+    "note": ""
+  },
+  {
+    "kanji": "矢印",
+    "reading": "やじるし",
+    "meaning": "Mũi tên chỉ hướng",
+    "note": ""
+  },
+  {
+    "kanji": "薬局",
+    "reading": "やっきょく",
+    "meaning": "Nhà thuốc",
+    "note": ""
+  },
+  {
+    "kanji": "やっ付ける",
+    "reading": "やっつける",
+    "meaning": "Đánh bại; xử lý cho xong",
+    "note": ""
+  },
+  {
+    "kanji": "矢っ張り",
+    "reading": "やっぱり",
+    "meaning": "Quả nhiên; vẫn; như đã nghĩ",
+    "note": ""
+  },
+  {
+    "kanji": "家主",
+    "reading": "やぬし",
+    "meaning": "Chủ nhà cho thuê",
+    "note": ""
+  },
+  {
+    "kanji": "破く",
+    "reading": "やぶく",
+    "meaning": "Xé; làm rách",
+    "note": ""
+  },
+  {
+    "kanji": "破れる",
+    "reading": "やぶれる",
+    "meaning": "Bị rách",
+    "note": ""
+  },
+  {
+    "kanji": "止むを得ない",
+    "reading": "やむをえない",
+    "meaning": "Bất đắc dĩ; không thể tránh",
+    "note": ""
+  },
+  {
+    "kanji": "軟らかい",
+    "reading": "やわらかい",
+    "meaning": "Mềm; mềm mại",
+    "note": ""
+  },
+  {
+    "kanji": "遊園地",
+    "reading": "ゆうえんち",
+    "meaning": "Công viên giải trí",
+    "note": ""
+  },
+  {
+    "kanji": "夕刊",
+    "reading": "ゆうかん",
+    "meaning": "Báo buổi chiều",
+    "note": ""
+  },
+  {
+    "kanji": "友好",
+    "reading": "ゆうこう",
+    "meaning": "Tình hữu nghị",
+    "note": ""
+  },
+  {
+    "kanji": "郵送",
+    "reading": "ゆうそう",
+    "meaning": "Gửi qua bưu điện",
+    "note": ""
+  },
+  {
+    "kanji": "夕立",
+    "reading": "ゆうだち",
+    "meaning": "Cơn mưa rào chiều",
+    "note": ""
+  },
+  {
+    "kanji": "夕日",
+    "reading": "ゆうひ",
+    "meaning": "Nắng chiều; mặt trời lúc chiều tà",
+    "note": ""
+  },
+  {
+    "kanji": "悠々",
+    "reading": "ゆうゆう",
+    "meaning": "Ung dung; thư thái",
+    "note": ""
+  },
+  {
+    "kanji": "有料",
+    "reading": "ゆうりょう",
+    "meaning": "Có thu phí",
+    "note": ""
+  },
+  {
+    "kanji": "浴衣",
+    "reading": "ゆかた",
+    "meaning": "Yukata; kimono nhẹ mặc mùa hè",
+    "note": ""
+  },
+  {
+    "kanji": "湯気",
+    "reading": "ゆげ",
+    "meaning": "Hơi nước bốc lên",
+    "note": ""
+  },
+  {
+    "kanji": "輸血",
+    "reading": "ゆけつ",
+    "meaning": "Truyền máu",
+    "note": ""
+  },
+  {
+    "kanji": "輸送",
+    "reading": "ゆそう",
+    "meaning": "Vận chuyển",
+    "note": ""
+  },
+  {
+    "kanji": "油断",
+    "reading": "ゆだん",
+    "meaning": "Sơ suất; mất cảnh giác",
+    "note": ""
+  },
+  {
+    "kanji": "茹でる",
+    "reading": "ゆでる",
+    "meaning": "Luộc",
+    "note": ""
+  },
+  {
+    "kanji": "湯飲み",
+    "reading": "ゆのみ",
+    "meaning": "Chén uống trà",
+    "note": ""
+  },
+  {
+    "kanji": "緩い",
+    "reading": "ゆるい",
+    "meaning": "Lỏng; rộng; dễ dãi; nhẹ",
+    "note": ""
+  },
+  {
+    "kanji": "溶岩",
+    "reading": "ようがん",
+    "meaning": "Dung nham",
+    "note": ""
+  },
+  {
+    "kanji": "容器",
+    "reading": "ようき",
+    "meaning": "Vật chứa; đồ đựng",
+    "note": ""
+  },
+  {
+    "kanji": "用語",
+    "reading": "ようご",
+    "meaning": "Thuật ngữ",
+    "note": ""
+  },
+  {
+    "kanji": "要旨",
+    "reading": "ようし",
+    "meaning": "Ý chính; nội dung tóm tắt",
+    "note": ""
+  },
+  {
+    "kanji": "幼児",
+    "reading": "ようじ",
+    "meaning": "Trẻ nhỏ; trẻ chưa đến tuổi đi học",
+    "note": ""
+  },
+  {
+    "kanji": "容積",
+    "reading": "ようせき",
+    "meaning": "Dung tích; sức chứa",
+    "note": ""
+  },
+  {
+    "kanji": "幼稚",
+    "reading": "ようち",
+    "meaning": "Ấu trĩ; non nớt",
+    "note": ""
+  },
+  {
+    "kanji": "幼稚園",
+    "reading": "ようちえん",
+    "meaning": "Trường mẫu giáo",
+    "note": ""
+  },
+  {
+    "kanji": "用途",
+    "reading": "ようと",
+    "meaning": "Công dụng; mục đích sử dụng",
+    "note": ""
+  },
+  {
+    "kanji": "洋品店",
+    "reading": "ようひんてん",
+    "meaning": "Cửa hàng quần áo, phụ kiện kiểu Tây",
+    "note": ""
+  },
+  {
+    "kanji": "養分",
+    "reading": "ようぶん",
+    "meaning": "Chất dinh dưỡng",
+    "note": ""
+  },
+  {
+    "kanji": "羊毛",
+    "reading": "ようもう",
+    "meaning": "Lông cừu; len",
+    "note": ""
+  },
+  {
+    "kanji": "漸く",
+    "reading": "ようやく",
+    "meaning": "Cuối cùng cũng; mãi mới; vừa đủ",
+    "note": ""
+  },
+  {
+    "kanji": "要領",
+    "reading": "ようりょう",
+    "meaning": "Điểm cốt yếu; cách làm khéo",
+    "note": ""
+  },
+  {
+    "kanji": "欲張り",
+    "reading": "よくばり",
+    "meaning": "Tham lam; người tham lam",
+    "note": ""
+  },
+  {
+    "kanji": "余計",
+    "reading": "よけい",
+    "meaning": "Thừa; không cần thiết; hơn nữa",
+    "note": ""
+  },
+  {
+    "kanji": "寄越す",
+    "reading": "よこす",
+    "meaning": "Gửi sang; đưa cho",
+    "note": ""
+  },
+  {
+    "kanji": "汚す",
+    "reading": "よごす",
+    "meaning": "Làm bẩn; làm ô uế",
+    "note": ""
+  },
+  {
+    "kanji": "寄せる",
+    "reading": "よせる",
+    "meaning": "Gom lại; đưa lại gần; gửi đến",
+    "note": ""
+  },
+  {
+    "kanji": "余所",
+    "reading": "よそ",
+    "meaning": "Nơi khác; nhà người khác",
+    "note": ""
+  },
+  {
+    "kanji": "四つ角",
+    "reading": "よつかど",
+    "meaning": "Ngã tư",
+    "note": ""
+  },
+  {
+    "kanji": "酔っ払い",
+    "reading": "よっぱらい",
+    "meaning": "Người say rượu",
+    "note": ""
+  },
+  {
+    "kanji": "予備",
+    "reading": "よび",
+    "meaning": "Dự phòng; chuẩn bị sẵn",
+    "note": ""
+  },
+  {
+    "kanji": "呼び掛ける",
+    "reading": "よびかける",
+    "meaning": "Gọi; kêu gọi",
+    "note": ""
+  },
+  {
+    "kanji": "呼び出す",
+    "reading": "よびだす",
+    "meaning": "Gọi ra; triệu tập; gọi điện tìm",
+    "note": ""
+  },
+  {
+    "kanji": "蘇る",
+    "reading": "よみがえる",
+    "meaning": "Sống lại; hồi sinh; hiện lại trong ký ức",
+    "note": ""
+  },
+  {
+    "kanji": "因る",
+    "reading": "よる",
+    "meaning": "Do; bắt nguồn từ",
+    "note": ""
+  },
+  {
+    "kanji": "来日",
+    "reading": "らいにち",
+    "meaning": "Đến Nhật; thăm Nhật Bản",
+    "note": ""
+  },
+  {
+    "kanji": "落第",
+    "reading": "らくだい",
+    "meaning": "Thi trượt; không lên lớp",
+    "note": ""
+  },
+  {
+    "kanji": "欄",
+    "reading": "らん",
+    "meaning": "Cột; ô trong biểu mẫu",
+    "note": ""
+  },
+  {
+    "kanji": "乱暴",
+    "reading": "らんぼう",
+    "meaning": "Thô bạo; bạo lực",
+    "note": ""
+  },
+  {
+    "kanji": "理科",
+    "reading": "りか",
+    "meaning": "Môn khoa học tự nhiên",
+    "note": ""
+  },
+  {
+    "kanji": "利害",
+    "reading": "りがい",
+    "meaning": "Lợi hại; quyền lợi liên quan",
+    "note": ""
+  },
+  {
+    "kanji": "略す",
+    "reading": "りゃくす",
+    "meaning": "Lược bỏ; viết tắt",
+    "note": ""
+  },
+  {
+    "kanji": "流域",
+    "reading": "りゅういき",
+    "meaning": "Lưu vực sông",
+    "note": ""
+  },
+  {
+    "kanji": "寮",
+    "reading": "りょう",
+    "meaning": "Ký túc xá",
+    "note": ""
+  },
+  {
+    "kanji": "両側",
+    "reading": "りょうがわ",
+    "meaning": "Hai bên",
+    "note": ""
+  },
+  {
+    "kanji": "漁師",
+    "reading": "りょうし",
+    "meaning": "Ngư dân; người đánh cá",
+    "note": ""
+  },
+  {
+    "kanji": "領事",
+    "reading": "りょうじ",
+    "meaning": "Lãnh sự",
+    "note": ""
+  },
+  {
+    "kanji": "領収",
+    "reading": "りょうしゅう",
+    "meaning": "Việc nhận tiền; xác nhận đã nhận",
+    "note": ""
+  },
+  {
+    "kanji": "臨時",
+    "reading": "りんじ",
+    "meaning": "Tạm thời; đột xuất",
+    "note": ""
+  },
+  {
+    "kanji": "留守番",
+    "reading": "るすばん",
+    "meaning": "Trông nhà; người trông nhà",
+    "note": ""
+  },
+  {
+    "kanji": "例外",
+    "reading": "れいがい",
+    "meaning": "Ngoại lệ",
+    "note": ""
+  },
+  {
+    "kanji": "零点",
+    "reading": "れいてん",
+    "meaning": "Điểm không",
+    "note": ""
+  },
+  {
+    "kanji": "冷凍",
+    "reading": "れいとう",
+    "meaning": "Đông lạnh; cấp đông",
+    "note": ""
+  },
+  {
+    "kanji": "列島",
+    "reading": "れっとう",
+    "meaning": "Quần đảo kéo dài thành chuỗi",
+    "note": ""
+  },
+  {
+    "kanji": "煉瓦",
+    "reading": "れんが",
+    "meaning": "Gạch xây",
+    "note": ""
+  },
+  {
+    "kanji": "連合",
+    "reading": "れんごう",
+    "meaning": "Liên minh; liên hợp",
+    "note": ""
+  },
+  {
+    "kanji": "蝋燭",
+    "reading": "ろうそく",
+    "meaning": "Nến",
+    "note": ""
+  },
+  {
+    "kanji": "ローマ字",
+    "reading": "ろーまじ",
+    "meaning": "Chữ Latin ghi tiếng Nhật; romaji",
+    "note": ""
+  },
+  {
+    "kanji": "録音",
+    "reading": "ろくおん",
+    "meaning": "Ghi âm",
+    "note": ""
+  },
+  {
+    "kanji": "論ずる",
+    "reading": "ろんずる",
+    "meaning": "Bàn luận; tranh luận",
+    "note": ""
+  },
+  {
+    "kanji": "和英",
+    "reading": "わえい",
+    "meaning": "Nhật–Anh",
+    "note": ""
+  },
+  {
+    "kanji": "分かれる",
+    "reading": "わかれる",
+    "meaning": "Chia ra; phân nhánh; tách thành nhóm",
+    "note": ""
+  },
+  {
+    "kanji": "若々しい",
+    "reading": "わかわかしい",
+    "meaning": "Trẻ trung",
+    "note": ""
+  },
+  {
+    "kanji": "湧く",
+    "reading": "わく",
+    "meaning": "Phun lên; tuôn ra; nảy sinh",
+    "note": ""
+  },
+  {
+    "kanji": "詫びる",
+    "reading": "わびる",
+    "meaning": "Xin lỗi; tạ lỗi",
+    "note": ""
+  },
+  {
+    "kanji": "和服",
+    "reading": "わふく",
+    "meaning": "Trang phục truyền thống Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "割合に",
+    "reading": "わりあいに",
+    "meaning": "Tương đối; khá",
+    "note": ""
+  },
+  {
+    "kanji": "割算",
+    "reading": "わりざん",
+    "meaning": "Phép chia",
+    "note": ""
+  },
+  {
+    "kanji": "割と",
+    "reading": "わりと",
+    "meaning": "Khá; tương đối",
+    "note": ""
+  },
+  {
+    "kanji": "割引",
+    "reading": "わりびき",
+    "meaning": "Giảm giá; chiết khấu",
+    "note": ""
+  },
+  {
+    "kanji": "椀",
+    "reading": "わん",
+    "meaning": "Bát gỗ; bát đựng canh kiểu Nhật",
+    "note": ""
+  },
+  {
+    "kanji": "碗",
+    "reading": "わん",
+    "meaning": "Bát sứ; chén sứ",
+    "note": ""
+  }
+]

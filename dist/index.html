@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Không gian riêng để ghi nhớ cách đọc, từ vựng và kanji JLPT N2."
+    />
+    <title>Kotoba — Không gian luyện N2</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232e5949'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='40' fill='%23fff' font-family='serif'%3E言%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./bootstrap.js"></script>
+  </head>
+  <body>
+    <section id="startup-screen" class="startup-screen" aria-label="Khởi động Kotoba">
+      <span class="brand-mark" lang="ja" aria-hidden="true">言</span>
+      <p id="startup-message" role="status">Đang mở góc học của bạn…</p>
+      <button id="startup-retry" class="button primary" type="button" hidden>Thử lại</button>
+    </section>
+    <section id="auth-screen" class="auth-screen" hidden>
+      <div class="auth-card">
+        <a class="brand" href="/" aria-label="Kotoba"
+          ><span class="brand-mark" lang="ja">言</span
+          ><span>kotoba<span class="brand-sub">KHÔNG GIAN HỌC N2</span></span></a
+        >
+        <div class="eyebrow">MỖI NGÀY, MỘT CHÚT TIẾN BỘ</div>
+        <h1 id="auth-title">Chào mừng trở lại</h1>
+        <p>Sổ từ, tiến độ và phiên học của bạn, ở mọi thiết bị.</p>
+        <form id="auth-form">
+          <div id="auth-name-row" hidden>
+            <label for="auth-name">Tên của bạn</label
+            ><input id="auth-name" autocomplete="name" maxlength="80" />
+          </div>
+          <label for="auth-email">Email</label
+          ><input
+            id="auth-email"
+            type="email"
+            autocomplete="username"
+            required
+            maxlength="254"
+            placeholder="ban@example.com"
+          />
+          <label for="auth-password">Mật khẩu</label
+          ><input
+            id="auth-password"
+            type="password"
+            autocomplete="current-password"
+            required
+            minlength="10"
+            maxlength="128"
+          /><small id="password-hint">Tối thiểu 10 ký tự.</small>
+          <p id="auth-error" class="form-error" role="alert"></p>
+          <button id="auth-submit" class="button primary full" type="submit">Đăng nhập →</button>
+        </form>
+        <button id="auth-toggle" class="auth-toggle" type="button">
+          Chưa có tài khoản? Đăng ký
+        </button>
+        <p class="auth-footnote" id="auth-catalogue-count">Bộ từ vựng cá nhân của bạn.</p>
+      </div>
+    </section>
+    <div class="shell" hidden>
+      <aside class="sidebar">
+        <a class="brand" href="#flash" aria-label="Kotoba trang luyện tập"
+          ><span class="brand-mark" lang="ja">言</span
+          ><span>kotoba<span class="brand-sub">KHÔNG GIAN HỌC N2</span></span></a
+        >
+        <div class="nav-label">GÓC HỌC TẬP</div>
+        <nav id="navigation" aria-label="Điều hướng chính">
+          <button class="nav-item active" data-view="flash">
+            <span class="nav-icon">▤</span>Flashcard<span class="nav-arrow">↗</span>
+          </button>
+          <button class="nav-item" data-view="quiz">
+            <span class="nav-icon">◈</span>Trắc nghiệm
+          </button>
+          <button class="nav-item" data-view="review">
+            <span class="nav-icon">↺</span>Ôn lại<span class="nav-count" id="nav-wrong">0</span>
+          </button>
+          <div class="nav-divider"></div>
+          <button class="nav-item" data-view="words">
+            <span class="nav-icon">☷</span>Sổ từ của bạn
+          </button>
+          <button class="nav-item" id="history-open">
+            <span class="nav-icon">◷</span>Lịch sử học
+          </button>
+        </nav>
+        <div class="sidebar-note">
+          <span class="sprout" aria-hidden="true">✳</span>
+          <p>Mỗi chút một ngày.<br />Mỗi ngày một tiến bộ.</p>
+          <span lang="ja">少しずつ、確実に。</span>
+        </div>
+        <div class="sidebar-bottom">
+          <span class="avatar">N2</span>
+          <div class="account-info">
+            <strong id="account-name">Góc học của bạn</strong><small id="account-email"></small>
+          </div>
+          <button id="logout" class="icon-button" title="Đăng xuất" aria-label="Đăng xuất">
+            ↪
+          </button>
+        </div>
+      </aside>
+      <main>
+        <header class="topbar">
+          <span id="breadcrumb">Luyện tập <span>/</span> Flashcard</span
+          ><span class="private-badge"><span class="status-dot"></span>Không gian riêng tư</span>
+        </header>
+        <section class="content">
+          <div class="page-heading">
+            <div>
+              <div class="eyebrow">ことばを、少しずつ。</div>
+              <h1 id="page-title">Ghi nhớ từ. Mở rộng thế giới.</h1>
+              <p id="page-description">
+                Tập trung vào cách đọc, rồi để từng từ trở nên quen thuộc.
+              </p>
+            </div>
+            <button class="button outline add-trigger"><span>＋</span> Thêm từ mới</button>
+          </div>
+          <div class="stats" aria-label="Thống kê sổ từ">
+            <div class="stat">
+              <span class="stat-icon green">▤</span>
+              <div>
+                <span class="stat-label">Trong sổ từ</span><strong id="stat-total">0</strong
+                ><span class="stat-unit">từ vựng</span>
+              </div>
+              <span class="stat-tag">JLPT N2</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon gold">✓</span>
+              <div>
+                <span class="stat-label" title="Đạt chuỗi đúng ở cả cách đọc và nghĩa"
+                  >Đã vững hai kỹ năng</span
+                ><strong id="stat-known">0</strong><span class="stat-unit">từ vựng</span>
+              </div>
+            </div>
+            <button class="stat stat-button" id="open-review">
+              <span class="stat-icon peach">↺</span>
+              <div>
+                <span class="stat-label">Cần ôn lại</span><strong id="stat-wrong">0</strong
+                ><span class="stat-unit">từ vựng</span>
+              </div>
+              <span class="stat-link">→</span>
+            </button>
+          </div>
+          <div id="study-view">
+            <div class="section-heading">
+              <div class="mode-switch" aria-label="Kiểu luyện tập">
+                <button id="flash-mode" class="selected">▤ <span>Flashcard</span></button
+                ><button id="quiz-mode">◈ <span>Trắc nghiệm</span></button>
+              </div>
+              <span class="session-caption" id="scope-caption">Mỗi phiên, một bước tiến nhỏ</span>
+            </div>
+            <div class="study-grid">
+              <div id="study-panel" class="study-panel" aria-live="polite"></div>
+              <aside class="study-aside">
+                <section class="progress-card">
+                  <div class="card-heading">
+                    <h2>Phiên học của bạn</h2>
+                    <span class="tiny-pill">N2</span>
+                  </div>
+                  <div class="progress-ring" id="progress-ring">
+                    <div>
+                      <strong id="progress-percent">0<span>%</span></strong
+                      ><small>hoàn thành</small>
+                    </div>
+                  </div>
+                  <div class="progress-count">
+                    <span>Đã luyện</span><strong id="progress-count">0 / 10 từ</strong>
+                  </div>
+                  <div class="progress-track"><div id="progress-bar"></div></div>
+                  <div class="session-numbers">
+                    <div>
+                      <span class="status-dot"></span>Đúng <strong id="session-correct">0</strong>
+                    </div>
+                    <div>
+                      <span class="status-dot orange"></span>Chưa đúng
+                      <strong id="session-wrong">0</strong>
+                    </div>
+                  </div>
+                  <div class="session-settings">
+                    <label for="session-size">Số từ mỗi phiên</label
+                    ><select id="session-size">
+                      <option value="10">10 từ · Nhẹ nhàng</option>
+                      <option value="20">20 từ · Tập trung</option>
+                      <option value="0">Tất cả từ</option>
+                    </select>
+                    <div id="quiz-setting">
+                      <label for="quiz-type">Nội dung câu hỏi</label
+                      ><select id="quiz-type">
+                        <option value="reading">Luyện cách đọc</option>
+                        <option value="meaning">Luyện nghĩa tiếng Việt</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="button outline full" id="new-session">↻ Bắt đầu phiên mới</button>
+                </section>
+                <section class="tip-card">
+                  <span class="tip-icon">✦</span>
+                  <div>
+                    <h3>Một mẹo nhỏ</h3>
+                    <p>
+                      Thử đọc thành tiếng trước khi lật thẻ. Sau đó, đặt một câu ngắn với từ vừa
+                      học.
+                    </p>
+                  </div>
+                </section>
+              </aside>
+            </div>
+            <div class="study-footer">
+              <span><span class="small-leaf">✳</span> Nhớ chậm cũng được. Đều đặn là được.</span
+              ><span id="save-indicator" role="status">Đang kết nối tài khoản…</span>
+            </div>
+          </div>
+          <section id="words-view" hidden>
+            <div class="library-toolbar">
+              <label class="search-box"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="10" cy="10" r="6" />
+                  <path d="m15 15 5 5" /></svg
+                ><input
+                  id="search"
+                  placeholder="Tìm kanji, hiragana hoặc nghĩa…"
+                  aria-label="Tìm từ" /></label
+              ><select id="word-filter" aria-label="Lọc sổ từ">
+                <option value="all">Tất cả từ</option>
+                <option value="review">Cần ôn lại</option>
+                <option value="known">Đã vững hai kỹ năng</option>
+                <option value="learning">Đang học</option>
+                <option value="new">Chưa học</option></select
+              ><button class="button outline" id="import-open">↓ Nhập danh sách</button
+              ><button class="button outline" id="export">↑ Xuất từ</button>
+            </div>
+            <div class="word-table-wrap" id="word-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>TỪ VỰNG</th>
+                    <th>CÁCH ĐỌC</th>
+                    <th>NGHĨA TIẾNG VIỆT</th>
+                    <th>TRẠNG THÁI</th>
+                    <th><span class="sr-only">Thao tác</span></th>
+                  </tr>
+                </thead>
+                <tbody id="word-rows"></tbody>
+              </table>
+              <div id="word-empty" class="empty-small" hidden>Chưa tìm thấy từ phù hợp.</div>
+            </div>
+            <div class="pager">
+              <button class="button outline" id="word-prev">← Trang trước</button
+              ><button class="button outline" id="word-next">Trang sau →</button>
+            </div>
+            <div class="library-footer">
+              <span id="word-count"></span
+              ><span>Sổ từ được lưu vào tài khoản. Dùng “Xuất từ” để giữ bản dự phòng.</span>
+            </div>
+          </section>
+        </section>
+        <footer class="page-footer">
+          <span
+            >kotoba <span class="footer-dot">·</span> Một góc nhỏ cho tiếng Nhật của bạn.
+            <a href="/vocabulary-credits.html">Nguồn từ vựng</a></span
+          ><span>自分のペースで。<span class="footer-dot">·</span> Theo nhịp của bạn.</span>
+        </footer>
+      </main>
+    </div>
+    <dialog id="word-dialog" aria-labelledby="word-dialog-title">
+      <form id="word-form">
+        <div class="dialog-heading">
+          <div>
+            <span class="eyebrow">SỔ TỪ CỦA BẠN</span>
+            <h2 id="word-dialog-title">Thêm một từ mới</h2>
+          </div>
+          <button type="button" class="icon-button close-dialog" aria-label="Đóng">×</button>
+        </div>
+        <p class="dialog-description">Một từ, một cách đọc, một chút tiến bộ.</p>
+        <input type="hidden" id="edit-id" /><label for="word-kanji"
+          >Kanji / từ vựng <span>*</span></label
+        ><input id="word-kanji" required maxlength="80" placeholder="Ví dụ: 挑戦" lang="ja" /><label
+          for="word-reading"
+          >Hiragana <span>*</span></label
+        ><input
+          id="word-reading"
+          required
+          maxlength="120"
+          placeholder="ちょうせん"
+          lang="ja"
+        /><label for="word-meaning">Nghĩa tiếng Việt <span>*</span></label
+        ><input
+          id="word-meaning"
+          required
+          maxlength="300"
+          placeholder="Thử thách; sự thử sức"
+        /><label for="word-note">Ví dụ hoặc gợi nhớ <small>Không bắt buộc</small></label
+        ><textarea
+          id="word-note"
+          maxlength="600"
+          rows="2"
+          placeholder="新しいことに挑戦する。｜Thử sức với điều mới."
+        ></textarea>
+        <p id="word-error" class="form-error" role="alert"></p>
+        <div class="dialog-actions">
+          <button type="button" class="button outline close-dialog">Hủy</button
+          ><button class="button primary" type="submit">Lưu từ vựng →</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="import-dialog" aria-labelledby="import-title">
+      <div class="dialog-heading">
+        <div>
+          <span class="eyebrow">MANG THEO NHỮNG TỪ BẠN MUỐN HỌC</span>
+          <h2 id="import-title">Nhập danh sách từ</h2>
+        </div>
+        <button class="icon-button close-dialog" aria-label="Đóng">×</button>
+      </div>
+      <p class="dialog-description" id="import-limits">
+        Dán từ Excel / Google Sheets, hoặc chọn tệp CSV, TSV, TXT, JSON. Tối đa 1 MB và 2.000 từ.
+      </p>
+      <button type="button" class="button outline full" id="import-local">
+        Lấy từ bản lưu trình duyệt cũ</button
+      ><label class="file-picker" for="import-file"
+        >↑ Chọn tệp từ thiết bị<input
+          type="file"
+          id="import-file"
+          accept=".csv,.tsv,.txt,.json" /></label
+      ><label for="import-text">Mỗi dòng: kanji, hiragana, nghĩa, ghi chú (tùy chọn)</label
+      ><textarea
+        id="import-text"
+        rows="7"
+        placeholder="kanji,hiragana,meaning&#10;挑戦,ちょうせん,Thử thách&#10;貢献,こうけん,Đóng góp"
+        spellcheck="false"
+      ></textarea>
+      <p class="input-hint">
+        Có thể ngăn cột bằng tab, dấu phẩy, | hoặc ;. Nghĩa chứa dấu phẩy cần đặt trong ngoặc kép.
+        Từ trùng được bỏ qua.
+      </p>
+      <div id="import-preview" aria-live="polite"></div>
+      <div class="dialog-actions">
+        <button class="button outline" id="import-check">Xem trước</button
+        ><button class="button primary" id="import-confirm" disabled>Thêm vào sổ từ →</button>
+      </div>
+    </dialog>
+    <dialog id="delete-dialog" aria-labelledby="delete-title">
+      <h2 id="delete-title">Xóa từ này?</h2>
+      <p id="delete-description"></p>
+      <div class="dialog-actions">
+        <button class="button outline close-dialog">Giữ lại</button
+        ><button class="button danger" id="delete-confirm">Xóa từ</button>
+      </div>
+    </dialog>
+    <dialog id="history-dialog" aria-labelledby="history-title">
+      <div class="dialog-heading">
+        <h2 id="history-title">Những bước tiến của bạn</h2>
+        <button class="icon-button close-dialog" aria-label="Đóng">×</button>
+      </div>
+      <p class="dialog-description">
+        Kết quả và các phiên đang tạm dừng. Bạn có thể tiếp tục phiên chưa hoàn thành.
+      </p>
+      <div id="history-content" aria-live="polite"></div>
+      <div class="pager">
+        <button class="button outline" id="history-prev">← Trước</button
+        ><button class="button outline" id="history-next">Sau →</button>
+      </div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

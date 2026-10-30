@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.venv/
+.uv-cache/
+.runtime/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.db
+backups/
+test-results/
+playwright-report/

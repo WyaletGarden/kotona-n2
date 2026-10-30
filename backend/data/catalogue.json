@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/evanclan/OpenJLPT",
+  "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+  "files": {
+    "data/json/vocab/n2.json": "4c7053d1b61f71ca4004252cafdf89439c65531900e7bab6c53078802acf3c5b",
+    "LICENSE": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+    "NOTICE.md": "a2e6f45517bb1a1c047628991832244916888a4ced3aa26adeafb89705588557",
+    "README.md": "b4a1b576311b240c1cfd274a567fae0cc7a16ef130b4664fb7d8b22fa29bb637"
+  },
+  "level": "N2",
+  "source_entries": 1778,
+  "kanji_entries": 1587,
+  "overlap_with_starter": 6,
+  "added_entries": 1581,
+  "starter_entries": 36,
+  "total_entries": 1617,
+  "license": "CC BY-SA 4.0",
+  "translation_language": "vi",
+  "translation_review": "Vietnamese study glosses adapted by AI; not independently reviewed by a Japanese teacher.",
+  "adaptations": [
+    "Selected one kanji-bearing written form per source entry.",
+    "Converted katakana in readings to hiragana for the application schema.",
+    "Retained the existing 36 starter words and skipped six duplicate word/reading pairs.",
+    "Vietnamese glosses were adapted using the Japanese entries and English glosses; some inaccurate source glosses were corrected.",
+    "No upstream example sentences were imported."
+  ]
+}
