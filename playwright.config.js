@@ -9,10 +9,13 @@ export default defineConfig({
   fullyParallel: false,
   timeout: 30000,
   use: { baseURL: 'http://127.0.0.1:8010', headless: true, trace: 'retain-on-failure' },
-  webServer: {
-    command: process.env.KOTOBA_E2E_COMMAND || 'uv run python -m scripts.e2e_server',
-    url: 'http://127.0.0.1:8010/api/test-environment',
-    reuseExistingServer: false,
-    timeout: 60000,
-  },
+  webServer:
+    process.env.KOTOBA_E2E_EXTERNAL_SERVER === '1'
+      ? undefined
+      : {
+          command: process.env.KOTOBA_E2E_COMMAND || 'uv run python -m scripts.e2e_server',
+          url: 'http://127.0.0.1:8010/api/test-environment',
+          reuseExistingServer: false,
+          timeout: 60000,
+        },
 });

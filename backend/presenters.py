@@ -1,9 +1,8 @@
 from datetime import timezone
-from sqlalchemy import func, select
 from .catalogue import catalogue_info
 from .constants import MASTERED_STREAK, public_limits
-from .models import StudyAnswer, StudySession, now
-from .repositories import owned_word, statistics
+from .models import now
+from .repositories import answer_summary, owned_session, owned_word, statistics
 from .schemas import MutationOut, SessionOut, SkillProgress, WordOut, WorkspaceOut
 
 
@@ -34,14 +33,15 @@ def word_out(word, skill="reading") -> WordOut:
     )
 
 
-def session_out(db, user):
-    study = db.get(StudySession, user.active_session_id) if user.active_session_id else None
+def session_out(db, user, *, study=None, summary=None):
+    study = study or (
+        owned_session(db, user, user.active_session_id, required=False)
+        if user.active_session_id
+        else None
+    )
     if not study:
         return None
-    count = db.scalar(
-        select(func.count()).select_from(StudyAnswer).where(StudyAnswer.session_id == study.id)
-    )
-    answer = db.get(StudyAnswer, (study.id, study.position))
+    count, result = summary if summary is not None else answer_summary(db, study)
     current = None
     if study.position < study.total and study.status in ("in_progress", "paused"):
         current = word_out(owned_word(db, user, study.data["ids"][study.position]), study.skill)
@@ -55,8 +55,8 @@ def session_out(db, user):
         total=study.total,
         correct=study.correct,
         answered_count=count,
-        answered=answer is not None,
-        current_result=answer.correct if answer else None,
+        answered=result is not None,
+        current_result=result,
         revealed=study.revealed,
         choice=study.choice,
         options=study.options,
@@ -64,14 +64,23 @@ def session_out(db, user):
     )
 
 
-def snapshot(db, user):
+def snapshot(db, user, *, study=None, summary=None):
     db.flush()
+    stats = statistics(db, user)
+    stats["valid_until"] = aware(stats["valid_until"])
+    # A relative deadline avoids refresh loops when the browser clock differs
+    # from the server clock. The next workspace read recomputes time-based counts.
+    stats["refresh_after_ms"] = (
+        max(0, int((stats["valid_until"] - now()).total_seconds() * 1000))
+        if stats["valid_until"]
+        else None
+    )
     return dict(
         revision=user.revision,
         view=user.view,
         settings=user.settings,
-        stats=statistics(db, user),
-        session=session_out(db, user),
+        stats=stats,
+        session=session_out(db, user, study=study, summary=summary),
     )
 
 
@@ -79,9 +88,11 @@ def workspace(db, user):
     return WorkspaceOut(**snapshot(db, user), limits=public_limits(), catalogue=catalogue_info())
 
 
-def mutation(db, user, *, updated=(), deleted=(), imported=0, duplicates=0):
+def mutation(
+    db, user, *, updated=(), deleted=(), imported=0, duplicates=0, study=None, summary=None
+):
     return MutationOut(
-        **snapshot(db, user),
+        **snapshot(db, user, study=study, summary=summary),
         updated_words=[word_out(w, user.settings["quizType"]) for w in updated],
         deleted_ids=list(deleted),
         imported=imported,

@@ -192,6 +192,8 @@ class Stats(Output):
     known: int
     review: int
     new: int
+    valid_until: datetime | None = None
+    refresh_after_ms: int | None = Field(default=None, ge=0)
 
 
 class SessionOut(Output):
@@ -233,6 +235,14 @@ class MutationOut(Snapshot):
     duplicates: int = 0
 
 
+class StudyMutationOut(Output):
+    """Opt-in delta for actions that do not change word statistics."""
+
+    revision: int
+    session: SessionOut
+    updated_words: list[WordOut]
+
+
 class WordPage(Output):
     revision: int
     total: int
@@ -257,6 +267,12 @@ class UserOut(Output):
 class Identity(Output):
     user: UserOut
     csrf: str
+
+
+class BootstrapOut(Output):
+    catalogue: CatalogueInfo
+    identity: Identity | None = None
+    workspace: WorkspaceOut | None = None
 
 
 class HistoryItem(Output):

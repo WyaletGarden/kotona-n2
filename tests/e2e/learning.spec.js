@@ -1,6 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { randomUUID } from 'node:crypto';
 
+test.beforeAll(async ({ request }) => {
+  const marker = await request.get('/api/test-environment');
+  expect(marker.status()).toBe(200);
+  expect(await marker.json()).toEqual({ isolated: true });
+});
+
 async function register(page) {
   await page.goto('/');
   await page.locator('#auth-toggle').click();
@@ -25,7 +31,7 @@ test('resumes learning across mode changes and reloads', async ({ page }) => {
   await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
 });
 
-test('reload keeps login hidden while identity and workspace are loading', async ({ page }) => {
+test('reload uses one bootstrap request and keeps login hidden while loading', async ({ page }) => {
   await register(page);
   const hold = async (pattern) => {
     let release, requested;
@@ -38,30 +44,31 @@ test('reload keeps login hidden while identity and workspace are loading', async
     });
     return { release, started };
   };
-  const identity = await hold('**/api/auth/me');
-  const workspace = await hold('**/api/workspace');
+  const bootstrap = await hold('**/api/bootstrap');
+  const extra = [];
+  page.on('request', (request) => {
+    if (/\/api\/(auth\/me|workspace|catalogue)$/.test(request.url())) extra.push(request.url());
+  });
   await page.reload({ waitUntil: 'domcontentloaded' });
-  await identity.started;
+  await bootstrap.started;
   await expect(page.locator('#startup-screen')).toBeVisible();
   await expect(page.locator('#auth-screen')).toBeHidden();
   await expect(page.locator('.shell')).toBeHidden();
-  identity.release();
-  await workspace.started;
-  await expect(page.locator('#startup-screen')).toBeVisible();
-  await expect(page.locator('#auth-screen')).toBeHidden();
-  workspace.release();
+  bootstrap.release();
   await expect(page.locator('.shell')).toBeVisible();
   await expect(page.locator('#startup-screen')).toBeHidden();
   await expect(page.locator('#auth-screen')).toBeHidden();
+  expect(extra).toEqual([]);
 });
 
 test('login appears only after the session is confirmed unauthenticated', async ({ page }) => {
   let release;
   const gate = new Promise((resolve) => (release = resolve));
-  const requested = page.waitForRequest('**/api/auth/me');
-  await page.route('**/api/auth/me', async (route) => {
+  const requested = page.waitForRequest('**/api/bootstrap');
+  await page.route('**/api/bootstrap', async (route) => {
     await gate;
-    await route.fulfill({ status: 401, json: { detail: 'Vui lòng đăng nhập lại.' } });
+    const response = await route.fetch();
+    await route.fulfill({ response });
   });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   await requested;
@@ -75,13 +82,13 @@ test('login appears only after the session is confirmed unauthenticated', async 
 
 test('startup connection errors offer retry without showing login', async ({ page }) => {
   await register(page);
-  await page.route('**/api/auth/me', (route) => route.abort());
+  await page.route('**/api/bootstrap', (route) => route.abort());
   await page.reload();
   await expect(page.locator('#startup-message')).toContainText('Không kết nối được máy chủ');
   await expect(page.locator('#startup-retry')).toBeVisible();
   await expect(page.locator('#auth-screen')).toBeHidden();
   await expect(page.locator('.shell')).toBeHidden();
-  await page.unroute('**/api/auth/me');
+  await page.unroute('**/api/bootstrap');
   await page.locator('#startup-retry').click();
   await expect(page.locator('.shell')).toBeVisible();
   await expect(page.locator('#startup-screen')).toBeHidden();
@@ -157,4 +164,75 @@ test('network errors preserve confirmed state and permit retry', async ({ page }
   await page.unroute('**/api/study/actions');
   await page.locator('[data-action="reveal"]').first().click();
   await expect(page.locator('[data-action="rate-correct"]')).toBeVisible();
+});
+
+test('patches a visible word without reloading an unfiltered page', async ({ page }) => {
+  await register(page);
+  await page.locator('[data-view="words"]').click();
+  await expect(page.locator('#word-rows tr')).toHaveCount(50);
+  const pages = [];
+  page.on('request', (request) => {
+    if (request.url().includes('/api/words?')) pages.push(request.url());
+  });
+  const toggle = page.locator('#word-rows [data-word-action="toggle"]').first();
+  await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-label', /^Bỏ đánh dấu ôn/);
+  expect(pages).toEqual([]);
+});
+
+test('refreshes review statistics at their deadline without a revision change', async ({
+  page,
+}) => {
+  await register(page);
+  await page.route('**/api/bootstrap', async (route) => {
+    const response = await route.fetch();
+    const body = await response.json();
+    body.workspace.stats.valid_until = new Date(Date.now() + 1000).toISOString();
+    body.workspace.stats.refresh_after_ms = 1000;
+    await route.fulfill({ json: body });
+  });
+  let refreshes = 0;
+  await page.route('**/api/workspace', async (route) => {
+    refreshes++;
+    const response = await route.fetch();
+    const body = await response.json();
+    body.stats.review = 1;
+    body.stats.valid_until = null;
+    body.stats.refresh_after_ms = null;
+    await route.fulfill({ json: body });
+  });
+  await page.reload();
+  await expect(page.locator('#nav-wrong')).toHaveText('1');
+  expect(refreshes).toBe(1);
+});
+
+test('focus reuses recent state but a cross-tab change forces refresh', async ({ page }) => {
+  await register(page);
+  const refreshes = [];
+  page.on('request', (request) => {
+    if (request.url().endsWith('/api/workspace')) refreshes.push(request.url());
+  });
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')));
+  // A storage notification represents a confirmed mutation in another tab.
+  await page.evaluate(() =>
+    window.dispatchEvent(new StorageEvent('storage', { key: 'kotoba:changed' })),
+  );
+  await expect.poll(() => refreshes.length).toBe(1);
+});
+
+test('a workspace failure after registration offers retry without resubmitting', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.locator('#auth-toggle').click();
+  await page.locator('#auth-name').fill('Retry learner');
+  await page.locator('#auth-email').fill(`retry-${randomUUID()}@example.com`);
+  await page.locator('#auth-password').fill('test-password-123');
+  await page.route('**/api/workspace', (route) => route.abort());
+  await page.locator('#auth-submit').click();
+  await expect(page.locator('#startup-retry')).toBeVisible();
+  await expect(page.locator('#auth-screen')).toBeHidden();
+  await page.unroute('**/api/workspace');
+  await page.locator('#startup-retry').click();
+  await expect(page.locator('.shell')).toBeVisible();
 });

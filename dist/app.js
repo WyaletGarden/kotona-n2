@@ -6,15 +6,49 @@ import { createLibrary } from './word-library.js';
 import { bindWordEditor } from './word-editor.js';
 import { bindImportExport } from './import-export.js';
 import { bindHistory } from './history.js';
+import { createRefreshPolicy } from './refresh-policy.js';
 
-export async function startApp({ api = defaultApi, doc = document, win = window } = {}) {
+export async function startApp({
+  api = defaultApi,
+  doc = document,
+  win = window,
+  initialSnapshot,
+} = {}) {
   const store = createStore();
   const toast = createToast(doc);
   let library;
+  let statsTimer;
+  let externalTimer;
+  const refreshPolicy = createRefreshPolicy();
+
+  function scheduleStatsRefresh() {
+    win.clearTimeout(statsTimer);
+    const expires = store.state.statsExpiresAt;
+    if (expires == null) return;
+    const remaining = Math.max(0, expires - Date.now());
+    statsTimer = win.setTimeout(
+      async function refreshDueStats() {
+        if (controller.busy) {
+          statsTimer = win.setTimeout(refreshDueStats, 500);
+          return;
+        }
+        if (!(await refreshSnapshot())) {
+          statsTimer = win.setTimeout(refreshDueStats, 15000);
+        } else if (store.state.view === 'words' && store.library.status === 'review') {
+          await library.load();
+        }
+      },
+      Math.min(remaining, 2147483647),
+    );
+  }
   const controller = createController({
     store,
     api,
-    changed: () => renderShell(store.state, doc),
+    changed() {
+      refreshPolicy.synced();
+      renderShell(store.state, doc);
+      scheduleStatsRefresh();
+    },
     error: (failure) => toast(failure.message),
     unauthorized: () => win.location.reload(),
     saving(status) {
@@ -30,14 +64,34 @@ export async function startApp({ api = defaultApi, doc = document, win = window 
       }[status];
     },
   });
-  controller.accept(await api.load());
+  controller.accept(initialSnapshot || (await api.load()));
   async function refreshSnapshot() {
     return controller.run(() => api.load());
   }
   library = createLibrary({ store, api, doc, toast, refreshSnapshot });
   async function mutate(operation) {
-    const ok = await controller.run(operation);
-    if (ok && store.state.view === 'words') await library.load();
+    const visible = new Set(store.library.items.map((word) => word.id));
+    let delta;
+    const ok = await controller.run(async () => (delta = await operation()));
+    if (ok) {
+      try {
+        win.localStorage?.setItem('kotoba:changed', `${store.state.revision}:${Date.now()}`);
+      } catch {
+        /* Storage may be disabled. Focus refresh remains available. */
+      }
+    }
+    if (ok && store.state.view === 'words') {
+      const patchable =
+        !store.library.query &&
+        store.library.status === 'all' &&
+        delta.updated_words?.length &&
+        delta.updated_words.every((word) => visible.has(word.id)) &&
+        !delta.deleted_ids?.length &&
+        !delta.imported &&
+        store.library.total === store.state.stats.total;
+      if (patchable) library.render();
+      else await library.load();
+    }
     return ok;
   }
   const editor = bindWordEditor({ store, api, doc, mutate, toast });
@@ -171,8 +225,25 @@ export async function startApp({ api = defaultApi, doc = document, win = window 
     }
   });
   win.addEventListener('focus', async () => {
-    if (controller.busy) return;
+    if (controller.busy || !refreshPolicy.needsRefresh(store.state.statsExpiresAt)) return;
     if ((await refreshSnapshot()) && store.state.view === 'words') await library.load();
+  });
+  win.addEventListener('storage', (event) => {
+    if (event.key !== 'kotoba:changed') return;
+    refreshPolicy.invalidate();
+    if (doc.visibilityState !== 'visible') return;
+    win.clearTimeout(externalTimer);
+    externalTimer = win.setTimeout(async function refreshExternalChange() {
+      if (controller.busy) {
+        externalTimer = win.setTimeout(refreshExternalChange, 500);
+        return;
+      }
+      if (await refreshSnapshot()) {
+        if (store.state.view === 'words') await library.load();
+      } else {
+        refreshPolicy.invalidate();
+      }
+    }, 0);
   });
   if (store.state.view === 'words') await library.load();
   else if (

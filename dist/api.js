@@ -9,7 +9,7 @@ export class APIError extends Error {
 export function createApi(fetcher = (...args) => globalThis.fetch(...args)) {
   let csrf = '';
   let revision = 0;
-  async function request(path, { method = 'GET', body, signal } = {}) {
+  async function request(path, { method = 'GET', body, signal, compact = false } = {}) {
     let response;
     try {
       response = await fetcher(`/api${path}`, {
@@ -20,6 +20,7 @@ export function createApi(fetcher = (...args) => globalThis.fetch(...args)) {
           'Content-Type': 'application/json',
           'X-CSRF-Token': csrf,
           'X-Revision': String(revision),
+          ...(compact ? { 'X-Compact-Response': 'true' } : {}),
         },
         ...(body === undefined ? {} : { body: JSON.stringify(body) }),
       });
@@ -49,6 +50,7 @@ export function createApi(fetcher = (...args) => globalThis.fetch(...args)) {
       );
     }
     if (data?.csrf) csrf = data.csrf;
+    if (data?.identity?.csrf) csrf = data.identity.csrf;
     return data;
   }
   const write = (path, method, body) => request(path, { method, body });
@@ -58,16 +60,21 @@ export function createApi(fetcher = (...args) => globalThis.fetch(...args)) {
       revision = value;
     },
     load: () => request('/workspace'),
+    bootstrap: () => request('/bootstrap'),
     catalogue: () => request('/catalogue'),
     preferences: (body) => write('/preferences', 'PUT', body),
     start: (body) => write('/study/sessions', 'POST', body),
     resume: (id) => write(`/study/sessions/${encodeURIComponent(id)}/resume`, 'POST'),
     action: (session, action, values = {}) =>
-      write('/study/actions', 'POST', {
-        session_id: session.id,
-        index: session.index,
-        action,
-        ...values,
+      request('/study/actions', {
+        method: 'POST',
+        compact: true,
+        body: {
+          session_id: session.id,
+          index: session.index,
+          action,
+          ...values,
+        },
       }),
     words: ({ query = '', status = 'all', offset = 0, limit }, signal) =>
       request(`/words?${new URLSearchParams({ q: query, status, offset, limit })}`, { signal }),

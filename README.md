@@ -23,26 +23,67 @@ Nếu môi trường ảo đã có:
 .\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload --reload-dir backend
 ```
 
-Mở **http://localhost:8000**; Swagger tại **/docs**, OpenAPI tại **/openapi.json**,
+Mở **http://127.0.0.1:8000**; Swagger tại **/docs**, OpenAPI tại **/openapi.json**,
 kiểm tra kết nối DB tại **/api/health**. `APP_ORIGIN` phải khớp địa chỉ truy cập,
 bao gồm giao thức/cổng. Không dùng `file://` hoặc Live Server. Không có tài khoản
 mặc định; đăng ký để tạo sổ từ riêng.
 
 Có thể thay uv bằng venv và `python -m pip install -r requirements.txt`.
 
+## PostgreSQL trên Aiven
+
+Backend và Alembic cùng đọc `DATABASE_URL` từ `.env`; không cần đổi model hay
+API. Dùng URI của service Aiven, đổi tiền tố thành `postgresql+psycopg://` để
+khớp driver đã cài trong project và giữ `sslmode=require`:
+
+```dotenv
+DATABASE_URL=postgresql+psycopg://avnadmin:URL_ENCODED_PASSWORD@HOST:PORT/defaultdb?sslmode=require
+```
+
+Thay host, port, database, tài khoản và mật khẩu bằng thông tin service thực tế.
+URL-encode mật khẩu có ký tự đặc biệt khi tự ghép URL. `sslmode=require` mã hóa
+kết nối TLS; để xác minh chứng chỉ, Aiven hỗ trợ `verify-ca`/`verify-full` cùng
+CA certificate ([tài liệu Aiven](https://aiven.io/docs/products/postgresql/howto/list-code-samples)).
+
+Chạy trực tiếp: dùng lệnh `alembic upgrade head` và khởi động Uvicorn ở trên.
+Migration tạo/cập nhật schema trên database được trỏ tới; dữ liệu từ database
+local không tự chuyển sang Aiven. Sau khi khởi động, mở
+<http://127.0.0.1:8000/api/health>; kết quả mong đợi là
+`{"status":"ok","database":"ok"}`.
+
 ## Docker Compose
 
-Cần Docker Desktop. Đặt `POSTGRES_PASSWORD` trong `.env`, rồi:
+Cần Docker Desktop. Compose mặc định truyền `DATABASE_URL` từ `.env` vào API,
+phù hợp với Aiven và không khởi tạo PostgreSQL local:
 
 ```powershell
 docker compose up --build -d
 docker compose logs -f api
 ```
 
-API tự chạy migration. Dữ liệu PostgreSQL ở volume `postgres_data`; lệnh
-`docker compose down` giữ dữ liệu. DB không mở cổng ra ngoài, API bind loopback.
-URL-encode mật khẩu có ký tự đặc biệt khi ghép URL. Với HTTPS, đặt
+API tự chạy migration trên database trong `DATABASE_URL` khi khởi động. Nếu đổi
+`.env` khi container đang chạy, chạy lại `docker compose up --build -d api` để
+áp dụng cấu hình mới. API bind loopback. Với HTTPS, đặt
 `COOKIE_SECURE=true` và `APP_ORIGIN` theo tên miền thực tế.
+
+Địa chỉ mặc định là **http://127.0.0.1:8000**. Đặt
+`APP_ORIGIN=http://127.0.0.1:8000` trong `.env` để đăng ký/đăng nhập từ địa chỉ này.
+Sau khi đổi `.env`, cần tạo lại container để cập nhật biến môi trường;
+`docker compose restart` không nạp lại các giá trị này:
+
+```powershell
+docker compose up --build -d --force-recreate api
+```
+
+Nếu muốn dùng PostgreSQL local, đặt `POSTGRES_PASSWORD` trong `.env` và thêm
+file cấu hình local (file này đổi URL của API sang service `db`):
+
+```powershell
+docker compose -f compose.yaml -f compose.local.yaml up --build -d
+```
+
+Database local vẫn dùng volume `postgres_data` như trước và không mở cổng ra
+ngoài. Chuyển sang Aiven không xóa volume hoặc tự chuyển dữ liệu local.
 
 ## Quy tắc học
 
@@ -185,6 +226,10 @@ khoản dùng một lần. Mẫu một client/10 flashcard không thay thế loa
 người dùng. Ctrl+C server để dọn schema.
 
 ## Vận hành
+
+Đo số truy vấn, thời gian API và benchmark trên dữ liệu test:
+[docs/PERFORMANCE.md](docs/PERFORMANCE.md). Bật `PERFORMANCE_METRICS=true` trong
+`.env` và tạo lại container để xem `Server-Timing`/`X-SQL-Queries` cùng log API.
 
 Giữ `.env` ngoài Git. Chỉ tin proxy headers từ proxy giới hạn rõ. Auth mặc định
 20 lần/IP/15 phút; cấu hình client IP tin cậy nếu đứng sau reverse proxy.

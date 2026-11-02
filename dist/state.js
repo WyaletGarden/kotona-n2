@@ -4,6 +4,7 @@ export function createStore() {
     view: 'flash',
     settings: null,
     stats: null,
+    statsExpiresAt: null,
     session: null,
     limits: null,
     catalogue: null,
@@ -11,8 +12,15 @@ export function createStore() {
   const library = { items: [], total: 0, offset: 0, query: '', status: 'all', loading: false };
   function applySnapshot(snapshot) {
     if (snapshot.revision < state.revision) return false;
-    const { revision, view, settings, stats, session } = snapshot;
-    Object.assign(state, { revision, view, settings, stats, session });
+    for (const key of ['revision', 'view', 'settings', 'stats', 'session']) {
+      if (Object.hasOwn(snapshot, key)) state[key] = snapshot[key];
+    }
+    if (Object.hasOwn(snapshot, 'stats')) {
+      state.statsExpiresAt =
+        snapshot.stats?.refresh_after_ms == null
+          ? null
+          : Date.now() + snapshot.stats.refresh_after_ms;
+    }
     if (snapshot.limits) state.limits = snapshot.limits;
     if (snapshot.catalogue) state.catalogue = snapshot.catalogue;
     if (snapshot.updated_words) {

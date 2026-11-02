@@ -3,6 +3,72 @@ import assert from 'node:assert/strict';
 import { createStore, createController } from '../dist/state.js';
 import { APIError, createApi } from '../dist/api.js';
 import { snapshot, word } from './fixtures.mjs';
+import { createRefreshPolicy } from '../dist/refresh-policy.js';
+
+test('study deltas preserve stats/settings and accept explicit session removal', () => {
+  const store = createStore();
+  store.applySnapshot(snapshot());
+  const stats = store.state.stats;
+  store.applySnapshot({
+    revision: 1,
+    session: { id: 'active', revealed: true },
+    updated_words: [],
+  });
+  assert.equal(store.state.stats, stats);
+  assert.deepEqual(store.state.settings, { count: 10, quizType: 'reading' });
+  assert.equal(store.state.view, 'flash');
+  store.applySnapshot({ revision: 2, session: null });
+  assert.equal(store.state.session, null);
+  assert.equal(store.applySnapshot({ revision: 1, session: { id: 'stale' } }), false);
+});
+
+test('focus refresh is bounded by TTL, cross-tab changes and review deadlines', () => {
+  let time = Date.parse('2026-11-02T00:00:00Z');
+  const policy = createRefreshPolicy({ now: () => time });
+  assert.equal(policy.needsRefresh(), true);
+  policy.synced();
+  assert.equal(policy.needsRefresh(), false);
+  time += 14999;
+  assert.equal(policy.needsRefresh(), false);
+  time += 1;
+  assert.equal(policy.needsRefresh(), true);
+  policy.synced();
+  assert.equal(policy.needsRefresh(new Date(time - 1).toISOString()), true);
+  assert.equal(policy.needsRefresh(new Date(time + 1).toISOString()), false);
+  assert.equal(policy.needsRefresh(time - 1), true);
+  policy.invalidate();
+  assert.equal(policy.needsRefresh(), true);
+  policy.synced();
+  assert.equal(policy.needsRefresh(), false);
+});
+
+test('relative review expiry tolerates a browser clock different from the server', () => {
+  const store = createStore();
+  const before = Date.now();
+  store.applySnapshot({
+    ...snapshot(),
+    stats: { ...snapshot().stats, valid_until: '2000-01-01T00:00:00Z', refresh_after_ms: 10000 },
+  });
+  const expires = store.state.statsExpiresAt;
+  assert.ok(expires >= before + 10000);
+  assert.ok(expires <= Date.now() + 10000);
+  store.applySnapshot({ revision: 1, session: null });
+  assert.equal(store.state.statsExpiresAt, expires);
+});
+
+test('bootstrap supplies CSRF and study actions request compact responses', async () => {
+  const calls = [];
+  const client = createApi(async (path, options) => {
+    calls.push({ path, options });
+    return new Response(
+      JSON.stringify(path.endsWith('/bootstrap') ? { identity: { csrf: 'boot-csrf' } } : {}),
+    );
+  });
+  await client.bootstrap();
+  await client.action({ id: word.id, index: 0 }, 'reveal');
+  assert.equal(calls[1].options.headers['X-CSRF-Token'], 'boot-csrf');
+  assert.equal(calls[1].options.headers['X-Compact-Response'], 'true');
+});
 
 test('render failures never turn a confirmed save into a failed write', async () => {
   const store = createStore();

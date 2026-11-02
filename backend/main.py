@@ -9,6 +9,7 @@ from .api import router
 from .db import engine
 from .errors import DomainError
 from .middleware import BodyTooLarge, SecurityMiddleware
+from .performance import PerformanceMiddleware
 
 app = FastAPI(
     title="Kotoba API",
@@ -16,6 +17,7 @@ app = FastAPI(
     description="Sổ từ JLPT N2 và tiến độ học theo từng kỹ năng.",
 )
 app.add_middleware(SecurityMiddleware)
+app.add_middleware(PerformanceMiddleware)
 
 
 @app.exception_handler(BodyTooLarge)

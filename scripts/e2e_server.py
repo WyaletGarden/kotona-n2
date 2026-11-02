@@ -40,6 +40,7 @@ def main():
         settings().app_origin = "http://127.0.0.1:8010"
         settings().cookie_secure = False
         settings().auth_limit = 1000
+        settings().performance_metrics = True
         app.dependency_overrides[get_db] = override
         backend.main.engine = engine
 

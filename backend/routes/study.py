@@ -1,12 +1,12 @@
 from uuid import UUID
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Header, Query
 from sqlalchemy import func, select
 from ..constants import MAX_PAGE_SIZE
 from ..db import Db
 from ..models import StudyAnswer, StudySession
-from ..presenters import mutation
+from ..presenters import mutation, session_out, word_out
 from ..repositories import owned_session
-from ..schemas import AnswerPage, HistoryPage, MutationOut, Start, StudyAction
+from ..schemas import AnswerPage, HistoryPage, MutationOut, Start, StudyAction, StudyMutationOut
 from ..security import CurrentUser, WritableUser
 from ..services import study
 
@@ -15,20 +15,32 @@ router = APIRouter(prefix="/study", tags=["study"])
 
 @router.post("/sessions", status_code=201, response_model=MutationOut)
 def start(payload: Start, user: WritableUser, db: Db):
-    study.start_session(db, user, payload)
-    return mutation(db, user)
+    active = study.start_session(db, user, payload)
+    return mutation(db, user, study=active)
 
 
 @router.post("/sessions/{session_id}/resume", response_model=MutationOut)
 def resume(session_id: UUID, user: WritableUser, db: Db):
-    study.resume_session(db, user, str(session_id))
-    return mutation(db, user)
+    active = study.resume_session(db, user, str(session_id))
+    return mutation(db, user, study=active)
 
 
-@router.post("/actions", response_model=MutationOut)
-def action(payload: StudyAction, user: WritableUser, db: Db):
-    word = study.act(db, user, payload)
-    return mutation(db, user, updated=[word])
+@router.post("/actions", response_model=MutationOut | StudyMutationOut)
+def action(
+    payload: StudyAction,
+    user: WritableUser,
+    db: Db,
+    x_compact_response: bool = Header(default=False),
+):
+    result = study.act(db, user, payload)
+    summary = (result.answered_count, result.current_result)
+    if x_compact_response and payload.action in ("reveal", "next"):
+        return StudyMutationOut(
+            revision=user.revision,
+            session=session_out(db, user, study=result.study, summary=summary),
+            updated_words=[word_out(result.word, user.settings["quizType"])],
+        )
+    return mutation(db, user, updated=[result.word], study=result.study, summary=summary)
 
 
 @router.get("/history", response_model=HistoryPage)

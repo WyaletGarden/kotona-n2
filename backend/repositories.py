@@ -1,10 +1,10 @@
 """Reusable SQL queries; ownership and pagination stay in the database."""
 
-from sqlalchemy import and_, case, exists, func, or_, select
-from sqlalchemy.orm import Session
+from sqlalchemy import Integer, and_, case, cast, exists, func, or_, select
+from sqlalchemy.orm import Session, joinedload
 from .constants import MASTERED_STREAK
 from .errors import DomainError
-from .models import StudySession, User, Vocabulary, Word, WordProgress, now
+from .models import StudyAnswer, StudySession, User, Vocabulary, Word, WordProgress, now
 from .normalization import normalize_text
 
 
@@ -54,22 +54,74 @@ def word_query(user: User, *, q="", status="all"):
 
 
 def owned_word(db: Session, user: User, word_id: str) -> Word:
-    word = db.scalar(select(Word).where(Word.id == word_id, Word.user_id == user.id))
+    cache = db.info.setdefault("owned_words", {})
+    key = (user.id, word_id)
+    if key in cache:
+        return cache[key]
+    # One word has at most two progress rows. Join them on single-word reads;
+    # paginated lists retain selectin loading to avoid multiplying page rows.
+    word = (
+        db.execute(
+            select(Word)
+            .where(Word.id == word_id, Word.user_id == user.id)
+            .options(joinedload(Word.progress))
+        )
+        .unique()
+        .scalar_one_or_none()
+    )
     if not word:
         raise DomainError(404, "word_not_found", "Không tìm thấy từ vựng.")
+    cache[key] = word
     return word
 
 
-def owned_session(db: Session, user: User, session_id: str) -> StudySession:
+def owned_session(
+    db: Session, user: User, session_id: str, *, required=True
+) -> StudySession | None:
+    cache = db.info.setdefault("owned_sessions", {})
+    key = (user.id, session_id)
+    if key in cache:
+        return cache[key]
     study = db.scalar(
         select(StudySession).where(StudySession.id == session_id, StudySession.user_id == user.id)
     )
     if not study:
+        if not required:
+            return None
         raise DomainError(404, "session_not_found", "Không tìm thấy phiên học.")
+    cache[key] = study
     return study
 
 
+def answer_summary(db: Session, study: StudySession):
+    count, result = db.execute(
+        select(
+            func.count(StudyAnswer.position),
+            func.max(
+                case(
+                    (StudyAnswer.position == study.position, cast(StudyAnswer.correct, Integer)),
+                    else_=None,
+                )
+            ),
+        ).where(StudyAnswer.session_id == study.id)
+    ).one()
+    return count, bool(result) if result is not None else None
+
+
 def statistics(db: Session, user: User):
+    cutoff = now()
+    next_due = (
+        select(func.min(WordProgress.next_review_at))
+        .join(Word, Word.id == WordProgress.word_id)
+        .where(
+            Word.user_id == user.id,
+            Word.marked_for_review.is_(False),
+            WordProgress.skill == user.settings["quizType"],
+            WordProgress.last_correct.is_not(False),
+            WordProgress.next_review_at > cutoff,
+        )
+        .scalar_subquery()
+    )
     return dict(
         db.execute(
             select(
@@ -79,6 +131,7 @@ def statistics(db: Session, user: User):
                     func.sum(case((review_due(user.settings["quizType"]), 1), else_=0)), 0
                 ).label("review"),
                 func.coalesce(func.sum(case((Word.seen == 0, 1), else_=0)), 0).label("new"),
+                next_due.label("valid_until"),
             ).where(Word.user_id == user.id)
         )
         .mappings()

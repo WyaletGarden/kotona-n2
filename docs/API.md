@@ -10,6 +10,9 @@ Request ghi đã xác thực gửi `X-CSRF-Token`; thay đổi dữ liệu học
 - `POST /auth/login`: email, password.
 - `GET /auth/me`; `POST /auth/logout` (204).
 - `GET /catalogue`: nguồn, số từ, giấy phép, giới hạn; public.
+- `GET /bootstrap`: catalogue public và identity/workspace nếu cookie còn hiệu lực.
+  Khách chưa đăng nhập nhận identity/workspace null; lỗi database vẫn trả 503.
+  Frontend dùng endpoint này để khởi động bằng một request.
 - `GET /workspace`: version 2, revision, view, settings, stats, session, limits,
   catalogue. Không có mảng toàn bộ từ.
 - `PUT /preferences`: count 0/10/20, quizType reading/meaning, view.
@@ -69,6 +72,19 @@ Không có toàn bộ IDs/câu trả lời.
 Mutation trả revision, view, settings, stats, session và delta updated_words,
 deleted_ids, imported, duplicates. Transaction function scope hoàn tất trước
 response thành công; helper không commit. Rate limit dùng transaction riêng.
+
+Với `POST /study/actions`, client có thể gửi `X-Compact-Response: true`.
+Action reveal/next khi đó chỉ trả revision, session và updated_words; client
+phải giữ các trường không có trong response. Action chấm điểm vẫn trả đầy đủ
+stats. Không gửi header thì hợp đồng response đầy đủ vẫn được giữ nguyên.
+
+Stats có thêm `valid_until` (thời điểm server cần tính lại số từ đến hạn) và
+`refresh_after_ms` (khoảng chờ tương đối cho client). Cả hai null nếu chưa có
+mốc đến hạn tiếp theo. Client đặt lịch tải workspace theo khoảng chờ tương đối
+để tránh sai lệch đồng hồ; revision không thay đổi khi chỉ thời gian trôi qua.
+
+Khi bật `PERFORMANCE_METRICS=true`, API thêm `Server-Timing` với app/db duration
+(ms) và `X-SQL-Queries`. Chi tiết và benchmark: [PERFORMANCE.md](PERFORMANCE.md).
 
 Lỗi có detail/code: duplicate_word, capacity_exceeded, revision_conflict,
 session_conflict, already_answered, invalid_choice... Chỉ xung đột revision/phiên

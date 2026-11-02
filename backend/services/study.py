@@ -1,4 +1,5 @@
 import random
+from dataclasses import dataclass
 from datetime import timedelta
 
 from sqlalchemy import select
@@ -6,10 +7,18 @@ from sqlalchemy import select
 from ..constants import REVIEW_DAYS
 from ..errors import DomainError, conflict
 from ..models import StudyAnswer, StudySession, Word, WordProgress, now
-from ..repositories import distractors, owned_session, owned_word, word_query
+from ..repositories import answer_summary, distractors, owned_session, owned_word, word_query
 from ..schemas import FlashAnswerAction, QuizAnswerAction
 
 rng = random.SystemRandom()
+
+
+@dataclass
+class ActionResult:
+    study: StudySession
+    word: Word
+    answered_count: int
+    current_result: bool | None
 
 
 def set_options(db, user, study):
@@ -114,7 +123,8 @@ def act(db, user, payload):
     ):
         conflict("session_conflict", "Câu hỏi đã thay đổi hoặc phiên học đã kết thúc.")
     word = owned_word(db, user, study.data["ids"][study.position])
-    answered = db.get(StudyAnswer, (study.id, study.position))
+    answered_count, current_result = answer_summary(db, study)
+    answered = current_result is not None
     if payload.action == "reveal":
         if study.mode != "flash":
             raise DomainError(422, "invalid_action", "Chỉ lật thẻ trong chế độ flashcard.")
@@ -147,16 +157,20 @@ def act(db, user, payload):
             )
         )
         study.correct += int(correct)
+        answered_count += 1
+        current_result = correct
         if study.mode == "flash":
             study.position += 1
             study.revealed = False
+            current_result = None
     elif payload.action == "next":
         if not answered:
             raise DomainError(422, "answer_required", "Hãy trả lời trước khi chuyển từ tiếp theo.")
         study.position += 1
         study.revealed, study.choice = False, None
+        current_result = None
         set_options(db, user, study)
     if study.position == study.total:
         study.status, study.completed_at = "completed", now()
     db.flush()
-    return word
+    return ActionResult(study, word, answered_count, current_result)

@@ -8,6 +8,16 @@ const startup = $('#startup-screen');
 const toast = createToast();
 let registering = false;
 
+async function launch(identity, snapshot) {
+  $('#account-name').textContent = identity.user.name;
+  $('#account-email').textContent = identity.user.email;
+  const { startApp } = await import('./app.js');
+  await startApp({ initialSnapshot: snapshot });
+  $('#auth-screen').hidden = true;
+  $('.shell').hidden = false;
+  startup.hidden = true;
+}
+
 $('#startup-retry').addEventListener('click', () => location.reload());
 
 $('#auth-toggle').addEventListener('click', () => {
@@ -27,13 +37,25 @@ form.addEventListener('submit', async (event) => {
   event.preventDefault();
   submit.disabled = true;
   error.textContent = '';
+  let signedIn = false;
   try {
     const body = { email: $('#auth-email').value.trim(), password: $('#auth-password').value };
     if (registering) body.name = $('#auth-name').value.trim();
-    await api.request(`/auth/${registering ? 'register' : 'login'}`, { method: 'POST', body });
-    location.reload();
+    const identity = await api.request(`/auth/${registering ? 'register' : 'login'}`, {
+      method: 'POST',
+      body,
+    });
+    signedIn = true;
+    $('#auth-screen').hidden = true;
+    startup.hidden = false;
+    await launch(identity, await api.load());
   } catch (failure) {
-    error.textContent = failure.message;
+    if (signedIn) {
+      $('#startup-message').textContent = failure.message;
+      $('#startup-retry').hidden = false;
+    } else {
+      error.textContent = failure.message;
+    }
   } finally {
     submit.disabled = false;
   }
@@ -50,7 +72,8 @@ $('#logout').addEventListener('click', async () => {
 
 submit.disabled = true;
 try {
-  const catalogue = await api.catalogue();
+  const initial = await api.bootstrap();
+  const catalogue = initial.catalogue;
   $('#auth-catalogue-count').textContent =
     `Tài khoản mới có sẵn ${catalogue.count.toLocaleString('vi-VN')} mục từ.`;
   $('#auth-password').minLength = catalogue.limits.password_min;
@@ -60,13 +83,12 @@ try {
     $('#word-' + field).maxLength = catalogue.limits[`${field}_length`];
   $('#import-limits').textContent =
     `Dán từ Excel / Google Sheets hoặc chọn CSV, TSV, TXT, JSON. Tối đa ${catalogue.limits.import_bytes.toLocaleString('vi-VN')} byte và ${catalogue.limits.max_words.toLocaleString('vi-VN')} từ.`;
-  const identity = await api.request('/auth/me');
-  $('#account-name').textContent = identity.user.name;
-  $('#account-email').textContent = identity.user.email;
-  const { startApp } = await import('./app.js');
-  await startApp();
-  $('.shell').hidden = false;
-  startup.hidden = true;
+  if (initial.identity) {
+    await launch(initial.identity, initial.workspace);
+  } else {
+    $('#auth-screen').hidden = false;
+    startup.hidden = true;
+  }
 } catch (failure) {
   if (failure.status === 401) {
     $('#auth-screen').hidden = false;

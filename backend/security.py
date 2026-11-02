@@ -35,16 +35,22 @@ def set_cookie(response: Response, token: str):
 
 def authenticated(request: Request, db: Db) -> User:
     token = request.cookies.get(COOKIE)
-    login = db.get(LoginSession, digest(token)) if token else None
-    if not login or aware(login.expires_at) <= now():
+    row = (
+        db.execute(
+            select(LoginSession, User)
+            .join(User, User.id == LoginSession.user_id)
+            .where(LoginSession.token_hash == digest(token))
+        ).first()
+        if token
+        else None
+    )
+    if not row or aware(row[0].expires_at) <= now():
         raise DomainError(401, "unauthenticated", "Vui lòng đăng nhập lại.")
+    login, user = row
     if request.method not in ("GET", "HEAD", "OPTIONS"):
         if not secrets.compare_digest(request.headers.get("X-CSRF-Token", ""), login.csrf):
             raise DomainError(403, "csrf_failed", "Phiên xác thực không hợp lệ. Hãy tải lại trang.")
     request.state.login = login
-    user = db.get(User, login.user_id)
-    if not user:
-        raise DomainError(401, "unauthenticated", "Vui lòng đăng nhập lại.")
     return user
 
 
