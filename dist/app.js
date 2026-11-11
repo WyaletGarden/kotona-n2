@@ -74,6 +74,11 @@ export async function startApp({
     let delta;
     const ok = await controller.run(async () => (delta = await operation()));
     if (ok) {
+      if (delta.session_transition) {
+        toast(
+          `${delta.session_transition === 'resumed' ? 'Tiếp tục phiên học' : 'Bắt đầu phiên mới'} · ${delta.session.total} từ.`,
+        );
+      }
       try {
         win.localStorage?.setItem('kotoba:changed', `${store.state.revision}:${Date.now()}`);
       } catch {
@@ -98,10 +103,12 @@ export async function startApp({
   bindImportExport({ store, api, doc, mutate, toast });
   bindHistory({ api, doc, mutate });
   bindDialogs(doc);
-  function start(mode, scope, view, restart = false, overrides = {}) {
-    return mutate(() =>
+  async function start(mode, scope, view, restart = false, overrides = {}) {
+    const ok = await mutate(() =>
       api.start({ ...store.state.settings, mode, scope, view, restart, ...overrides }),
     );
+    if (!ok) renderShell(store.state, doc);
+    return ok;
   }
   function navigate(view) {
     const s = store.state.session;
@@ -113,6 +120,7 @@ export async function startApp({
       s.mode === mode &&
       s.scope === scope &&
       s.quizType === store.state.settings.quizType &&
+      s.requested_count === store.state.settings.count &&
       s.index < s.total &&
       ['in_progress', 'paused'].includes(s.status)
     ) {
@@ -178,12 +186,12 @@ export async function startApp({
   });
   $('#new-session', doc).addEventListener('click', () => studyAction('restart'));
   $('#session-size', doc).addEventListener('change', (event) =>
-    mutate(() =>
-      api.preferences({
-        ...store.state.settings,
-        count: Number(event.target.value),
-        view: store.state.view,
-      }),
+    start(
+      store.state.view === 'quiz' ? 'quiz' : store.state.session?.mode || 'flash',
+      store.state.view === 'review' ? 'wrong' : 'all',
+      store.state.view,
+      false,
+      { count: Number(event.target.value) },
     ),
   );
   $('#quiz-type', doc).addEventListener('change', (event) => {

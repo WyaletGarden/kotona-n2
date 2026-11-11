@@ -195,6 +195,10 @@
                       </select>
                     </div>
                   </div>
+                  <p class="input-hint">
+                    Đổi số từ hoặc nội dung để mở phiên phù hợp. Phiên đang học được giữ trong lịch
+                    sử.
+                  </p>
                   <button class="button outline full" id="new-session">↻ Bắt đầu phiên mới</button>
                 </section>
                 <section class="tip-card">
@@ -254,7 +258,7 @@
             </div>
             <div class="library-footer">
               <span id="word-count"></span
-              ><span>Sổ từ được lưu vào tài khoản. Dùng “Xuất từ” để giữ bản dự phòng.</span>
+              ><span>“Xuất từ” lưu từ và ghi chú; không bao gồm tiến độ hoặc lịch sử học.</span>
             </div>
           </section>
         </section>
@@ -316,7 +320,7 @@
         <button class="icon-button close-dialog" aria-label="Đóng">×</button>
       </div>
       <p class="dialog-description" id="import-limits">
-        Dán từ Excel / Google Sheets, hoặc chọn tệp CSV, TSV, TXT, JSON. Tối đa 1 MB và 2.000 từ.
+        Dán từ Excel / Google Sheets, hoặc chọn tệp CSV, TSV, TXT, JSON. Tối đa 16 MB và 2.000 từ.
       </p>
       <button type="button" class="button outline full" id="import-local">
         Lấy từ bản lưu trình duyệt cũ</button
@@ -336,6 +340,7 @@
         Có thể ngăn cột bằng tab, dấu phẩy, | hoặc ;. Nghĩa chứa dấu phẩy cần đặt trong ngoặc kép.
         Từ trùng được bỏ qua.
       </p>
+      <p class="input-hint">File xuất chứa từ và ghi chú; không chứa tiến độ hoặc lịch sử học.</p>
       <div id="import-preview" aria-live="polite"></div>
       <div class="dialog-actions">
         <button class="button outline" id="import-check">Xem trước</button
@@ -359,6 +364,8 @@
         Kết quả và các phiên đang tạm dừng. Bạn có thể tiếp tục phiên chưa hoàn thành.
       </p>
       <div id="history-content" aria-live="polite"></div>
+      <p id="history-status" role="status"></p>
+      <button class="button outline" id="history-retry" hidden>Thử lại</button>
       <div class="pager">
         <button class="button outline" id="history-prev">← Trước</button
         ><button class="button outline" id="history-next">Sau →</button>

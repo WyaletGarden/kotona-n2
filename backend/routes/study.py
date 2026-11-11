@@ -15,14 +15,19 @@ router = APIRouter(prefix="/study", tags=["study"])
 
 @router.post("/sessions", status_code=201, response_model=MutationOut)
 def start(payload: Start, user: WritableUser, db: Db):
-    active = study.start_session(db, user, payload)
-    return mutation(db, user, study=active)
+    result = study.start_session(db, user, payload)
+    return mutation(
+        db,
+        user,
+        study=result.study,
+        session_transition="resumed" if result.resumed else "created",
+    )
 
 
 @router.post("/sessions/{session_id}/resume", response_model=MutationOut)
 def resume(session_id: UUID, user: WritableUser, db: Db):
     active = study.resume_session(db, user, str(session_id))
-    return mutation(db, user, study=active)
+    return mutation(db, user, study=active, session_transition="resumed")
 
 
 @router.post("/actions", response_model=MutationOut | StudyMutationOut)

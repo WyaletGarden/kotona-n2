@@ -19,7 +19,8 @@ export function validateWord(word, limits) {
   )
     return 'Cần đủ từ, hiragana và nghĩa tiếng Việt.';
   for (const key of ['kanji', 'reading', 'meaning', 'note']) {
-    if (String(word[key] || '').length > limits[`${key}_length`]) return `Nội dung ${key} quá dài.`;
+    if (Array.from(String(word[key] || '')).length > limits[`${key}_length`])
+      return `Nội dung ${key} quá dài.`;
   }
   if (!/^[\p{Script=Hiragana}ー・\s]+$/u.test(word.reading))
     return 'Cách đọc chỉ dùng hiragana (ví dụ: ちょうせん).';

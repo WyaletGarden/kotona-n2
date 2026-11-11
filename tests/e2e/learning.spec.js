@@ -31,6 +31,137 @@ test('resumes learning across mode changes and reloads', async ({ page }) => {
   await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
 });
 
+test('changing session size preserves progress and resumes only a matching configuration', async ({
+  page,
+}) => {
+  await register(page);
+  await page.locator('[data-action="reveal"]').first().click();
+  await page.locator('[data-action="rate-correct"]').click();
+  await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
+  await page.locator('#quiz-mode').click();
+  await expect(page.locator('.quiz-options')).toBeVisible();
+  await page.locator('#session-size').selectOption('20');
+  await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
+  await page.locator('#flash-mode').click();
+  await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
+  await expect(page.locator('#toast')).toContainText('Bắt đầu phiên mới');
+  await page.locator('#session-size').selectOption('10');
+  await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
+  await expect(page.locator('#toast')).toContainText('Tiếp tục phiên học');
+  await page.reload();
+  await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
+  await expect(page.locator('#session-size')).toHaveValue('10');
+});
+
+test('a failed size change restores the confirmed configuration and permits retry', async ({
+  page,
+}) => {
+  await register(page);
+  await page.route('**/api/study/sessions', (route) => route.abort());
+  await page.locator('#session-size').selectOption('20');
+  await expect(page.locator('#save-indicator')).toContainText('chưa được lưu');
+  await expect(page.locator('#session-size')).toHaveValue('10');
+  await expect(page.locator('#progress-count')).toHaveText('0 / 10 từ');
+  await page.unroute('**/api/study/sessions');
+  await page.locator('#session-size').selectOption('20');
+  await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
+});
+
+test('history locks pagination and preserves the confirmed page after a failed request', async ({
+  page,
+}) => {
+  await register(page);
+  const historyPage = (offset) => ({
+    offset,
+    limit: 20,
+    total: 60,
+    items: [
+      {
+        id: randomUUID(),
+        mode: 'flash',
+        scope: 'all',
+        quizType: 'reading',
+        status: 'completed',
+        total: 10,
+        correct: offset + 1,
+        answered_count: 10,
+        created_at: '2026-11-11T00:00:00Z',
+        completed_at: '2026-11-11T00:01:00Z',
+      },
+    ],
+  });
+  let release;
+  let fail = true;
+  let pageRequests = 0;
+  const gate = new Promise((resolve) => (release = resolve));
+  await page.route('**/api/study/history?*', async (route) => {
+    const offset = Number(new URL(route.request().url()).searchParams.get('offset'));
+    if (offset === 20) {
+      pageRequests += 1;
+      await gate;
+      if (fail) return route.abort();
+    }
+    await route.fulfill({ json: historyPage(offset) });
+  });
+  await page.locator('#history-open').click();
+  await expect(page.locator('#history-content')).toContainText('1 đúng');
+  await page.locator('#history-next').click();
+  await expect(page.locator('#history-next')).toBeDisabled();
+  await expect(page.locator('#history-prev')).toBeDisabled();
+  await expect(page.locator('#history-content')).toContainText('1 đúng');
+  release();
+  await expect(page.locator('#history-retry')).toBeVisible();
+  await expect(page.locator('#history-content')).toContainText('1 đúng');
+  await expect(page.locator('#history-prev')).toBeDisabled();
+  fail = false;
+  await page.locator('#history-retry').click();
+  await expect(page.locator('#history-content')).toContainText('21 đúng');
+  await expect(page.locator('#history-retry')).toBeHidden();
+  await expect(page.locator('#history-prev')).toBeEnabled();
+  expect(pageRequests).toBe(2);
+});
+
+test('imports a full large JSON file and exports its exact word contents', async ({ page }) => {
+  await register(page);
+  // Use unique valid words to fill the remaining capacity, with a file over the old 1 MB limit.
+  const words = Array.from({ length: 383 }, (_, i) => ({
+    kanji: `試験語${i}`,
+    reading: 'しけんご',
+    meaning: 'Nghĩa tiếng Việt với dấu ắ',
+    note: 'a' + '\u0001'.repeat(598) + '終',
+  }));
+  const buffer = Buffer.from(JSON.stringify({ words, attribution: {} }, null, 2));
+  expect(buffer.byteLength).toBeGreaterThan(1_000_000);
+  await page.locator('[data-view="words"]').click();
+  await page.locator('#import-open').click();
+  await page
+    .locator('#import-file')
+    .setInputFiles({ name: 'kotoba-large.json', mimeType: 'application/json', buffer });
+  await expect(page.locator('#import-preview')).toContainText('383 từ mới');
+  await page.locator('#import-confirm').click();
+  await expect(page.locator('#stat-total')).toHaveText('2000');
+  const downloading = page.waitForEvent('download');
+  await page.locator('#export').click();
+  const stream = await (await downloading).createReadStream();
+  const chunks = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  const exported = JSON.parse(Buffer.concat(chunks).toString('utf8'));
+  expect(exported.words).toHaveLength(2000);
+  const byKanji = (a, b) => a.kanji.localeCompare(b.kanji);
+  expect(exported.words.filter((word) => word.kanji.startsWith('試験語')).sort(byKanji)).toEqual(
+    [...words].sort(byKanji),
+  );
+  await page.locator('#import-open').click();
+  await expect(page.locator('#import-dialog')).toContainText('không chứa tiến độ');
+  await page.locator('#import-file').setInputFiles({
+    name: 'kotoba-export.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(JSON.stringify(exported)),
+  });
+  await expect(page.locator('#import-preview')).toContainText('0 từ mới');
+  await expect(page.locator('#import-preview')).toContainText('2000 từ trùng');
+});
+
 test('reload uses one bootstrap request and keeps login hidden while loading', async ({ page }) => {
   await register(page);
   const hold = async (pattern) => {

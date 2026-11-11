@@ -201,6 +201,7 @@ class SessionOut(Output):
     mode: Mode
     scope: Scope
     quizType: Skill
+    requested_count: Literal[0, 10, 20] | None
     status: SessionStatus
     index: int
     total: int
@@ -229,6 +230,7 @@ class WorkspaceOut(Snapshot):
 
 
 class MutationOut(Snapshot):
+    session_transition: Literal["created", "resumed"] | None = None
     updated_words: list[WordOut] = Field(default_factory=list)
     deleted_ids: list[UUID] = Field(default_factory=list)
     imported: int = 0

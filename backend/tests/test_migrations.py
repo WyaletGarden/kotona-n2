@@ -147,9 +147,43 @@ def test_migration_preserves_private_data_and_active_answers():
                 and active["correct"] == 1
             )
             assert active["data"] == {"ids": [word_id]}
+            assert active["requested_count"] is None
             assert (
                 connection.scalar(sa.select(sa.func.count()).select_from(tables["study_answers"]))
                 == 2
+            )
+            # Downgrading only the new revision preserves every legacy session
+            # and answer. Re-upgrade cannot safely infer a requested size.
+            old_active = dict(active)
+            del old_active["requested_count"]
+            connection.execute(
+                tables["study_sessions"]
+                .update()
+                .where(tables["study_sessions"].c.id == active_id)
+                .values(requested_count=20)
+            )
+            connection.commit()
+            command.downgrade(config, "0002")
+            downgraded = sa.Table("study_sessions", sa.MetaData(), autoload_with=connection)
+            assert "requested_count" not in downgraded.c
+            assert (
+                dict(
+                    connection.execute(sa.select(downgraded).where(downgraded.c.id == active_id))
+                    .mappings()
+                    .one()
+                )
+                == old_active
+            )
+            answers = sa.Table("study_answers", sa.MetaData(), autoload_with=connection)
+            assert connection.scalar(sa.select(sa.func.count()).select_from(answers)) == 2
+            connection.commit()
+            command.upgrade(config, "head")
+            upgraded = sa.Table("study_sessions", sa.MetaData(), autoload_with=connection)
+            assert (
+                connection.scalar(
+                    sa.select(upgraded.c.requested_count).where(upgraded.c.id == active_id)
+                )
+                is None
             )
             connection.commit()
             command.downgrade(config, "0001")

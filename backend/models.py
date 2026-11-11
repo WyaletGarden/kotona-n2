@@ -147,6 +147,7 @@ class StudySession(Base):
             "status IN ('in_progress','paused','completed','abandoned','invalidated')",
             name="ck_session_status",
         ),
+        CheckConstraint("requested_count IN (0, 10, 20)", name="ck_session_requested_count"),
         Index("ix_sessions_resume", "user_id", "status", "mode", "scope", "skill"),
     )
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
@@ -155,6 +156,7 @@ class StudySession(Base):
     mode: Mapped[str] = mapped_column(String(16), default="flash")
     scope: Mapped[str] = mapped_column(String(16), default="all")
     skill: Mapped[str] = mapped_column(String(16), default="reading")
+    requested_count: Mapped[int | None] = mapped_column(Integer)
     status: Mapped[str] = mapped_column(String(16), default="in_progress")
     position: Mapped[int] = mapped_column(Integer, default=0)
     total: Mapped[int] = mapped_column(Integer, default=0)

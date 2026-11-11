@@ -35,9 +35,28 @@ test('attributed JSON exports round trip and duplicates are reported', () => {
 test('malformed input, invalid fields and UTF-8 byte limits', () => {
   assert.throws(() => parseImport('[broken', [], limits), /JSON/);
   assert.throws(() => parseImport('記憶,きおく,"unfinished', [], limits), /ngoặc kép/);
-  assert.throws(() => parseImport('あ'.repeat(350000), [], limits), /giới hạn/);
+  assert.throws(
+    () => parseImport('あ'.repeat(34), [], { ...limits, import_bytes: 100 }),
+    /giới hạn/,
+  );
   assert.equal(parseImport('[null,1]', [], limits).errors.length, 2);
   assert.equal(parseImport('記憶,,Trí nhớ', [], limits).errors.length, 1);
+});
+
+test('a full exported library with maximum Unicode fields can be imported unchanged', () => {
+  const words = Array.from({ length: limits.max_words }, (_, i) => ({
+    kanji: String(i).padEnd(limits.kanji_length - 1, '字') + '𠮷',
+    reading: 'あ'.repeat(limits.reading_length),
+    meaning: 'ắ日本語"\\\n'.repeat(50).slice(0, limits.meaning_length - 1) + '終',
+    note: 'a' + '\u0001'.repeat(limits.note_length - 2) + '終',
+  }));
+  const exported = JSON.stringify({ words, attribution: { license: 'CC BY-SA 4.0' } }, null, 2);
+  assert.ok(new TextEncoder().encode(exported).byteLength > 4_000_000);
+  const imported = parseImport(exported, [], limits);
+  assert.deepEqual(imported.words, words);
+  assert.deepEqual(imported.errors, []);
+  assert.equal(imported.duplicates, 0);
+  assert.match(validateWord({ ...words[0], kanji: words[0].kanji + '字' }, limits), /quá dài/);
 });
 test('parameterized capacity and complete catalogue parsing', () => {
   assert.throws(

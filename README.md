@@ -98,6 +98,8 @@ ngoài. Chuyển sang Aiven không xóa volume hoặc tự chuyển dữ liệu 
 - Đổi Kanji/cách đọc đặt lại tiến độ từ. Đổi nghĩa đặt lại tiến độ nghĩa; sửa ghi
   chú giữ tiến độ. Lịch sử giữ bản chụp nội dung tại lúc trả lời.
 - Đổi chế độ tạm dừng phiên cũ; quay lại cùng cấu hình tiếp tục phiên phù hợp.
+  Cấu hình gồm chế độ, phạm vi, kỹ năng và số từ yêu cầu (10/20/tất cả), kể cả khi
+  số từ thực tế ít hơn. Đổi số từ hoặc kỹ năng mở phiên phù hợp, giữ phiên cũ trong lịch sử.
   **Bắt đầu phiên mới** chủ động tạo lại phiên; lịch sử có nút tiếp tục phiên tạm dừng.
 - Đổi nội dung đề hoặc xóa từ làm phiên liên quan chưa hoàn thành chuyển sang
   invalidated. Các câu trả lời và phiên hoàn thành vẫn được giữ.
@@ -180,6 +182,14 @@ Hộp thoại nhận CSV/TSV/TXT/JSON và đối chiếu từ trùng tại DB. J
 `words` và `attribution`, nhập lại được. Bản localStorage cũ chỉ được đọc theo
 thao tác chủ động, không bị xóa; chuyển từ/ghi chú, không chuyển tiến độ. Dữ liệu
 ở origin khác như Sites cũ cần xuất JSON từ địa chỉ cũ trước.
+
+Nhập tối đa 16 MB và 2.000 từ; giới hạn request API cũng là 16 MB để nhận sổ đầy
+với ghi chú dài, Unicode và ký tự JSON cần escape. Bản xuất chứa từ và ghi chú,
+không chứa tiến độ hoặc lịch sử học. Nhập lỗi không ghi một phần dữ liệu.
+
+Khi cập nhật từ schema 0002, chạy `uv run alembic upgrade head` trước khi khởi
+động mã mới. Migration 0003 thêm cấu hình số từ; phiên cũ và câu trả lời được giữ
+nguyên. Phiên cũ thiếu cấu hình chỉ tiếp tục qua lịch sử, không tự đoán số từ yêu cầu.
 
 ## Kiểm thử và định dạng
 

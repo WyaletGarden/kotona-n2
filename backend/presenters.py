@@ -50,6 +50,7 @@ def session_out(db, user, *, study=None, summary=None):
         mode=study.mode,
         scope=study.scope,
         quizType=study.skill,
+        requested_count=study.requested_count,
         status=study.status,
         index=study.position,
         total=study.total,
@@ -89,7 +90,16 @@ def workspace(db, user):
 
 
 def mutation(
-    db, user, *, updated=(), deleted=(), imported=0, duplicates=0, study=None, summary=None
+    db,
+    user,
+    *,
+    updated=(),
+    deleted=(),
+    imported=0,
+    duplicates=0,
+    study=None,
+    summary=None,
+    session_transition=None,
 ):
     return MutationOut(
         **snapshot(db, user, study=study, summary=summary),
@@ -97,4 +107,5 @@ def mutation(
         deleted_ids=list(deleted),
         imported=imported,
         duplicates=duplicates,
+        session_transition=session_transition,
     )

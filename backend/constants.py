@@ -3,8 +3,10 @@
 MAX_WORDS = 2000
 PAGE_SIZE = 50
 MAX_PAGE_SIZE = 100
-IMPORT_BYTES = 1_000_000
-REQUEST_BYTES = 4_000_000
+# Covers 2,000 full-length words, including JSON escaping, export formatting
+# and attribution. The same budget accepts the subsequent import request.
+IMPORT_BYTES = 16_000_000
+REQUEST_BYTES = IMPORT_BYTES
 KANJI_LENGTH = 80
 READING_LENGTH = 120
 MEANING_LENGTH = 300

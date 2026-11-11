@@ -26,6 +26,19 @@ uv run python scripts/verify_refactor.py
 
 Khởi động API v2 và Ctrl+F5 trình duyệt. Không dùng frontend/API v1 với schema v2.
 
+## Migration 0003 — cấu hình số từ của phiên
+
+Chạy `uv run alembic upgrade head` sau khi dừng API cũ và sao lưu DB. Bản cập nhật
+thêm cột nullable `study_sessions.requested_count`, ràng buộc 0/10/20 hoặc null.
+Không thay đổi ID, thứ tự từ, vị trí, điểm hoặc câu trả lời của các phiên hiện có.
+
+Phiên cũ để null vì không thể suy ra cấu hình từ tổng số từ: phiên có 3 từ có thể
+được yêu cầu 10, 20 hoặc tất cả. Vẫn tiếp tục được từ lịch sử; chỉ phiên có đủ cấu
+hình mới được tự tiếp tục khi đổi chế độ. Phiên mới lưu số từ yêu cầu ngay khi tạo.
+
+Downgrade về 0002 chỉ bỏ cột cấu hình và ràng buộc, giữ các phiên và câu trả lời.
+Cấu hình này sẽ không phục hồi khi nâng lại; các phiên đó được xử lý như phiên cũ.
+
 ## Kiểm chứng và phục hồi
 
 `backend/tests/test_migrations.py` tạo schema PostgreSQL tạm, nạp dữ liệu v1 có

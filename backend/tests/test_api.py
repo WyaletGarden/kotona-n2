@@ -1,4 +1,5 @@
 import os
+import json
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 from uuid import uuid4
@@ -7,15 +8,15 @@ import pytest
 from conftest import Account
 from fastapi.exceptions import ResponseValidationError
 from fastapi.testclient import TestClient
-from sqlalchemy import event, func, select
+from sqlalchemy import delete, event, func, select
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
 from backend.catalogue import seed_words
 from backend.config import settings
-from backend.constants import MAX_WORDS, REQUEST_BYTES
+from backend.constants import IMPORT_BYTES, MAX_WORDS, REQUEST_BYTES
 from backend.main import app
-from backend.models import AuthAttempt, LoginSession, User, Vocabulary, Word, now
+from backend.models import AuthAttempt, LoginSession, StudySession, User, Vocabulary, Word, now
 
 SEED_COUNT = len(seed_words())
 WORD = {"kanji": "記憶", "reading": "きおく", "meaning": "Trí nhớ", "note": "記憶に残る。"}
@@ -74,7 +75,7 @@ def test_csrf_origin_validation_and_request_limit(account):
     assert client.post("/api/auth/login", content=b"x" * (REQUEST_BYTES + 1)).status_code == 413
 
     def chunks():
-        for _ in range(5):
+        for _ in range(REQUEST_BYTES // 1_000_000 + 1):
             yield b"x" * 1_000_000
 
     assert (
@@ -201,6 +202,59 @@ def test_switch_modes_resumes_previous_session(account):
     )
 
 
+def test_session_sizes_match_requested_configuration_and_explicit_resume_restores_it(account):
+    first = account.start(count=10)
+    assert first["requested_count"] == 10
+    assert account.state["session_transition"] == "created"
+    account.flash()
+    account.start(mode="quiz", view="quiz", count=10)
+    twenty = account.start(count=20)
+    assert twenty["total"] == twenty["requested_count"] == 20
+    assert twenty["id"] != first["id"]
+    assert account.state["session_transition"] == "created"
+    resumed = account.start(count=10)
+    assert resumed["id"] == first["id"] and resumed["index"] == 1
+    assert account.state["settings"]["count"] == 10
+    assert account.state["session_transition"] == "resumed"
+    explicit = account.write("POST", f"/study/sessions/{twenty['id']}/resume").json()
+    assert explicit["settings"]["count"] == 20
+    assert explicit["session"]["id"] == twenty["id"]
+    assert explicit["session_transition"] == "resumed"
+    restarted = account.start(count=20, restart=True)
+    assert restarted["id"] != twenty["id"]
+    assert account.state["session_transition"] == "created"
+
+
+def test_requested_size_is_not_inferred_from_a_small_review_pool(account):
+    add_review_word(account)
+    first = account.start(scope="wrong", view="review", count=20)
+    assert first["total"] == 1 and first["requested_count"] == 20
+    ten = account.start(scope="wrong", view="review", count=10)
+    assert ten["total"] == 1 and ten["id"] != first["id"]
+    assert account.start(scope="wrong", view="review", count=20)["id"] == first["id"]
+    all_words = account.start(scope="wrong", view="review", count=0)
+    assert all_words["total"] == 1 and all_words["requested_count"] == 0
+    account.start(scope="wrong", view="review", count=10)
+    assert account.start(scope="wrong", view="review", count=0)["id"] == all_words["id"]
+    assert account.state["settings"]["count"] == 0
+
+
+def test_legacy_sessions_are_preserved_for_explicit_resume_only(account, database):
+    first = account.start(count=10)
+    account.action("reveal")
+    with database.begin() as db:
+        db.get(StudySession, first["id"]).requested_count = None
+    account.start(mode="quiz", view="quiz", count=20)
+    new = account.start(count=10)
+    assert new["id"] != first["id"]
+    history = account.client.get("/api/study/history").json()
+    assert next(s for s in history["items"] if s["id"] == first["id"])["status"] == "paused"
+    explicit = account.write("POST", f"/study/sessions/{first['id']}/resume").json()
+    assert explicit["session"]["id"] == first["id"]
+    assert explicit["session"]["requested_count"] is None
+    assert explicit["session"]["revealed"] is True
+
+
 @pytest.mark.parametrize("mode", ["flash", "quiz"])
 def test_review_skips_empty_sessions_when_words_become_due(account, mode):
     empty = account.start(mode=mode, scope="wrong", view="review")
@@ -290,6 +344,58 @@ def test_import_atomicity_capacity_and_expired_auth(account, database):
     with database.begin() as db:
         db.scalar(select(LoginSession)).expires_at = now() - timedelta(seconds=1)
     assert account.client.get("/api/auth/me").status_code == 401
+
+
+def test_full_library_export_import_round_trip_and_large_invalid_import_is_atomic(
+    account, database
+):
+    # Isolated fixture database only: start empty to exercise the entire capacity.
+    with database.begin() as db:
+        db.execute(delete(Word))
+    words = [
+        {
+            "kanji": str(i).ljust(79, "字") + "𠮷",
+            "reading": "あ" * 120,
+            "meaning": ('ắ日本語"\\\n' * 50)[:299] + "終",
+            "note": "a" + "\u0001" * 598 + "終",
+        }
+        for i in range(MAX_WORDS)
+    ]
+    payload = json.dumps({"words": words}, ensure_ascii=False).encode()
+    assert 4_000_000 < len(payload) < REQUEST_BYTES
+    invalid = [*words[:-1], {**words[-1], "reading": "invalid"}]
+    assert account.write("POST", "/words/import", {"words": invalid}).status_code == 422
+    assert account.reload()["stats"]["total"] == 0
+    assert account.state["revision"] == 0
+    imported = account.client.post(
+        "/api/words/import",
+        content=payload,
+        headers={
+            "Content-Type": "application/json",
+            "X-CSRF-Token": account.csrf,
+            "X-Revision": str(account.state["revision"]),
+        },
+    )
+    assert imported.status_code == 200, imported.text
+    assert imported.json()["imported"] == MAX_WORDS
+    account.reload()
+    exported = account.client.get("/api/words/export").json()
+    backup = json.dumps(
+        {"words": exported, "attribution": account.state["catalogue"]}, ensure_ascii=False, indent=2
+    ).encode()
+    assert 4_000_000 < len(backup) <= IMPORT_BYTES
+    assert sorted(exported, key=lambda w: w["kanji"]) == sorted(words, key=lambda w: w["kanji"])
+    # A second import of the export is harmless and still respects capacity.
+    duplicate = account.write("POST", "/words/import", {"words": exported})
+    assert duplicate.status_code == 200
+    assert duplicate.json()["imported"] == 0 and duplicate.json()["duplicates"] == MAX_WORDS
+    with database.begin() as db:
+        db.execute(delete(Word))
+    restored = account.write("POST", "/words/import", {"words": exported})
+    assert restored.status_code == 200 and restored.json()["imported"] == MAX_WORDS
+    assert sorted(
+        account.client.get("/api/words/export").json(), key=lambda w: w["kanji"]
+    ) == sorted(exported, key=lambda w: w["kanji"])
 
 
 def test_failed_logins_consume_rate_limit(client, database, monkeypatch):

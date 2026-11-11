@@ -29,6 +29,10 @@ Request ghi đã xác thực gửi `X-CSRF-Token`; thay đổi dữ liệu học
 - `POST /words/import`: cùng body, có revision, nhập nguyên tử và bỏ trùng.
 - `GET /words/export`: mảng nội dung từ. Frontend bọc cùng attribution khi tải JSON.
 
+File nhập và request body giới hạn 16.000.000 byte, tối đa 2.000 từ. Bản xuất chỉ
+chứa từ và ghi chú; không chứa tiến độ hoặc lịch sử học. Các giới hạn trường và
+kiểm tra nguyên tử vẫn áp dụng, kể cả với file lớn.
+
 Word response có progress.reading/meaning, tổng seen/correct, known,
 marked_for_review và needs_review. Từ đã vững vẫn có thể được đánh dấu ôn thủ công.
 
@@ -37,6 +41,13 @@ marked_for_review và needs_review. Từ đã vững vẫn có thể được đ
 `POST /study/sessions`: mode flash/quiz, scope all/wrong, count, quizType,
 view, restart (mặc định false). Mặc định tiếp tục phiên tạm dừng phù hợp;
 restart true tạo phiên mới. `POST /study/sessions/{id}/resume` tiếp tục phiên cụ thể.
+
+Phiên phù hợp phải khớp mode, scope, quizType và requested_count (0/10/20).
+requested_count lưu cấu hình yêu cầu, độc lập với total thực tế khi sổ ít từ.
+Tiếp tục phiên cụ thể khôi phục cả số từ yêu cầu nếu đã được lưu. Phiên cũ có
+requested_count null được giữ trong lịch sử để tiếp tục cụ thể, không tự chọn lại.
+Response tạo/tiếp tục phiên có session_transition created/resumed để UI thông báo;
+các mutation khác có trường này là null.
 
 `POST /study/actions` nhận một trong bốn loại, mỗi loại có session_id và index:
 
@@ -61,6 +72,7 @@ trạng thái. Trường không thuộc schema bị từ chối. Gửi lại câ
 
 Session response: id, mode, scope, quizType, status, index, total, correct,
 answered_count, answered, current_result, revealed, choice, options, current_word.
+Trường requested_count là 0/10/20 hoặc null với phiên được tạo trước migration 0003.
 Không có toàn bộ IDs/câu trả lời.
 
 - `GET /study/history?offset=0&limit=20`: cả phiên hoàn thành và tạm dừng.

@@ -21,6 +21,12 @@ class ActionResult:
     current_result: bool | None
 
 
+@dataclass
+class StartResult:
+    study: StudySession
+    resumed: bool
+
+
 def set_options(db, user, study):
     study.options = []
     if study.mode == "quiz" and study.position < study.total:
@@ -43,6 +49,8 @@ def resume_session(db, user, session_id):
     user.active_session_id = study.id
     user.view = "review" if study.scope == "wrong" else study.mode
     user.settings = {**user.settings, "quizType": study.skill}
+    if study.requested_count is not None:
+        user.settings = {**user.settings, "count": study.requested_count}
     return study
 
 
@@ -60,12 +68,13 @@ def start_session(db, user, payload):
                 StudySession.mode == payload.mode,
                 StudySession.scope == payload.scope,
                 StudySession.skill == payload.quizType,
+                StudySession.requested_count == payload.count,
             )
             .order_by(StudySession.created_at.desc())
             .limit(1)
         )
         if candidate:
-            return resume_session(db, user, candidate.id)
+            return StartResult(resume_session(db, user, candidate.id), resumed=True)
     elif active and active.status == "paused":
         active.status = "abandoned"
     user.settings = {"count": payload.count, "quizType": payload.quizType}
@@ -83,6 +92,7 @@ def start_session(db, user, payload):
         mode=payload.mode,
         scope=payload.scope,
         skill=payload.quizType,
+        requested_count=payload.count,
         total=len(ids),
         status="in_progress" if ids else "completed",
         completed_at=None if ids else now(),
@@ -91,7 +101,7 @@ def start_session(db, user, payload):
     db.flush()
     user.active_session_id, user.view = study.id, payload.view
     set_options(db, user, study)
-    return study
+    return StartResult(study, resumed=False)
 
 
 def grade_progress(word, skill, correct):
