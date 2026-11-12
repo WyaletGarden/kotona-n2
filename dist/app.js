@@ -52,6 +52,9 @@ export async function startApp({
     error: (failure) => toast(failure.message),
     unauthorized: () => win.location.reload(),
     saving(status) {
+      for (const id of ['session-size', 'quiz-type']) {
+        $(`#${id}`, doc).disabled = status === 'pending';
+      }
       if (status === 'idle') {
         doc.body.classList.remove('is-saving');
         return;

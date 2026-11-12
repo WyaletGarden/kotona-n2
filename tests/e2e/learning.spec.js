@@ -42,9 +42,25 @@ test('changing session size preserves progress and resumes only a matching confi
   await expect(page.locator('.quiz-options')).toBeVisible();
   await page.locator('#session-size').selectOption('20');
   await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
-  await page.locator('#flash-mode').click();
-  await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
-  await expect(page.locator('#toast')).toContainText('Bắt đầu phiên mới');
+  let release;
+  const gate = new Promise((resolve) => (release = resolve));
+  await page.route(
+    '**/api/study/sessions',
+    async (route) => {
+      await gate;
+      await route.continue();
+    },
+    { times: 1 },
+  );
+  try {
+    await page.locator('#flash-mode').click();
+    await expect(page.locator('#session-size')).toBeDisabled();
+    await expect(page.locator('#quiz-type')).toBeDisabled();
+    await expect(page.locator('#progress-count')).toHaveText('0 / 20 từ');
+    await expect(page.locator('#toast')).toContainText('Bắt đầu phiên mới');
+  } finally {
+    release();
+  }
   await page.locator('#session-size').selectOption('10');
   await expect(page.locator('#progress-count')).toHaveText('1 / 10 từ');
   await expect(page.locator('#toast')).toContainText('Tiếp tục phiên học');
