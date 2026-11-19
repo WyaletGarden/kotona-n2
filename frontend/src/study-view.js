@@ -1,9 +1,4 @@
 ﻿import { escapeHTML as e, select as $, selectAll } from './dom.js';
-import { createRoot } from 'react-dom/client';
-import { createElement } from 'react';
-import { StudyPanel } from './study-panel.js';
-
-const studyRoots = new WeakMap();
 
 export function studyHTML(session, stats) {
   if (!session || ['invalidated', 'abandoned'].includes(session.status)) {
@@ -81,13 +76,7 @@ export function renderShell(state, doc = document) {
   $('#quiz-type', doc).value = state.settings.quizType;
   $('#quiz-setting', doc).hidden = false;
   if (view === 'words') return;
-  const studyPanel = $('#study-panel', doc);
-  let studyRoot = studyRoots.get(studyPanel);
-  if (!studyRoot) {
-    studyRoot = createRoot(studyPanel);
-    studyRoots.set(studyPanel, studyRoot);
-  }
-  studyRoot.render(createElement(StudyPanel, { html: studyHTML(s, stats) }));
+  $('#study-panel', doc).innerHTML = studyHTML(s, stats);
   $('#flash-mode', doc).classList.toggle('selected', s?.mode === 'flash');
   $('#quiz-mode', doc).classList.toggle('selected', s?.mode === 'quiz');
   const done = s?.answered_count || 0;
