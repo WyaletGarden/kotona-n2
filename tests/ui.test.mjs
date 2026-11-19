@@ -64,4 +64,3 @@ test('HTML has unique IDs, assets and selectors used by modules', () => {
       ids.includes('history-next'),
   );
 });
-
