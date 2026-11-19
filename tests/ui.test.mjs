@@ -23,19 +23,19 @@ test('quiz feedback reflects the server grade and locks scoring', () => {
       answered: true,
       answered_count: 1,
       current_result: false,
-      choice: 'ã‚',
-      options: ['ã‚', 'ããŠã'],
+      choice: 'あ',
+      options: ['あ', 'きおく'],
     }),
     snapshot().stats,
   );
-  assert.match(html, /ChÆ°a Ä‘Ãºng/);
+  assert.match(html, /Chưa đúng/);
   assert.match(html, /disabled/);
-  assert.match(html, /Xem káº¿t quáº£/);
+  assert.match(html, /Xem kết quả/);
   const summary = studyHTML(
     session({ status: 'completed', index: 10, answered_count: 10, correct: 7, current_word: null }),
     snapshot().stats,
   );
-  assert.match(summary, /hoÃ n thÃ nh phiÃªn há»c/);
+  assert.match(summary, /hoàn thành phiên học/);
   assert.match(summary, />7</);
 });
 test('manual review mark and mastery are separate in word rows', () => {
