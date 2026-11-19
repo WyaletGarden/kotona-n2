@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { normalize, parseImport, validateWord, wordKey } from '../dist/core.js';
+import { normalize, parseImport, validateWord, wordKey } from '../frontend/src/core.js';
 import { limits, word } from './fixtures.mjs';
 
 test('Vietnamese search normalization and NFC word identity', () => {

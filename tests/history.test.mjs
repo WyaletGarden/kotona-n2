@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { bindHistory } from '../dist/history.js';
+import { bindHistory } from '../frontend/src/history.js';
 
 function setup() {
   const elements = Object.fromEntries(

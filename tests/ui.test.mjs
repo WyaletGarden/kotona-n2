@@ -40,9 +40,9 @@ test('quiz feedback reflects the server grade and locks scoring', () => {
 });
 test('manual review mark and mastery are separate in word rows', () => {
   const html = wordRows([{ ...word, marked_for_review: true, needs_review: true }], 2);
-  assert.match(html, /ÄÃ¡nh dáº¥u Ã´n/);
-  assert.doesNotMatch(html, /ÄÃ£ vá»¯ng/);
-  assert.match(html, /Äá»c 0\/2/);
+  assert.match(html, /Đánh dấu ôn/);
+  assert.doesNotMatch(html, /Đã vững/);
+  assert.match(html, /Đọc 0\/2/);
 });
 test('HTML has unique IDs, assets and selectors used by modules', () => {
   const html = readFileSync(new URL('../frontend/index.html', import.meta.url), 'utf8');
@@ -53,7 +53,7 @@ test('HTML has unique IDs, assets and selectors used by modules', () => {
   for (const file of readdirSync(new URL('../frontend/src/', import.meta.url)).filter((n) =>
     n.endsWith('.js'),
   )) {
-    const src = readFileSync(new URL('../dist/' + file, import.meta.url), 'utf8');
+    const src = readFileSync(new URL('../frontend/src/' + file, import.meta.url), 'utf8');
     for (const m of src.matchAll(/\$\(['"]#([\w-]+)['"]\s*(?:,|\))/g))
       assert.ok(ids.includes(m[1]), `${file}: missing #${m[1]}`);
   }

@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createStore, createController } from '../dist/state.js';
-import { APIError, createApi } from '../dist/api.js';
+import { createStore, createController } from '../frontend/src/state.js';
+import { APIError, createApi } from '../frontend/src/api.js';
 import { snapshot, word } from './fixtures.mjs';
-import { createRefreshPolicy } from '../dist/refresh-policy.js';
+import { createRefreshPolicy } from '../frontend/src/refresh-policy.js';
 
 test('study deltas preserve stats/settings and accept explicit session removal', () => {
   const store = createStore();
