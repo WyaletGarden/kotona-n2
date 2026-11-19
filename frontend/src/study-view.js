@@ -102,4 +102,3 @@ export function renderShell(state, doc = document) {
   $('#scope-caption', doc).textContent =
     `Äang luyá»‡n ${state.settings.quizType === 'reading' ? 'cÃ¡ch Ä‘á»c' : 'nghÄ©a tiáº¿ng Viá»‡t'}`;
 }
-
